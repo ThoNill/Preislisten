@@ -16,12 +16,13 @@ import org.springframework.transaction.PlatformTransactionManager;
 import entities.Kasse;
 import entities.Kunde;
 import entities.PreislistePosition;
+import lombok.extern.slf4j.Slf4j;
 import repositories.KasseRepository;
 import repositories.KundeRepository;
 import tho.nill.preislisten.simpleAttributes.BezugArt;
 import tho.nill.preislisten.simpleAttributes.DatumArt;
 
-
+@Slf4j
 @Service
 public class AbfrageService extends BasisServiceWithResult<AbfrageDaten,Optional<PreislistePosition>>{
 
@@ -49,7 +50,7 @@ public class AbfrageService extends BasisServiceWithResult<AbfrageDaten,Optional
 		Kunde kunde = kundeRepo.getOne(abfrage.getKundenId());
 		Kasse kasse = kasseRepo.getOne(abfrage.getKassenId());
 		String stmt = createQuery(kunde,kasse,abfrage);
-		System.out.println(stmt);
+		log.info(stmt);
 		Query query = entityManager.createQuery(stmt);
 		List<?> list = query.getResultList();
 		if (list.size()>0) {

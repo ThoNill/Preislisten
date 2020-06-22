@@ -10,13 +10,25 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import entities.VersandZiel;
-import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
-import tho.nill.preislisten.simpleAttributes.Bundesland;
-import tho.nill.preislisten.simpleAttributes.DFÜMedium;
-import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
+
 import tho.nill.preislisten.simpleAttributes.IK;
-import tho.nill.preislisten.simpleAttributes.KVBezirk;
+
+import tho.nill.preislisten.simpleAttributes.IK;
+
+import tho.nill.preislisten.simpleAttributes.IK;
+
+import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
+
 import tho.nill.preislisten.simpleAttributes.Kostenträger;
+
+import tho.nill.preislisten.simpleAttributes.DFÜMedium;
+
+import tho.nill.preislisten.simpleAttributes.Bundesland;
+
+import tho.nill.preislisten.simpleAttributes.KVBezirk;
+
+import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
+
 import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
 
 

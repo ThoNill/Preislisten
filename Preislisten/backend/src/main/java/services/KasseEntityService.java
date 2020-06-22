@@ -8,9 +8,33 @@ import org.springframework.stereotype.Service;
 
 import entities.Kasse;
 import repositories.KasseRepository;
+
 import tho.nill.preislisten.simpleAttributes.IK;
+
 import tho.nill.preislisten.simpleAttributes.KasseArt;
+
 import tho.nill.preislisten.simpleAttributes.KassenFunktion;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+
+
+import java.util.concurrent.atomic.AtomicLong;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @Service
 public class KasseEntityService  {

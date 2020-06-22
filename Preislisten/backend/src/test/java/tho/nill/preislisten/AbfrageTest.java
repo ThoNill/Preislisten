@@ -7,20 +7,16 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Optional;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.event.annotation.BeforeTestMethod;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import entities.Kasse;
 import entities.Kunde;
 import entities.Position;
 import entities.PreislisteBezug;
 import entities.PreislisteKopf;
 import entities.PreislistePosition;
-import lombok.extern.slf4j.Slf4j;
 import repositories.KasseRepository;
 import repositories.KundeRepository;
 import repositories.PositionRepository;
@@ -34,8 +30,7 @@ import tho.nill.preislisten.simpleAttributes.KasseArt;
 import tho.nill.preislisten.simpleAttributes.PreislisteArt;
 import tho.nill.preislisten.simpleAttributes.Tarifbereich;
 
-@Slf4j
-@RunWith(SpringRunner.class)
+
 @SpringBootTest
 public class AbfrageTest {
 	
