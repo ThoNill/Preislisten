@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>tho.nill</groupId>
+	<artifactId>Preislisten.backend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Preislisten Backend</name>
+	<description>Preislisten Backend</description>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.6.RELEASE</version>
+		<relativePath /> <!-- <groupId>tho.nill</groupId> <artifactId>Preislisten</artifactId> <version>0.0.1-SNAPSHOT</version> -->
+
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>11</java.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.4.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.4.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-batch</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-integration</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jooq</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<!-- scope>test</scope -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>tho.nill</groupId>
+			<artifactId>Vorlagen-vorlagen</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>tho.nill</groupId>
+			<artifactId>Preislisten.modell</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+
+			<plugin>
+				<groupId>tho.nill</groupId>
+				<artifactId>Vorlagen-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<extensions>true</extensions>
+				<inherited>true</inherited>
+				<dependencies>
+					<dependency>
+						<groupId>tho.nill</groupId>
+						<artifactId>Preislisten.modell</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+					</dependency>
+					<dependency>
+						<groupId>tho.nill</groupId>
+						<artifactId>Preislisten.modell</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+						<classifier>sources</classifier>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<id>generateEntities</id>
+						<phase>generate-sources</phase>
+						<configuration>
+							<doNothing>false</doNothing>
+							<sourceJarPaths>
+								<sourceJarPath>${settings.localRepository}\tho\nill\Preislisten.modell\0.0.1-SNAPSHOT\Preislisten.modell-0.0.1-SNAPSHOT-sources.jar</sourceJarPath>
+							</sourceJarPaths>
+							<modellDir>../modell/src/main/java</modellDir>
+							<templateDir>entity/single</templateDir>
+							<outputDir>src/main/java</outputDir>
+							<converterClass>tho.nill.preislisten.simpleAttributes.Converters</converterClass>
+							<connectionClass>tho.nill.preislisten.verknüpfungen.Verknüpfungen</connectionClass>
+							<modelClasses>
+								<modelClass>tho.nill.preislisten.modelle.Gruppe</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.HMVArt</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.HMVGruppe</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.HMVOrt</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.HMVUntergruppe</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.HMVProdukt</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.Kasse</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.Kunde</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.Position</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.PreislisteBezug</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.PreislisteKopf</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.PreislistePosition</modelClass>
+								<modelClass>tho.nill.preislisten.modelle.VersandZiel</modelClass>
+						</modelClasses>
+						</configuration>
+						<goals>
+							<goal>generateFromObjectModel</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>generateServices</id>
+						<phase>generate-sources</phase>
+						<configuration>
+							<doNothing>true</doNothing>
+							<templateDir>services</templateDir>
+							<outputDir>src/main/java</outputDir>
+							<modelClasses>
+								<modelClass>tho.nill.preislisten.services.ServiceDescriptions</modelClass>
+							</modelClasses>
+						</configuration>
+						<goals>
+							<goal>generateFromFreeformModel</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>
