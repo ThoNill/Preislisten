@@ -43,68 +43,58 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.IK;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.IK;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.IK;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.Kostenträger;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.DFÜMedium;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.Bundesland;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.KVBezirk;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
     import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
 
 
-    import interfaces.IVersandZiel;
     import entities.VersandZiel;
     import repositories.VersandZielRepository;
 
-    import interfaces.IKasse;
+    import entities.Kasse;
     import repositories.KasseRepository;
 
-    import interfaces.IVersandZiel;
+    import entities.VersandZiel;
     import zelte.VersandZielZelt;
 
 

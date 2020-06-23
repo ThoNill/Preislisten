@@ -43,38 +43,33 @@ import entities.*;
     import java.lang.String;
 
 
-    import interfaces.IHMVProdukt;
     import entities.HMVProdukt;
     import repositories.HMVProduktRepository;
     import java.lang.String;
 
 
-    import interfaces.IHMVProdukt;
     import entities.HMVProdukt;
     import repositories.HMVProduktRepository;
     import java.lang.String;
 
 
-    import interfaces.IHMVProdukt;
     import entities.HMVProdukt;
     import repositories.HMVProduktRepository;
     import java.lang.String;
 
 
-    import interfaces.IHMVProdukt;
     import entities.HMVProdukt;
     import repositories.HMVProduktRepository;
     import java.lang.String;
 
 
-    import interfaces.IHMVProdukt;
     import entities.HMVProdukt;
     import repositories.HMVProduktRepository;
 
-    import interfaces.IHMVArt;
+    import entities.HMVArt;
     import repositories.HMVArtRepository;
 
-    import interfaces.IHMVProdukt;
+    import entities.HMVProdukt;
     import zelte.HMVProduktZelt;
 
 

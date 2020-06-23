@@ -43,20 +43,18 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.PositionsArt;
 
 
-    import interfaces.IPosition;
     import entities.Position;
     import repositories.PositionRepository;
     import java.lang.String;
 
 
-    import interfaces.IPosition;
     import entities.Position;
     import repositories.PositionRepository;
 
-    import interfaces.IPosition;
+    import entities.Position;
     import repositories.PositionRepository;
 
-    import interfaces.IPreislistePosition;
+    import entities.PreislistePosition;
     import zelte.PreislistePositionZelt;
 
 

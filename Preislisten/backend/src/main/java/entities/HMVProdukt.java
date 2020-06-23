@@ -42,12 +42,10 @@ import lombok.ToString;
     import java.lang.String;
     import java.lang.String;
 
-    import interfaces.IHMVArt;
+    import entities.HMVArt;
 
-    import interfaces.IHMVProdukt;
+    import entities.HMVProdukt;
 
-
-import interfaces.IHMVProdukt;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -55,7 +53,7 @@ import interfaces.IHMVProdukt;
 @Entity
 @Table(name = "HMVPRODUKT")
 @SequenceGenerator(name = "HMVPRODUKT_SEQ", sequenceName = "HMVPRODUKT_SEQ")
-public class HMVProdukt implements IHMVProdukt {
+public class HMVProdukt  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -157,8 +155,8 @@ public class HMVProdukt implements IHMVProdukt {
      	    @JoinColumn(name = "HMVArt_Id")
      		private HMVArt HMVArt;
 
-     	    @Override
-     	    public void setHMVArt(IHMVArt value) {
+
+     	    public void setHMVArt(HMVArt value) {
      	 	   HMVArt = (HMVArt) value;
      	    }
 

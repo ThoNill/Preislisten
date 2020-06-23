@@ -47,12 +47,10 @@ import lombok.ToString;
     import java.lang.String;
     import java.lang.String;
 
-    import interfaces.IKasse;
+    import entities.Kasse;
 
-    import interfaces.IVersandZiel;
+    import entities.VersandZiel;
 
-
-import interfaces.IKasse;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -60,7 +58,7 @@ import interfaces.IKasse;
 @Entity
 @Table(name = "KASSE")
 @SequenceGenerator(name = "KASSE_SEQ", sequenceName = "KASSE_SEQ")
-public class Kasse implements IKasse {
+public class Kasse  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -250,14 +248,14 @@ public class Kasse implements IKasse {
      	    private Set<VersandZiel> VersandZiel = new HashSet<>();
 
 
-     	    @Override
-     	    public void addVersandZiel(IVersandZiel x) {
+
+     	    public void addVersandZiel(VersandZiel x) {
      	        this.VersandZiel.add((VersandZiel)x);
      	        x.setKasse(this);
      	    }
 
-     	    @Override
-     	    public void removeVersandZiel(IVersandZiel x) {
+
+     	    public void removeVersandZiel(VersandZiel x) {
      	        this.VersandZiel.remove((VersandZiel)x);
      	        x.setKasse(null);
      	    }

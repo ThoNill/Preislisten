@@ -38,12 +38,10 @@ import lombok.ToString;
 
     import tho.nill.preislisten.simpleAttributes.BezugArt;
 
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteKopf;
 
-    import interfaces.IPreislisteBezug;
+    import entities.PreislisteBezug;
 
-
-import interfaces.IPreislisteBezug;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -51,7 +49,7 @@ import interfaces.IPreislisteBezug;
 @Entity
 @Table(name = "PREISLISTEBEZUG")
 @SequenceGenerator(name = "PREISLISTEBEZUG_SEQ", sequenceName = "PREISLISTEBEZUG_SEQ")
-public class PreislisteBezug implements IPreislisteBezug {
+public class PreislisteBezug  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -101,8 +99,8 @@ public class PreislisteBezug implements IPreislisteBezug {
      	    @JoinColumn(name = "PreislisteKopf_Id")
      		private PreislisteKopf PreislisteKopf;
 
-     	    @Override
-     	    public void setPreislisteKopf(IPreislisteKopf value) {
+
+     	    public void setPreislisteKopf(PreislisteKopf value) {
      	 	   PreislisteKopf = (PreislisteKopf) value;
      	    }
 

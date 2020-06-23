@@ -43,20 +43,18 @@ import entities.*;
     import java.lang.String;
 
 
-    import interfaces.IHMVOrt;
     import entities.HMVOrt;
     import repositories.HMVOrtRepository;
     import java.lang.String;
 
 
-    import interfaces.IHMVOrt;
     import entities.HMVOrt;
     import repositories.HMVOrtRepository;
 
-    import interfaces.IHMVOrt;
+    import entities.HMVOrt;
     import repositories.HMVOrtRepository;
 
-    import interfaces.IHMVUntergruppe;
+    import entities.HMVUntergruppe;
     import zelte.HMVUntergruppeZelt;
 
 

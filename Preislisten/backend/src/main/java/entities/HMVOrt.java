@@ -39,12 +39,10 @@ import lombok.ToString;
     import java.lang.String;
     import java.lang.String;
 
-    import interfaces.IHMVOrt;
+    import entities.HMVOrt;
 
-    import interfaces.IHMVUntergruppe;
+    import entities.HMVUntergruppe;
 
-
-import interfaces.IHMVOrt;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -52,7 +50,7 @@ import interfaces.IHMVOrt;
 @Entity
 @Table(name = "HMVORT")
 @SequenceGenerator(name = "HMVORT_SEQ", sequenceName = "HMVORT_SEQ")
-public class HMVOrt implements IHMVOrt {
+public class HMVOrt  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -107,14 +105,14 @@ public class HMVOrt implements IHMVOrt {
      	    private Set<HMVUntergruppe> HMVUntergruppe = new HashSet<>();
 
 
-     	    @Override
-     	    public void addHMVUntergruppe(IHMVUntergruppe x) {
+
+     	    public void addHMVUntergruppe(HMVUntergruppe x) {
      	        this.HMVUntergruppe.add((HMVUntergruppe)x);
      	        x.setHMVOrt(this);
      	    }
 
-     	    @Override
-     	    public void removeHMVUntergruppe(IHMVUntergruppe x) {
+
+     	    public void removeHMVUntergruppe(HMVUntergruppe x) {
      	        this.HMVUntergruppe.remove((HMVUntergruppe)x);
      	        x.setHMVOrt(null);
      	    }

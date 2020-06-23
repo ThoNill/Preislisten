@@ -43,14 +43,13 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.BezugArt;
 
 
-    import interfaces.IPreislisteBezug;
     import entities.PreislisteBezug;
     import repositories.PreislisteBezugRepository;
 
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
 
-    import interfaces.IPreislisteBezug;
+    import entities.PreislisteBezug;
     import zelte.PreislisteBezugZelt;
 
 

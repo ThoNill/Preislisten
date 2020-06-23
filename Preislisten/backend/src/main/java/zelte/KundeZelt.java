@@ -43,61 +43,51 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.IK;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import tho.nill.preislisten.simpleAttributes.Tarifbereich;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import java.lang.String;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import java.lang.String;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import java.lang.String;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import java.lang.String;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import java.lang.String;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import java.lang.String;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
     import java.lang.String;
 
 
-    import interfaces.IKunde;
     import entities.Kunde;
     import repositories.KundeRepository;
 

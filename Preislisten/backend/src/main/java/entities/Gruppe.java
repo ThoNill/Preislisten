@@ -42,15 +42,13 @@ import lombok.ToString;
     import java.lang.String;
 
 
-import interfaces.IGruppe;
-
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "GRUPPE")
 @SequenceGenerator(name = "GRUPPE_SEQ", sequenceName = "GRUPPE_SEQ")
-public class Gruppe implements IGruppe {
+public class Gruppe  {
 
     @EqualsAndHashCode.Include
     @ToString.Include

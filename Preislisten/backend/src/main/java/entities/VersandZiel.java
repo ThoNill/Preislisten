@@ -47,12 +47,10 @@ import lombok.ToString;
     import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
     import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
 
-    import interfaces.IKasse;
+    import entities.Kasse;
 
-    import interfaces.IVersandZiel;
+    import entities.VersandZiel;
 
-
-import interfaces.IVersandZiel;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -60,7 +58,7 @@ import interfaces.IVersandZiel;
 @Entity
 @Table(name = "VERSANDZIEL")
 @SequenceGenerator(name = "VERSANDZIEL_SEQ", sequenceName = "VERSANDZIEL_SEQ")
-public class VersandZiel implements IVersandZiel {
+public class VersandZiel  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -245,8 +243,8 @@ public class VersandZiel implements IVersandZiel {
      	    @JoinColumn(name = "Kasse_Id")
      		private Kasse Kasse;
 
-     	    @Override
-     	    public void setKasse(IKasse value) {
+
+     	    public void setKasse(Kasse value) {
      	 	   Kasse = (Kasse) value;
      	    }
 

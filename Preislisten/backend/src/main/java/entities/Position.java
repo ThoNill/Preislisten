@@ -39,12 +39,10 @@ import lombok.ToString;
     import tho.nill.preislisten.simpleAttributes.PositionsArt;
     import java.lang.String;
 
-    import interfaces.IPosition;
+    import entities.Position;
 
-    import interfaces.IPreislistePosition;
+    import entities.PreislistePosition;
 
-
-import interfaces.IPosition;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -52,7 +50,7 @@ import interfaces.IPosition;
 @Entity
 @Table(name = "POSITION")
 @SequenceGenerator(name = "POSITION_SEQ", sequenceName = "POSITION_SEQ")
-public class Position implements IPosition {
+public class Position  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -106,14 +104,14 @@ public class Position implements IPosition {
      	    private Set<PreislistePosition> PreislistePosition = new HashSet<>();
 
 
-     	    @Override
-     	    public void addPreislistePosition(IPreislistePosition x) {
+
+     	    public void addPreislistePosition(PreislistePosition x) {
      	        this.PreislistePosition.add((PreislistePosition)x);
      	        x.setPosition(this);
      	    }
 
-     	    @Override
-     	    public void removePreislistePosition(IPreislistePosition x) {
+
+     	    public void removePreislistePosition(PreislistePosition x) {
      	        this.PreislistePosition.remove((PreislistePosition)x);
      	        x.setPosition(null);
      	    }

@@ -48,15 +48,13 @@ import lombok.ToString;
     import java.lang.String;
 
 
-import interfaces.IKunde;
-
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "KUNDE")
 @SequenceGenerator(name = "KUNDE_SEQ", sequenceName = "KUNDE_SEQ")
-public class Kunde implements IKunde {
+public class Kunde  {
 
     @EqualsAndHashCode.Include
     @ToString.Include

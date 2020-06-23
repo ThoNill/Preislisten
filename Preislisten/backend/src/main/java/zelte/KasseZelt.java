@@ -43,68 +43,58 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.IK;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import tho.nill.preislisten.simpleAttributes.KasseArt;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import tho.nill.preislisten.simpleAttributes.KassenFunktion;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import java.lang.String;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import java.lang.String;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import java.lang.String;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import java.lang.String;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import java.lang.String;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import java.lang.String;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
     import java.lang.String;
 
 
-    import interfaces.IKasse;
     import entities.Kasse;
     import repositories.KasseRepository;
 
-    import interfaces.IKasse;
+    import entities.Kasse;
     import repositories.KasseRepository;
 
-    import interfaces.IVersandZiel;
+    import entities.VersandZiel;
     import zelte.VersandZielZelt;
 
 

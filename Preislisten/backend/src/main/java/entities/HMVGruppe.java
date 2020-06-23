@@ -42,12 +42,10 @@ import lombok.ToString;
     import java.lang.String;
     import java.lang.String;
 
-    import interfaces.IHMVGruppe;
+    import entities.HMVGruppe;
 
-    import interfaces.IHMVUntergruppe;
+    import entities.HMVUntergruppe;
 
-
-import interfaces.IHMVGruppe;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -55,7 +53,7 @@ import interfaces.IHMVGruppe;
 @Entity
 @Table(name = "HMVGRUPPE")
 @SequenceGenerator(name = "HMVGRUPPE_SEQ", sequenceName = "HMVGRUPPE_SEQ")
-public class HMVGruppe implements IHMVGruppe {
+public class HMVGruppe  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -161,14 +159,14 @@ public class HMVGruppe implements IHMVGruppe {
      	    private Set<HMVUntergruppe> HMVUntergruppe = new HashSet<>();
 
 
-     	    @Override
-     	    public void addHMVUntergruppe(IHMVUntergruppe x) {
+
+     	    public void addHMVUntergruppe(HMVUntergruppe x) {
      	        this.HMVUntergruppe.add((HMVUntergruppe)x);
      	        x.setHMVGruppe(this);
      	    }
 
-     	    @Override
-     	    public void removeHMVUntergruppe(IHMVUntergruppe x) {
+
+     	    public void removeHMVUntergruppe(HMVUntergruppe x) {
      	        this.HMVUntergruppe.remove((HMVUntergruppe)x);
      	        x.setHMVGruppe(null);
      	    }

@@ -40,18 +40,16 @@ import lombok.ToString;
     import java.lang.String;
     import java.lang.String;
 
-    import interfaces.IHMVGruppe;
+    import entities.HMVGruppe;
 
-    import interfaces.IHMVUntergruppe;
-    import interfaces.IHMVOrt;
+    import entities.HMVUntergruppe;
+    import entities.HMVOrt;
 
-    import interfaces.IHMVUntergruppe;
-    import interfaces.IHMVUntergruppe;
+    import entities.HMVUntergruppe;
+    import entities.HMVUntergruppe;
 
-    import interfaces.IHMVArt;
+    import entities.HMVArt;
 
-
-import interfaces.IHMVUntergruppe;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -59,7 +57,7 @@ import interfaces.IHMVUntergruppe;
 @Entity
 @Table(name = "HMVUNTERGRUPPE")
 @SequenceGenerator(name = "HMVUNTERGRUPPE_SEQ", sequenceName = "HMVUNTERGRUPPE_SEQ")
-public class HMVUntergruppe implements IHMVUntergruppe {
+public class HMVUntergruppe  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -127,8 +125,8 @@ public class HMVUntergruppe implements IHMVUntergruppe {
      	    @JoinColumn(name = "HMVGruppe_Id")
      		private HMVGruppe HMVGruppe;
 
-     	    @Override
-     	    public void setHMVGruppe(IHMVGruppe value) {
+
+     	    public void setHMVGruppe(HMVGruppe value) {
      	 	   HMVGruppe = (HMVGruppe) value;
      	    }
 
@@ -140,8 +138,8 @@ public class HMVUntergruppe implements IHMVUntergruppe {
      	    @JoinColumn(name = "HMVOrt_Id")
      		private HMVOrt HMVOrt;
 
-     	    @Override
-     	    public void setHMVOrt(IHMVOrt value) {
+
+     	    public void setHMVOrt(HMVOrt value) {
      	 	   HMVOrt = (HMVOrt) value;
      	    }
 
@@ -157,14 +155,14 @@ public class HMVUntergruppe implements IHMVUntergruppe {
      	    private Set<HMVArt> HMVArt = new HashSet<>();
 
 
-     	    @Override
-     	    public void addHMVArt(IHMVArt x) {
+
+     	    public void addHMVArt(HMVArt x) {
      	        this.HMVArt.add((HMVArt)x);
      	        x.setHMVUntergruppe(this);
      	    }
 
-     	    @Override
-     	    public void removeHMVArt(IHMVArt x) {
+
+     	    public void removeHMVArt(HMVArt x) {
      	        this.HMVArt.remove((HMVArt)x);
      	        x.setHMVUntergruppe(null);
      	    }

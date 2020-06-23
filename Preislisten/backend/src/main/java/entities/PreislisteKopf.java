@@ -41,15 +41,13 @@ import lombok.ToString;
     import java.time.LocalDate;
     import tho.nill.preislisten.simpleAttributes.DatumArt;
 
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteKopf;
 
-    import interfaces.IPreislisteBezug;
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteBezug;
+    import entities.PreislisteKopf;
 
-    import interfaces.IPreislistePosition;
+    import entities.PreislistePosition;
 
-
-import interfaces.IPreislisteKopf;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -57,7 +55,7 @@ import interfaces.IPreislisteKopf;
 @Entity
 @Table(name = "PREISLISTEKOPF")
 @SequenceGenerator(name = "PREISLISTEKOPF_SEQ", sequenceName = "PREISLISTEKOPF_SEQ")
-public class PreislisteKopf implements IPreislisteKopf {
+public class PreislisteKopf  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -144,14 +142,14 @@ public class PreislisteKopf implements IPreislisteKopf {
      	    private Set<PreislisteBezug> PreislisteBezug = new HashSet<>();
 
 
-     	    @Override
-     	    public void addPreislisteBezug(IPreislisteBezug x) {
+
+     	    public void addPreislisteBezug(PreislisteBezug x) {
      	        this.PreislisteBezug.add((PreislisteBezug)x);
      	        x.setPreislisteKopf(this);
      	    }
 
-     	    @Override
-     	    public void removePreislisteBezug(IPreislisteBezug x) {
+
+     	    public void removePreislisteBezug(PreislisteBezug x) {
      	        this.PreislisteBezug.remove((PreislisteBezug)x);
      	        x.setPreislisteKopf(null);
      	    }
@@ -168,14 +166,14 @@ public class PreislisteKopf implements IPreislisteKopf {
      	    private Set<PreislistePosition> PreislistePosition = new HashSet<>();
 
 
-     	    @Override
-     	    public void addPreislistePosition(IPreislistePosition x) {
+
+     	    public void addPreislistePosition(PreislistePosition x) {
      	        this.PreislistePosition.add((PreislistePosition)x);
      	        x.setPreislisteKopf(this);
      	    }
 
-     	    @Override
-     	    public void removePreislistePosition(IPreislistePosition x) {
+
+     	    public void removePreislistePosition(PreislistePosition x) {
      	        this.PreislistePosition.remove((PreislistePosition)x);
      	        x.setPreislisteKopf(null);
      	    }

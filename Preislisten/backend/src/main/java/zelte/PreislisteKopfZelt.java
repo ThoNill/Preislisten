@@ -43,37 +43,33 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.PreislisteArt;
 
 
-    import interfaces.IPreislisteKopf;
     import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
     import java.lang.String;
 
 
-    import interfaces.IPreislisteKopf;
     import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
     import java.time.LocalDate;
 
 
-    import interfaces.IPreislisteKopf;
     import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
     import tho.nill.preislisten.simpleAttributes.DatumArt;
 
 
-    import interfaces.IPreislisteKopf;
     import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
 
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
 
-    import interfaces.IPreislisteBezug;
+    import entities.PreislisteBezug;
     import zelte.PreislisteBezugZelt;
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
 
-    import interfaces.IPreislistePosition;
+    import entities.PreislistePosition;
     import zelte.PreislistePositionZelt;
 
 

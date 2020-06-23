@@ -38,15 +38,13 @@ import lombok.ToString;
 
     import tho.nill.preislisten.simpleAttributes.Mwst;
 
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteKopf;
 
-    import interfaces.IPreislistePosition;
-    import interfaces.IPosition;
+    import entities.PreislistePosition;
+    import entities.Position;
 
-    import interfaces.IPreislistePosition;
+    import entities.PreislistePosition;
 
-
-import interfaces.IPreislistePosition;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -54,7 +52,7 @@ import interfaces.IPreislistePosition;
 @Entity
 @Table(name = "PREISLISTEPOSITION")
 @SequenceGenerator(name = "PREISLISTEPOSITION_SEQ", sequenceName = "PREISLISTEPOSITION_SEQ")
-public class PreislistePosition implements IPreislistePosition {
+public class PreislistePosition  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -104,8 +102,8 @@ public class PreislistePosition implements IPreislistePosition {
      	    @JoinColumn(name = "PreislisteKopf_Id")
      		private PreislisteKopf PreislisteKopf;
 
-     	    @Override
-     	    public void setPreislisteKopf(IPreislisteKopf value) {
+
+     	    public void setPreislisteKopf(PreislisteKopf value) {
      	 	   PreislisteKopf = (PreislisteKopf) value;
      	    }
 
@@ -117,8 +115,8 @@ public class PreislistePosition implements IPreislistePosition {
      	    @JoinColumn(name = "Position_Id")
      		private Position Position;
 
-     	    @Override
-     	    public void setPosition(IPosition value) {
+
+     	    public void setPosition(Position value) {
      	 	   Position = (Position) value;
      	    }
 

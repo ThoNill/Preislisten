@@ -41,15 +41,13 @@ import lombok.ToString;
     import java.lang.String;
     import java.lang.String;
 
-    import interfaces.IHMVUntergruppe;
+    import entities.HMVUntergruppe;
 
-    import interfaces.IHMVArt;
-    import interfaces.IHMVArt;
+    import entities.HMVArt;
+    import entities.HMVArt;
 
-    import interfaces.IHMVProdukt;
+    import entities.HMVProdukt;
 
-
-import interfaces.IHMVArt;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -57,7 +55,7 @@ import interfaces.IHMVArt;
 @Entity
 @Table(name = "HMVART")
 @SequenceGenerator(name = "HMVART_SEQ", sequenceName = "HMVART_SEQ")
-public class HMVArt implements IHMVArt {
+public class HMVArt  {
 
     @EqualsAndHashCode.Include
     @ToString.Include
@@ -142,8 +140,8 @@ public class HMVArt implements IHMVArt {
      	    @JoinColumn(name = "HMVUntergruppe_Id")
      		private HMVUntergruppe HMVUntergruppe;
 
-     	    @Override
-     	    public void setHMVUntergruppe(IHMVUntergruppe value) {
+
+     	    public void setHMVUntergruppe(HMVUntergruppe value) {
      	 	   HMVUntergruppe = (HMVUntergruppe) value;
      	    }
 
@@ -159,14 +157,14 @@ public class HMVArt implements IHMVArt {
      	    private Set<HMVProdukt> HMVProdukt = new HashSet<>();
 
 
-     	    @Override
-     	    public void addHMVProdukt(IHMVProdukt x) {
+
+     	    public void addHMVProdukt(HMVProdukt x) {
      	        this.HMVProdukt.add((HMVProdukt)x);
      	        x.setHMVArt(this);
      	    }
 
-     	    @Override
-     	    public void removeHMVProdukt(IHMVProdukt x) {
+
+     	    public void removeHMVProdukt(HMVProdukt x) {
      	        this.HMVProdukt.remove((HMVProdukt)x);
      	        x.setHMVArt(null);
      	    }

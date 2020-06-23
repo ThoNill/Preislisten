@@ -43,25 +43,21 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.GruppeArt;
 
 
-    import interfaces.IGruppe;
     import entities.Gruppe;
     import repositories.GruppeRepository;
     import java.lang.Long;
 
 
-    import interfaces.IGruppe;
     import entities.Gruppe;
     import repositories.GruppeRepository;
     import java.lang.String;
 
 
-    import interfaces.IGruppe;
     import entities.Gruppe;
     import repositories.GruppeRepository;
     import java.lang.String;
 
 
-    import interfaces.IGruppe;
     import entities.Gruppe;
     import repositories.GruppeRepository;
 

@@ -43,19 +43,18 @@ import entities.*;
     import tho.nill.preislisten.simpleAttributes.Mwst;
 
 
-    import interfaces.IPreislistePosition;
     import entities.PreislistePosition;
     import repositories.PreislistePositionRepository;
 
-    import interfaces.IPreislisteKopf;
+    import entities.PreislisteKopf;
     import repositories.PreislisteKopfRepository;
 
-    import interfaces.IPreislistePosition;
+    import entities.PreislistePosition;
     import zelte.PreislistePositionZelt;
-    import interfaces.IPosition;
+    import entities.Position;
     import repositories.PositionRepository;
 
-    import interfaces.IPreislistePosition;
+    import entities.PreislistePosition;
     import zelte.PreislistePositionZelt;
 
 
