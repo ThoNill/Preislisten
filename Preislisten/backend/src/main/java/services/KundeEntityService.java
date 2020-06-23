@@ -8,32 +8,9 @@ import org.springframework.stereotype.Service;
 
 import entities.Kunde;
 import repositories.KundeRepository;
-
-import tho.nill.preislisten.simpleAttributes.IK;
-
-import tho.nill.preislisten.simpleAttributes.Tarifbereich;
-
 import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import tho.nill.preislisten.simpleAttributes.IK;
+import tho.nill.preislisten.simpleAttributes.Tarifbereich;
 
 @Service
 public class KundeEntityService  {

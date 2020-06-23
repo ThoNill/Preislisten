@@ -8,17 +8,7 @@ import org.springframework.stereotype.Service;
 
 import entities.PreislistePosition;
 import repositories.PreislistePositionRepository;
-
-
 import tho.nill.preislisten.simpleAttributes.Mwst;
-
-
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 @Service
 public class PreislistePositionEntityService  {

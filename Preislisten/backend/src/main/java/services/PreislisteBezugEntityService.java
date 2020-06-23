@@ -8,16 +8,7 @@ import org.springframework.stereotype.Service;
 
 import entities.PreislisteBezug;
 import repositories.PreislisteBezugRepository;
-
-
 import tho.nill.preislisten.simpleAttributes.BezugArt;
-
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 @Service
 public class PreislisteBezugEntityService  {
