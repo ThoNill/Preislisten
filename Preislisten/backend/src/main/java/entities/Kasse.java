@@ -44,8 +44,28 @@ import lombok.ToString;
     import java.lang.String;
     import java.lang.String;
     import java.lang.String;
+    import java.time.LocalDate;
+    import java.time.LocalDate;
     import java.lang.String;
     import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import tho.nill.preislisten.simpleAttributes.DFÜMedium;
+    import tho.nill.preislisten.simpleAttributes.DFÜParameter;
+    import tho.nill.preislisten.simpleAttributes.Übermittlungszeichensatz;
+    import tho.nill.preislisten.simpleAttributes.Komprimierungsart;
+    import tho.nill.preislisten.simpleAttributes.DFÜProtokoll;
+    import java.lang.String;
+    import java.lang.String;
+    import java.lang.String;
+    import tho.nill.preislisten.simpleAttributes.Übertragungstage;
     import java.lang.String;
 
     import entities.Kasse;
@@ -124,23 +144,6 @@ public class Kasse  {
 
 
      		@Basic
-     	    @Column(name = "ANSPRECHPARTNER")
-     	    private String ansprechpartner;
-
-
-     	    public String getAnsprechpartner() {
-     	    	return ansprechpartner;
-     	    }
-
-     	    public void setAnsprechpartner(String value) {
-     	    	ansprechpartner = value;
-     	    }
-
-         
-        // Kind: (value)
-
-
-     		@Basic
      	    @Column(name = "FIRMA")
      	    private String firma;
 
@@ -209,16 +212,101 @@ public class Kasse  {
 
 
      		@Basic
-     	    @Column(name = "TELEFON")
-     	    private String telefon;
+     	    @Column(name = "EMAIL")
+     	    private String email;
 
 
-     	    public String getTelefon() {
-     	    	return telefon;
+     	    public String getEmail() {
+     	    	return email;
      	    }
 
-     	    public void setTelefon(String value) {
-     	    	telefon = value;
+     	    public void setEmail(String value) {
+     	    	email = value;
+     	    }
+
+         
+        // Kind: (LocalDate)
+
+
+
+     		    @Column(name = "GÜLTIGAB", columnDefinition = "DATE")
+     		    private LocalDate gültigAb;
+
+
+     		    public LocalDate getGültigAb() {
+     		    	return gültigAb;
+     		    }
+
+     		    public void setGültigAb(LocalDate value) {
+     		    	gültigAb = value;
+     		    }
+
+         
+        // Kind: (LocalDate)
+
+
+
+     		    @Column(name = "GÜLTIGBIS", columnDefinition = "DATE")
+     		    private LocalDate gültigBis;
+
+
+     		    public LocalDate getGültigBis() {
+     		    	return gültigBis;
+     		    }
+
+     		    public void setGültigBis(LocalDate value) {
+     		    	gültigBis = value;
+     		    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "IBAN")
+     	    private String iban;
+
+
+     	    public String getIban() {
+     	    	return iban;
+     	    }
+
+     	    public void setIban(String value) {
+     	    	iban = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "BIC")
+     	    private String bic;
+
+
+     	    public String getBic() {
+     	    	return bic;
+     	    }
+
+     	    public void setBic(String value) {
+     	    	bic = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "KONTOINHABER")
+     	    private String kontoinhaber;
+
+
+     	    public String getKontoinhaber() {
+     	    	return kontoinhaber;
+     	    }
+
+     	    public void setKontoinhaber(String value) {
+     	    	kontoinhaber = value;
      	    }
 
          
@@ -243,16 +331,282 @@ public class Kasse  {
 
 
      		@Basic
-     	    @Column(name = "EMAIL")
-     	    private String email;
+     	    @Column(name = "NAME2")
+     	    private String name2;
 
 
-     	    public String getEmail() {
-     	    	return email;
+     	    public String getName2() {
+     	    	return name2;
      	    }
 
-     	    public void setEmail(String value) {
-     	    	email = value;
+     	    public void setName2(String value) {
+     	    	name2 = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "NAME3")
+     	    private String name3;
+
+
+     	    public String getName3() {
+     	    	return name3;
+     	    }
+
+     	    public void setName3(String value) {
+     	    	name3 = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "NAME4")
+     	    private String name4;
+
+
+     	    public String getName4() {
+     	    	return name4;
+     	    }
+
+     	    public void setName4(String value) {
+     	    	name4 = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "ANSPRECHPARTNER")
+     	    private String ansprechpartner;
+
+
+     	    public String getAnsprechpartner() {
+     	    	return ansprechpartner;
+     	    }
+
+     	    public void setAnsprechpartner(String value) {
+     	    	ansprechpartner = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "TELEFON")
+     	    private String telefon;
+
+
+     	    public String getTelefon() {
+     	    	return telefon;
+     	    }
+
+     	    public void setTelefon(String value) {
+     	    	telefon = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "FAX")
+     	    private String fax;
+
+
+     	    public String getFax() {
+     	    	return fax;
+     	    }
+
+     	    public void setFax(String value) {
+     	    	fax = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "ARBEITSGEBIET")
+     	    private String arbeitsgebiet;
+
+
+     	    public String getArbeitsgebiet() {
+     	    	return arbeitsgebiet;
+     	    }
+
+     	    public void setArbeitsgebiet(String value) {
+     	    	arbeitsgebiet = value;
+     	    }
+
+         
+        // Kind: (enumeration)
+
+
+     	    @Enumerated
+     	    @Column(name = "MEDIUM")
+     	    private DFÜMedium medium;
+
+
+     	    public DFÜMedium getMedium() {
+     	    	return medium;
+     	    }
+
+     	    public void setMedium(DFÜMedium value) {
+     	    	medium = value;
+     	    }
+         
+        // Kind: (enumeration)
+
+
+     	    @Enumerated
+     	    @Column(name = "PARAMETER")
+     	    private DFÜParameter parameter;
+
+
+     	    public DFÜParameter getParameter() {
+     	    	return parameter;
+     	    }
+
+     	    public void setParameter(DFÜParameter value) {
+     	    	parameter = value;
+     	    }
+         
+        // Kind: (enumeration)
+
+
+     	    @Enumerated
+     	    @Column(name = "ZEICHENSATZ")
+     	    private Übermittlungszeichensatz zeichensatz;
+
+
+     	    public Übermittlungszeichensatz getZeichensatz() {
+     	    	return zeichensatz;
+     	    }
+
+     	    public void setZeichensatz(Übermittlungszeichensatz value) {
+     	    	zeichensatz = value;
+     	    }
+         
+        // Kind: (enumeration)
+
+
+     	    @Enumerated
+     	    @Column(name = "KOMPRIMIERUNG")
+     	    private Komprimierungsart komprimierung;
+
+
+     	    public Komprimierungsart getKomprimierung() {
+     	    	return komprimierung;
+     	    }
+
+     	    public void setKomprimierung(Komprimierungsart value) {
+     	    	komprimierung = value;
+     	    }
+         
+        // Kind: (enumeration)
+
+
+     	    @Enumerated
+     	    @Column(name = "PROTOKOLL")
+     	    private DFÜProtokoll protokoll;
+
+
+     	    public DFÜProtokoll getProtokoll() {
+     	    	return protokoll;
+     	    }
+
+     	    public void setProtokoll(DFÜProtokoll value) {
+     	    	protokoll = value;
+     	    }
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "BENUTZERKENNUNG")
+     	    private String benutzerkennung;
+
+
+     	    public String getBenutzerkennung() {
+     	    	return benutzerkennung;
+     	    }
+
+     	    public void setBenutzerkennung(String value) {
+     	    	benutzerkennung = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "ÜBERTRAGUNG_VON")
+     	    private String übertragung_von;
+
+
+     	    public String getÜbertragung_von() {
+     	    	return übertragung_von;
+     	    }
+
+     	    public void setÜbertragung_von(String value) {
+     	    	übertragung_von = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "ÜBERTRAGUNG_BIS")
+     	    private String übertragung_bis;
+
+
+     	    public String getÜbertragung_bis() {
+     	    	return übertragung_bis;
+     	    }
+
+     	    public void setÜbertragung_bis(String value) {
+     	    	übertragung_bis = value;
+     	    }
+
+         
+        // Kind: (enumeration)
+
+
+     	    @Enumerated
+     	    @Column(name = "ÜBERTRAGUNGSTAGE")
+     	    private Übertragungstage übertragungstage;
+
+
+     	    public Übertragungstage getÜbertragungstage() {
+     	    	return übertragungstage;
+     	    }
+
+     	    public void setÜbertragungstage(Übertragungstage value) {
+     	    	übertragungstage = value;
+     	    }
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "KOMMUNIKATIONSKANAL")
+     	    private String kommunikationskanal;
+
+
+     	    public String getKommunikationskanal() {
+     	    	return kommunikationskanal;
+     	    }
+
+     	    public void setKommunikationskanal(String value) {
+     	    	kommunikationskanal = value;
      	    }
 
          

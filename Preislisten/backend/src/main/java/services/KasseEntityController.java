@@ -27,9 +27,49 @@ import java.lang.String;
 
 import java.lang.String;
 
+import java.time.LocalDate;
+
+import java.time.LocalDate;
+
 import java.lang.String;
 
 import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import tho.nill.preislisten.simpleAttributes.DFÜMedium;
+
+import tho.nill.preislisten.simpleAttributes.DFÜParameter;
+
+import tho.nill.preislisten.simpleAttributes.Übermittlungszeichensatz;
+
+import tho.nill.preislisten.simpleAttributes.Komprimierungsart;
+
+import tho.nill.preislisten.simpleAttributes.DFÜProtokoll;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import tho.nill.preislisten.simpleAttributes.Übertragungstage;
 
 import java.lang.String;
 
@@ -58,8 +98,6 @@ public class KasseEntityController  {
      // enumeration
     , @RequestParam(name = "funktion") KassenFunktion funktion
      // enumeration
-    , @RequestParam(name = "ansprechpartner") String ansprechpartner
-     // value
     , @RequestParam(name = "firma") String firma
      // value
     , @RequestParam(name = "plz") String plz
@@ -68,18 +106,60 @@ public class KasseEntityController  {
      // value
     , @RequestParam(name = "straße") String straße
      // value
-    , @RequestParam(name = "telefon") String telefon
+    , @RequestParam(name = "email") String email
+     // value
+    , @RequestParam(name = "gültigAb") LocalDate gültigAb
+     // LocalDate
+    , @RequestParam(name = "gültigBis") LocalDate gültigBis
+     // LocalDate
+    , @RequestParam(name = "iban") String iban
+     // value
+    , @RequestParam(name = "bic") String bic
+     // value
+    , @RequestParam(name = "kontoinhaber") String kontoinhaber
      // value
     , @RequestParam(name = "name") String name
      // value
-    , @RequestParam(name = "email") String email
+    , @RequestParam(name = "name2") String name2
+     // value
+    , @RequestParam(name = "name3") String name3
+     // value
+    , @RequestParam(name = "name4") String name4
+     // value
+    , @RequestParam(name = "ansprechpartner") String ansprechpartner
+     // value
+    , @RequestParam(name = "telefon") String telefon
+     // value
+    , @RequestParam(name = "fax") String fax
+     // value
+    , @RequestParam(name = "arbeitsgebiet") String arbeitsgebiet
+     // value
+    , @RequestParam(name = "medium") DFÜMedium medium
+     // enumeration
+    , @RequestParam(name = "parameter") DFÜParameter parameter
+     // enumeration
+    , @RequestParam(name = "zeichensatz") Übermittlungszeichensatz zeichensatz
+     // enumeration
+    , @RequestParam(name = "komprimierung") Komprimierungsart komprimierung
+     // enumeration
+    , @RequestParam(name = "protokoll") DFÜProtokoll protokoll
+     // enumeration
+    , @RequestParam(name = "benutzerkennung") String benutzerkennung
+     // value
+    , @RequestParam(name = "übertragung_von") String übertragung_von
+     // value
+    , @RequestParam(name = "übertragung_bis") String übertragung_bis
+     // value
+    , @RequestParam(name = "übertragungstage") Übertragungstage übertragungstage
+     // enumeration
+    , @RequestParam(name = "kommunikationskanal") String kommunikationskanal
      // value
     , @RequestParam(name = "versandziel") long versandziel // VersandZiel
      // fromone2many
     ) {
 
     		try {
-    			Kasse d = service.create(ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, name, email, versandziel);
+    			Kasse d = service.create(ik, art, funktion, firma, plz, ort, straße, email, gültigAb, gültigBis, iban, bic, kontoinhaber, name, name2, name3, name4, ansprechpartner, telefon, fax, arbeitsgebiet, medium, parameter, zeichensatz, komprimierung, protokoll, benutzerkennung, übertragung_von, übertragung_bis, übertragungstage, kommunikationskanal, versandziel);
     			return DER_DATENSATZ_MIT_DER + d.getKasseId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines Kasse Datensatzes trat ein Fehler auf";
@@ -95,8 +175,6 @@ public class KasseEntityController  {
     	               // enumeration
     	              , @RequestParam(name = "funktion") KassenFunktion funktion
     	               // enumeration
-    	              , @RequestParam(name = "ansprechpartner") String ansprechpartner
-    	               // value
     	              , @RequestParam(name = "firma") String firma
     	               // value
     	              , @RequestParam(name = "plz") String plz
@@ -105,18 +183,60 @@ public class KasseEntityController  {
     	               // value
     	              , @RequestParam(name = "straße") String straße
     	               // value
-    	              , @RequestParam(name = "telefon") String telefon
+    	              , @RequestParam(name = "email") String email
+    	               // value
+    	              , @RequestParam(name = "gültigAb") LocalDate gültigAb
+    	               // LocalDate
+    	              , @RequestParam(name = "gültigBis") LocalDate gültigBis
+    	               // LocalDate
+    	              , @RequestParam(name = "iban") String iban
+    	               // value
+    	              , @RequestParam(name = "bic") String bic
+    	               // value
+    	              , @RequestParam(name = "kontoinhaber") String kontoinhaber
     	               // value
     	              , @RequestParam(name = "name") String name
     	               // value
-    	              , @RequestParam(name = "email") String email
+    	              , @RequestParam(name = "name2") String name2
+    	               // value
+    	              , @RequestParam(name = "name3") String name3
+    	               // value
+    	              , @RequestParam(name = "name4") String name4
+    	               // value
+    	              , @RequestParam(name = "ansprechpartner") String ansprechpartner
+    	               // value
+    	              , @RequestParam(name = "telefon") String telefon
+    	               // value
+    	              , @RequestParam(name = "fax") String fax
+    	               // value
+    	              , @RequestParam(name = "arbeitsgebiet") String arbeitsgebiet
+    	               // value
+    	              , @RequestParam(name = "medium") DFÜMedium medium
+    	               // enumeration
+    	              , @RequestParam(name = "parameter") DFÜParameter parameter
+    	               // enumeration
+    	              , @RequestParam(name = "zeichensatz") Übermittlungszeichensatz zeichensatz
+    	               // enumeration
+    	              , @RequestParam(name = "komprimierung") Komprimierungsart komprimierung
+    	               // enumeration
+    	              , @RequestParam(name = "protokoll") DFÜProtokoll protokoll
+    	               // enumeration
+    	              , @RequestParam(name = "benutzerkennung") String benutzerkennung
+    	               // value
+    	              , @RequestParam(name = "übertragung_von") String übertragung_von
+    	               // value
+    	              , @RequestParam(name = "übertragung_bis") String übertragung_bis
+    	               // value
+    	              , @RequestParam(name = "übertragungstage") Übertragungstage übertragungstage
+    	               // enumeration
+    	              , @RequestParam(name = "kommunikationskanal") String kommunikationskanal
     	               // value
     	              , @RequestParam(name = "versandziel") long versandziel // VersandZiel
     	               // fromone2many
     ) {
 
     		try {
-    			service.update(id,ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, name, email, versandziel);
+    			service.update(id,ik, art, funktion, firma, plz, ort, straße, email, gültigAb, gültigBis, iban, bic, kontoinhaber, name, name2, name3, name4, ansprechpartner, telefon, fax, arbeitsgebiet, medium, parameter, zeichensatz, komprimierung, protokoll, benutzerkennung, übertragung_von, übertragung_bis, übertragungstage, kommunikationskanal, versandziel);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des Kasse Datensatzes mit der " + id + " trat ein Fehler auf";

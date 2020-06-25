@@ -1,6 +1,9 @@
 package tho.nill.preislisten;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.io.IOException;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +14,7 @@ import entities.Kasse;
 import entities.VersandZiel;
 import repositories.KasseRepository;
 import repositories.VersandZielRepository;
+import tho.nill.preislisten.simpleAttributes.IK;
 
 
 @SpringBootTest
@@ -34,12 +38,32 @@ public class KostenträgerImportTest {
 	@Test
 	public void test() throws IOException {
 		kostenträgerImportService.performService("src/test/resources/BK05Q220.ke0");
-		for(Kasse k : kasseRepository.findAll()) {
-			System.out.println(k.getIk().toString() + " " + k.getFirma() + " " + k.getOrt());
-		}
-		for(VersandZiel z : versandZielRepository.findAll()) {
-			System.out.println(z.getVon_ik() + " " +z.getNach_ik());
-		}
+		List<Kasse> kl = kasseRepository.getKassenZurIK(new IK(661430046));
+		assertEquals(1,kl.size());
+		Kasse k = kl.get(0);
+	/*	
+		UNH+00342+KOTR:02:001:KV'
+		IDK+661430046+99+DAVASO (vorm. Syntela)'
+		VDT+20050101'
+		FKT+01'
+		NAM+01+DAVASO GmbH (vorm. Syntela)'
+		ANS+1+04356+Leipzig+Am Alten Flughafen 1'
+		ANS+3+04311+Leipzig'
+		ASP+01+0341/25920-0+0341/25920-20++Zentrale'
+		UEM+1+00+I8'
+		DFU+01+070+++++da302@syntela.de'
+		DFU+02+016+++++ftam.syntela.de?:9000'
+*/
+		assertEquals("DAVASO (vorm. Syntela)",k.getFirma());
+		assertEquals("DAVASO GmbH (vorm. Syntela)",k.getName());
+		assertEquals("04356",k.getPlz());
+		assertEquals("Leipzig",k.getOrt());
+		assertEquals("Am Alten Flughafen 1",k.getStraße());
+		assertEquals("0341/25920-0",k.getTelefon());
+		assertEquals("0341/25920-20",k.getFax());
+		assertEquals("Zentrale",k.getArbeitsgebiet());
+		assertEquals("da302@syntela.de",k.getKommunikationskanal());
+		
 	}
 
 }

@@ -35,60 +35,86 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 	@Autowired
 	private KasseRepository kasseRepo;
 
+	KasseZelt kasseZelt;
+	VersandZielZelt versandZielZelt;
+
+	Consumer<Segment> idkFelder;
+	Consumer<Segment> ansFelder;
+	Consumer<Segment> vkgFelder;
+	Consumer<Segment> vdtFelder;
+	Consumer<Segment> ktoFelder;
+	Consumer<Segment> namFelder;
+	Consumer<Segment> aspFelder;
+	Consumer<Segment> uemFelder;
+	Consumer<Segment> dfuFelder;
+
 	public KostenträgerImportService(PlatformTransactionManager transactionManager) {
 		super(transactionManager);
 	}
 
+	private void init() {
+		kasseZelt = new ImportKasseZelt(kasseRepo);
+		versandZielZelt = new VersandZielZelt(versandZielRepo);
+
+		idkFelder = new SetterList(kasseZelt::setIkWithString, kasseZelt::skip, kasseZelt::setFirmaWithString);
+
+		ansFelder = new SetterList(kasseZelt::skip, kasseZelt::setPlzWithString, kasseZelt::setOrtWithString,
+				kasseZelt::setStraßeWithString);
+
+		vkgFelder = new SetterList(versandZielZelt::setVerweisWithString, versandZielZelt::setNach_ikWithString,
+				versandZielZelt::setLeistungserbringergruppeWithString, versandZielZelt::setAbrechnungsstelleWithString,
+				versandZielZelt::setArtWithString, versandZielZelt::setMediumWithString,
+				versandZielZelt::setLandWithString, versandZielZelt::setBezirkWithString,
+				versandZielZelt::setAbrechnungscodeWithString, versandZielZelt::setTarifkennzeichenWithString);
+
+		vdtFelder = new SetterList(kasseZelt::setGültigAbWithString, kasseZelt::setGültigBisWithString);
+		ktoFelder = new SetterList(kasseZelt::skip, kasseZelt::skip, kasseZelt::skip, kasseZelt::setIbanWithString,
+				kasseZelt::setBicWithString, kasseZelt::setKontoinhaberWithString);
+		namFelder = new SetterList(kasseZelt::skip, kasseZelt::setNameWithString, kasseZelt::setName2WithString,
+				kasseZelt::setName3WithString, kasseZelt::setName4WithString);
+		aspFelder = new SetterList(kasseZelt::skip, kasseZelt::setTelefonWithString, kasseZelt::setFaxWithString,
+				kasseZelt::setAnsprechpartnerWithString, kasseZelt::setArbeitsgebietWithString);
+		uemFelder = new SetterList(kasseZelt::setMediumWithString, kasseZelt::setParameterWithString,
+				kasseZelt::setZeichensatzWithString, kasseZelt::setKomprimierungWithString);
+		dfuFelder = new SetterList(kasseZelt::skip, kasseZelt::setProtokollWithString,
+				kasseZelt::setBenutzerkennungWithString, kasseZelt::setÜbertragung_vonWithString,
+				kasseZelt::setÜbertragung_bisWithString, kasseZelt::setÜbertragungstageWithString,
+				kasseZelt::setKommunikationskanalWithString);
+
+	}
+
 	/*
-	 * UNH+00002+KOTR:02:001:KV' 
-	 * IDK+101320032+99+SECURVITA BKK' 
-	 * VDT+20100701'
-	 * FKT+01' 
-	 * VKG+01+101320032+5++++++00' 
-	 * VKG+03+107436557+5++07++++00'
-	 * VKG+09+107436557+5++28++++00' 
-	 * VKG+09+107436557+5++29++++00'
-	 * NAM+01+SECURVITA+Betriebskrankenkasse' 
-	 * ANS+1+20099+Hamburg+Lübeckertordamm 1-3' 
-	 * ANS+2+20039+Hamburg+105829' 
+	 * UNH+00002+KOTR:02:001:KV' IDK+101320032+99+SECURVITA BKK' VDT+20100701'
+	 * gültigab, gültigbis FKT+01' VKG+01+101320032+5++++++00'
+	 * VKG+03+107436557+5++07++++00' VKG+09+107436557+5++28++++00'
+	 * VKG+09+107436557+5++29++++00' NAM+01+SECURVITA+Betriebskrankenkasse'
+	 * ANS+1+20099+Hamburg+Lübeckertordamm 1-3' ANS+2+20039+Hamburg+105829'
 	 * UNT+000012+00002'
 	 */
 
 	@Override
 	public void performService(String dateiName) {
-
+		init();
 		TagProvider tags = createTagProvider();
-		KasseZelt kasseZelt = new KasseZelt(kasseRepo);
-		VersandZielZelt versandZielZelt = new VersandZielZelt(versandZielRepo);
 
-		Consumer<Segment> idkFelder = new SetterList(kasseZelt::setIkWithString, kasseZelt::skip,
-				kasseZelt::setFirmaWithString);
-
-		Consumer<Segment> ansFelder = new SetterList(kasseZelt::skip, kasseZelt::setPlzWithString,
-				kasseZelt::setOrtWithString, kasseZelt::setStraßeWithString);
-
-		Consumer<Segment> vkgFelder = new SetterList(versandZielZelt::setVerweisWithString,
-				versandZielZelt::setNach_ikWithString, versandZielZelt::setLeistungserbringergruppeWithString,
-				versandZielZelt::setAbrechnungsstelleWithString, versandZielZelt::setArtWithString,
-				versandZielZelt::setMediumWithString, versandZielZelt::setLandWithString,
-				versandZielZelt::setBezirkWithString, versandZielZelt::setAbrechnungscodeWithString,
-				versandZielZelt::setTarifkennzeichenWithString);
+		int zeile = 1;
+		Segment seg = null;
 		try {
 			EdifactReader edifactReader = new EdifactReader(new FileReader(dateiName, StandardCharsets.UTF_8), tags,
 					50);
 			while (edifactReader.hasNext()) {
-				Segment seg = edifactReader.next();
-				tagsBehandeln(kasseZelt, versandZielZelt, idkFelder, ansFelder, vkgFelder, seg);
+				seg = edifactReader.next();
+				log.info(seg.toString());
+				tagsBehandeln(seg);
+				zeile++;
 			}
-
-		} catch (IOException e) {
-			log.error(e.getLocalizedMessage());
+		} catch (IOException | RuntimeException e) {
+			log.error("Fehler in Zeile {} {} {}", zeile, seg, e.getLocalizedMessage());
 		}
 
 	}
 
-	private void tagsBehandeln(KasseZelt kasseZelt, VersandZielZelt versandZielZelt, Consumer<Segment> idkFelder,
-			Consumer<Segment> ansFelder, Consumer<Segment> vkgFelder, Segment seg) {
+	private void tagsBehandeln(Segment seg) {
 		switch (seg.getTag().name()) {
 		case "UNH":
 			kasseZelt.create();
@@ -96,8 +122,29 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 		case "IDK":
 			idkFelder.accept(seg);
 			break;
+		case "VDT":
+			vdtFelder.accept(seg);
+			break;
+		case "KTO":
+			ktoFelder.accept(seg);
+			break;
+		case "NAM":
+			namFelder.accept(seg);
+			break;
+		case "ASP":
+			aspFelder.accept(seg);
+			break;
+		case "UEM":
+			uemFelder.accept(seg);
+			break;
+		case "DFU":
+			// Internet
+			if ("070".contentEquals(seg.getGroupAsText(1))) {
+				dfuFelder.accept(seg);
+			}
+			break;
 		case "ANS":
-			if ("1".contentEquals(seg.getGroup(0).getElement(0))) {
+			if ("1".contentEquals(seg.getGroupAsText(0))) {
 				ansFelder.accept(seg);
 			}
 			break;
@@ -127,6 +174,7 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 		tags.getOrCreateEnum("DFU");
 		tags.getOrCreateEnum("UEM");
 		tags.getOrCreateEnum("ASP");
+		tags.getOrCreateEnum("KTO");
 		return tags;
 	}
 

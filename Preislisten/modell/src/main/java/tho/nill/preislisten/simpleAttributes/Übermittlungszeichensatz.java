@@ -1,11 +1,8 @@
 package tho.nill.preislisten.simpleAttributes;
 
-
-
 /* Schlüssel Übermittlungszeichensatz */
-public enum Übermittlungszeichensatz  {
-
-;
+public enum Übermittlungszeichensatz {
+	NN("");
 
 	private String code;
 
@@ -17,9 +14,8 @@ public enum Übermittlungszeichensatz  {
 		return this.code;
 	}
 
-
 	public static Übermittlungszeichensatz search(String code) {
-		for ( Übermittlungszeichensatz o  : Übermittlungszeichensatz.values() ) {
+		for (Übermittlungszeichensatz o : Übermittlungszeichensatz.values()) {
 			if (code.equals(o.getCode())) {
 				return o;
 			}
@@ -28,5 +24,3 @@ public enum Übermittlungszeichensatz  {
 	}
 
 }
-
-   

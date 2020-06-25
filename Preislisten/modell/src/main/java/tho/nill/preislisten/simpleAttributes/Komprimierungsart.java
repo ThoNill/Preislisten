@@ -4,8 +4,7 @@ package tho.nill.preislisten.simpleAttributes;
 
 /* Schlüssel Komprimierungsart */
 public enum Komprimierungsart  {
-
-;
+    NN("");
 
 	private String code;
 
