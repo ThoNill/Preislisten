@@ -3,7 +3,7 @@ package tho.nill.preislisten.simpleAttributes;
 
 
 /* Schlüssel Kostenträger */
-public enum Kostenträger  {
+public enum VerweisArt  {
 
 	/* Verweis vom IK der Versichertenkarte zum Kostenträger
 					 */
@@ -21,7 +21,7 @@ public enum Kostenträger  {
 
 	private String code;
 
-	private Kostenträger(String code) {
+	private VerweisArt(String code) {
 		this.code = code;
 	}
 
@@ -30,8 +30,8 @@ public enum Kostenträger  {
 	}
 
 
-	public static Kostenträger search(String code) {
-		for ( Kostenträger o  : Kostenträger.values() ) {
+	public static VerweisArt search(String code) {
+		for ( VerweisArt o  : VerweisArt.values() ) {
 			if (code.equals(o.getCode())) {
 				return o;
 			}

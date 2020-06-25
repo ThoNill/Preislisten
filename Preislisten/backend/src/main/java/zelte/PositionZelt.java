@@ -1,21 +1,77 @@
 package zelte;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.List;
 
-import entities.Position;
-import entities.PreislistePosition;
-import repositories.PositionRepository;
-import tho.nill.preislisten.simpleAttributes.PositionsArt;
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.persistence.Enumerated;
+import javax.persistence.Lob;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import entities.*;
+
+    import tho.nill.preislisten.simpleAttributes.PositionsArt;
+
+
+    import entities.Position;
+    import repositories.PositionRepository;
+    import java.lang.String;
+
+
+    import entities.Position;
+    import repositories.PositionRepository;
+
+    import entities.Position;
+    import repositories.PositionRepository;
+
+    import entities.PreislistePosition;
+    import zelte.PreislistePositionZelt;
+
+
+import zelte.StandardZelt;
 
 public class PositionZelt extends StandardZelt {
 
 
 	private Position entity;
 
-	@Autowired
 	private PositionRepository repo;
 
-	@Override
+	public PositionZelt(PositionRepository repo) {
+		super();
+		this.repo = repo;
+	}
+
+
 	public void save() {
 		if (entity != null ) {
 			entity = repo.saveAndFlush(entity);
@@ -32,14 +88,13 @@ public class PositionZelt extends StandardZelt {
 
 
 
-	@Override
 	public void create() {
 		save();
 		entity = new Position();
 	}
 
 
-	Position getEntity() {
+	public Position getEntity() {
 		return entity;
 	}
 
@@ -58,7 +113,7 @@ public class PositionZelt extends StandardZelt {
      	        }
 
      	   public PositionsArt convertToPositionsArt(String value) {
-     					return PositionsArt.valueOf(value);
+     					return PositionsArt.search(value);
      				}   
 
 
@@ -74,20 +129,31 @@ public class PositionZelt extends StandardZelt {
 
 
      	    public void connectPosition(PreislistePositionZelt x) {
-     	        PreislistePosition target = x.getEntity();
 
-     	        saveIfNeeded();
-     	        x.saveIfNeeded();
+     	        if (entity!=null) {
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
 
-     	        entity.addPreislistePosition(target);
-     	        target.setPosition(entity);
+     	        	PreislistePosition target = x.getEntity();
+     	        	entity.addPreislistePosition(target);
+     	        	target.setPosition(entity);
+
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
+     	        };
+
      	    }
 
 
      	    public void disconnectPosition(PreislistePositionZelt x) {
+     	      if (entity!=null) {
      	        PreislistePosition target = x.getEntity();
      	        entity.removePreislistePosition(target);
      	        target.setPosition(null);
+
+     	        saveIfNeeded();
+     	        x.saveIfNeeded();
+     	      };
      	    }
 
 

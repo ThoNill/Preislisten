@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hv:HMV logische_version="1.0.0"
+    xmlns:GI4X-basis="GI4X:/xml-schema/GI4X-basis/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema" xmlns:hv="GI4X:/xml-schema/ESOL-HMV/1.0">
+    <hv:HMV_GRUPPE>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:BEZEICHNUNG>Absauggeräte</hv:BEZEICHNUNG>
+        <hv:DEFINITION>Die Produktgruppe beinhaltet die Produktuntergruppen: Sekret-Absauggeräte, netzabhängig; Sekret-Absauggeräte, netzunabhängig und Milchpumpen sowie das jeweilige Zubehör.&#xd;
+&#xd;
+&#xd;
+SEKRET-ABSAUGGERÄTE&#xd;
+&#xd;
+Sekret-Absauggeräte bestehen aus einer wartungsfreien Absaugpumpe, einem Schlauchleitungssystem und einem Sekretbehälter. Bei Betrieb erzeugt die elektromotorische Pumpe einen Unterdruck. Mittels eines Einmal-Absaugkatheters (Zubehör), der an das Schlauchleitungssystem angeschlossen wird, wird das Bronchialsekret in den Sekretbehälter geleitet und dort gesammelt.&#xd;
+&#xd;
+In der Regel kann der Unterdruck - bei verschlossenem Absaugschlauch - an einem Manometer abgelesen werden. &#xd;
+&#xd;
+Der einzusetzende Unterdruck variiert u. a. in Abhängigkeit vom Alter der Versicherten und der Konsistenz des Bronchialsekrets.&#xd;
+&#xd;
+&#xd;
+MILCHPUMPEN&#xd;
+&#xd;
+Milchpumpen zum Abpumpen der Muttermilch werden sowohl bei Stillproblemen der Mutter als auch bei Saug- und Trinkproblemen des Kindes angewendet. &#xd;
+&#xd;
+Die Milch wird abgepumpt, gesammelt und in der Regel anschließend mit Hilfe einer Flasche an den Säugling gefüttert. Da die für den Stillvorgang erforderliche Milchabgabe erst durch das rhythmische Saugen des Babys angeregt wird, wird mit Hilfe einer Milchpumpe der natürliche Saugrhythmus (Saugphase, Entspannungsphase, Schluckphase) nachgebildet.&#xd;
+</hv:DEFINITION>
+        <hv:INDIKATION>Siehe Produktarten&#xd;
+</hv:INDIKATION>
+        <hv:QUERVERWEISE>Produktgruppe: 12 „Hilfsmittel bei Tracheostoma“&#xd;
+&#xd;
+Produktgruppe 14 „Inhalations- und Atemtherapiegeräte“&#xd;
+</hv:QUERVERWEISE>
+    </hv:HMV_GRUPPE>
+    <hv:HMV_GRUPPE>
+        <hv:GRUPPE>2</hv:GRUPPE>
+        <hv:BEZEICHNUNG>Adaptionshilfen</hv:BEZEICHNUNG>
+        <hv:DEFINITION>Adaptionshilfen dienen dem Behinderungsausgleich, wenn infolge Krankheit oder Behinderung Geräte und Gegenstände des täglichen Lebens nicht mehr zweckentsprechend genutzt werden können. Mithilfe der Adaptionshilfen können Geräte und Gegenstände, die unabdingbar mit der täglichen Lebensführung und Alltagsbewältigung zur Befriedigung der Grundbedürfnisse verbunden sind, wieder verwendet werden.&#xd;
+&#xd;
+Adaptionshilfen sind:&#xd;
+&#xd;
+- Armunterstützungssysteme&#xd;
+&#xd;
+- Anziehhilfen&#xd;
+&#xd;
+- Ess- und Trinkhilfen&#xd;
+&#xd;
+- Rutschfeste Unterlagen&#xd;
+&#xd;
+- Greifhilfen&#xd;
+&#xd;
+- Halter/Halterungen/Greifhilfen für Produkte der Körperhygiene&#xd;
+&#xd;
+- Schreibhilfen&#xd;
+&#xd;
+- Lesehilfen&#xd;
+&#xd;
+- Behindertengerechte Bedienelemente für elektrische Geräte&#xd;
+&#xd;
+- Umfeldkontrollgeräte für elektrische Geräte&#xd;
+&#xd;
+Armunterstützungssysteme sind elektrisch steuerbare Hilfsmittel, die Armbewegungen der Versicherten oder des Versicherten mit begrenzter Muskelkraft und Kondition unterstützen.&#xd;
+&#xd;
+Anziehhilfen sollen z. B. bei Bewegungseinschränkungen das selbstständige An - und Ausziehen ermöglichen. Hierzu zählen Anziehhilfen für Kleidungstücke, Knöpfhilfen sowie Strumpf - bzw. Strumpfhosenanziehhilfen.&#xd;
+&#xd;
+Des Weiteren gibt es für Kompressionsstrümpfe bzw. –strumpfhosen An- und Ausziehhilfen. So erreicht man durch Anziehgestelle, über die der Kompressionsstrumpf/die Kompressionsstrumpfhose gezogen und vorgedehnt wird, einen leichteren Einstieg in den Strumpf und leichteres Anziehen. Diese Hilfsmittel ermöglichen es, den Kompressionsstrumpf im Unterschenkelbereich an- und auszuziehen. Andererseits gibt es Gleithilfen aus gleitfähigen textilen Geweben, die als Anziehhilfen genutzt werden. Derartige Hilfsmittel können teilweise auch mit speziellen Griffen und Griffverlängerungen ausgestattet sein. Nach ausreichender Übung kann der Kompressionsstrumpf bzw. die Kompressionsstrumpfhose selbstständig an- und - je nach Produkt – ggf. auch ausgezogen werden.&#xd;
+&#xd;
+Zu den Ess- und Trinkhilfen gehören Besteckhalter, Griffverdickungen/-verlängerungen für Essbesteck sowie Halterungen bzw. Handspangen für Trinkgefäße/-becher, Tellerranderhöhungen, Saug- und Trinkhilfen sowie Essapparate in verschiedenen Versionen für unterschiedliche Indikation und Einsatzbereiche.&#xd;
+&#xd;
+Rutschfeste Unterlagen aus Kunststoff verhindern das Wegrutschen von Gegenständen und ermöglichen so das Greifen dieser Gegenstände.&#xd;
+&#xd;
+Greifhilfen, wie z. B. Universalgriffe, Greifzangen, Türgriffverlängerungen, ermöglichen die Nutzung, das Erreichen und das Heranholen von Gegenständen.&#xd;
+&#xd;
+Mit sogenannten pneumatischen Greifhilfen können bestimmte Greifaktivitäten durchgeführt werden.&#xd;
+&#xd;
+Halter, Halterungen und Greifhilfen, wie Fönhalterungen, Zahnbürstenhalter, Toilettenpapiergreifhilfen oder Rasierapparathalterungen kommen vorwiegend als Hilfsmittel zur Körperhygiene in Betracht.&#xd;
+&#xd;
+Schreibhilfen kompensieren eingeschränkte oder fehlende Körperfunktionen der Hand oder der Finger beim Schreiben. Diese Hilfsmittel, wie Schreibgriffe, Schreibverdickungen, Schreibhilfen zur Führung eines Schreibgerätes, Kopfschreibhilfen, Blas-Saug-Mundstäbe oder Führungsschablonen für Tastaturen, ermöglichen das selbstständige Schreiben.&#xd;
+&#xd;
+Lesehilfen als Mundstab, manuelle Umblättergeräte (Blattwender), elektrische Umblättergeräte und Leseständer unterstützen bei fehlender oder eingeschränkter Funktion der Hände oder Finger das Lesen durch Umblättern von Seiten ohne fremde Hilfe.&#xd;
+&#xd;
+Behindertengerechte Bedienelemente, die über Druck, Zug, Berührung, bestimmte Bewegungen, Licht, Geräusche oder über die Sprache funktionieren, lösen den für elektrische Geräte vorgesehene Funktionszweck aus. Sie reichen, abhängig von Art und Umfang der Behinderung, von in Bauformen und Bedienung angepassten einfachen elektromechanischen Tasten bis zu komplexen Sensoren mit elektronischer Auswertung. Behindertengerechte Bedienelemente sind z. B. Einzeltasten, Tastengruppen, Blas-Saug-Ansteuerungen und Sensoren zur Auslösung von gewünschten Funktionen/Signalübertragungen. &#xd;
+&#xd;
+Mithilfe dieser Adaptionshilfen kann das Maß der Fremdhilfe reduziert und der Versicherten oder dem Versicherten ein Verbleiben in der Wohnung ermöglicht werden. Anwendung und Funktion der Produkte zur Ansteuerung elektrischer Geräte sind bei Auslieferung immer im System, also immer mit den Zielgeräten (z. B. Kaffeemaschine) zu überprüfen. Zur Absicherung eindeutiger Signale an das zu steuernde Gerät können über das Zubehör oder über Funktionen im angesteuerten Gerät unbeabsichtigte Schaltvorgänge ausgefiltert werden.&#xd;
+&#xd;
+Umfeldkontrollgeräte ermöglichen die Steuerung von Funktionen verschiedenster Gebrauchsgegenstände des täglichen Lebens.&#xd;
+&#xd;
+Die Erreichung des gesicherten Umgangs mit behindertengerechten Bedienelementen und Umfeldkontrollgeräten, jeweils bezogen auf das Gesamtsystem (Bedienelement/Umfeldkontrollgerät, Zusatzfunktionen, angesteuertes Gerät) sollte nach Ablauf einer Erprobungszeit unter Alltagsbedingungen durch die Krankenkassen überprüft werden. Näheres ist in den Verträgen nach § 127 SGB V zu regeln.&#xd;
+&#xd;
+&#xd;
+1.2	Leistungsrechtliche Hinweise&#xd;
+&#xd;
+Die Notwendigkeit zur Versorgung mit bestimmten Adaptionshilfen ist stets anhand der Gegebenheiten des Einzelfalls zu bewerten. Es ist eine Gesamtbetrachtung der funktionellen/strukturellen Schädigungen, der Beeinträchtigungen der Aktivitäten (Fähigkeitsstörungen) und der noch verbliebenen Aktivitäten vorzunehmen, um den Bedarf, die Fähigkeit zur Nutzung, die Prognose und das Ziel der Versorgung mit Adaptionshilfen auf der Grundlage realistischer, alltagsrelevanter Anforderungen zu ermitteln. Dabei sind die individuellen Kontextfaktoren zu berücksichtigen. &#xd;
+&#xd;
+Die Versicherte oder der Versicherte muss in der Lage sein, z. B. Umfeldkontrollgeräte/behindertengerechte Bedienelemente entsprechend dem vorgesehenen Zweck zu bedienen. Die Erzeugung beabsichtigter, eindeutiger Schaltvorgänge erfordert im individuell zu beurteilenden Einzelfall für alle behindertengerechten Bedienelemente und Umfeldkontrollgeräte sowie das Zubehör mindestens die Abklärung nachfolgender Sachverhalte:&#xd;
+&#xd;
+- Welche Geräte im Haushalt sollen angesteuert werden?&#xd;
+&#xd;
+- Welche Körperteile sind für die Ansteuerung von Geräten durch Bedienelemente/Umfeldkontrollgeräte geeignet und mit welchem Körperteil (z. B. Arm, Bein, Finger) wird die Ansteuerung ausgelöst?&#xd;
+&#xd;
+- Welche Kräfte sind für die Auslösung erforderlich? Verfügt die Versicherte oder der Versicherte darüber?&#xd;
+&#xd;
+- Welche Maßnahmen sind erforderlich, um eine sichere Bedienung zu gewährleisten?&#xd;
+&#xd;
+- Wie kann das behindertengerechte Bedienelement/das Umfeldkontrollgerät fachgerecht positioniert werden, um für die Versicherte oder den Versicherten erreichbar und anwendbar zu sein (z.B. keine Sichtbehinderung, keine Behinderung anderer Aktivitäten).&#xd;
+&#xd;
+Erst nach Abklärung dieser Sachverhalte, bei Bedarf und mit Einverständnis der Versicherten oder des Versicherten unter Einbindung der Ergo-/Physiotherapeuten kann die fachgerechte Auswahl eines oder mehrerer geeigneter Bedienelemente/Umfeldkontrollgeräte zum Auslösen von Ansteuerungen (Hände, Füße, Mund/Fernbedienung) erfolgen.&#xd;
+&#xd;
+Wenn keine Möglichkeit zur sicheren Bedienung behindertengerechter Bedienelemente insbesondere von Einzeltasten/Tastengruppe gegeben ist und die Versicherte oder der Versicherte nicht versorgt werden kann, kann eine Versorgung mit einer individuell angefertigten Tastengruppe möglich werden. Individuelle Versorgungen bedürfen der ausführlichen ärztlichen Begründung.&#xd;
+&#xd;
+Eine Mehrfachausstattung, z. B. mit typengleichen Bedienelementen, ist im Einzelfall möglich.&#xd;
+&#xd;
+Nicht jede technisch mögliche Adaption zur Nutzung eines Gerätes/Gebrauchsgegenstandes begründet eine Leistungspflicht der gesetzlichen Krankenversicherung. Die Kosten für die Bedienungseinheiten von Geräten etwa aus den Bereichen Unterhaltungselektronik (z. B. Video, Hifi-Anlage), Hobbys (z. B. Computerspiele, Musikinstrumente), Telekommunikation (z. B. Online-Banking, Wearable) fallen in den Bereich der Eigenverantwortung der Versicherten oder des Versicherten und werden nicht von der gesetzlichen Krankenversicherung übernommen.&#xd;
+&#xd;
+Keine Leistungen der gesetzlichen Krankenversicherung sind des Weiteren PCs, Tablets u. ä., deren USB-Anschlüsse und Bluetooths-Verbindungen standardmäßig auch zur Bedienung von behindertengerechten Bedienelementen oder Umfeldkontrollgeräten genutzt werden können.&#xd;
+&#xd;
+Von der Leistungspflicht ausgeschlossen sind Gebrauchsgegenstände des täglichen Lebens, auch wenn sie behindertengerecht gestaltet sind. Hierzu zählen die Mittel, die allgemein Verwendung finden und üblicherweise von einer großen Zahl von Personen benutzt werden bzw. in einem Haushalt vorhanden sind. Dies sind z. B. Hilfen zur Nahrungsaufnahme bzw. -zubereitung wie Nagelbretter, Elektromesser, elektrische Dosenöffner etc., aber z. B. auch Handys und Apps, die das Nutzen von Funktionen zur Umfeldkontrolle und Bedienung von Haushaltsgegenständen und baulichem Wohnungszubehör ermöglichen. &#xd;
+&#xd;
+Die Entwicklung in den Bereichen Smarthome und Ambient Assistend Living (AAL) führt zu einem immer größeren Angebot an Produkten, Dienstleistungen und Systemen standardisierter, weitgehend geprüfter und gesicherter Komponenten, die Funktionen der Umfeldkontrolle enthalten. So gibt es Systeme, die die Haussteuerung übernehmen, Einkaufslisten führen oder Termine überwachen. Älteren Versicherten und Versicherten mit Behinderung wird so ermöglicht, so lange es geht, ein selbstbestimmtes Leben in der eigenen Wohnung zu führen. &#xd;
+&#xd;
+Zur Vermeidung von Doppelversorgungen (Umfeldkontrollgeräte/behindertengerechte Bedienelemente) ist vor einer Genehmigung zu prüfen, ob sich mit den vorhandenen Gegebenheiten (z. B. Smarthome, Ambient Assistend Living) oder bereits vorhandenen Hilfs-mitteln die gewünschten Ziele erreichen lassen. Zu prüfen ist auch, ob einzelne Verrichtungen bereits im Rahmen der Pflege bei ständiger Betreuung durch die Pflegeperson sichergestellt sind.&#xd;
+&#xd;
+Sollten bauliche Veränderungen im Zusammenhang mit Umfeldkontrollgeräten notwendig werden, fallen diese nicht in den Leistungsbereich der gesetzlichen Krankenversicherung.&#xd;
+In diesen Fällen kann eine Leistungspflicht anderer Sozialleistungsträger, z. B. im Rahmen wohnumfeldverbessernder Maßnahmen, gegeben sein.&#xd;
+&#xd;
+Sogenannte Schlüpfhilfen für Kompressionsstrümpfe bzw.-strumpfhosen, die z. B. aus einem seidigen Gewebe gefertigt sind, sind keine Hilfsmittel im Sinne der gesetzlichen Krankenversicherung. Sie gehören obligatorisch zur verwendungsfertigen Abgabe eines Kompressionsstrumpfes. Diese Produkte erlangen auch dann keine Hilfsmitteleigenschaft, wenn sie aufwendiger, z. B. mit verlängertem Material, oder mit weiteren Zusatzprodukten, ausgestattet sind.&#xd;
+&#xd;
+&#xd;
+</hv:DEFINITION>
+        <hv:INDIKATION>Indikation&#xd;
+&#xd;
+- Siehe Produktarten&#xd;
+&#xd;
+</hv:INDIKATION>
+        <hv:QUERVERWEISE>Querverweise&#xd;
+&#xd;
+- Spezial-Tastaturen als Bedienelemente zur Kommunikation: siehe Produktgruppe 16 "Kommunikationshilfen"&#xd;
+&#xd;
+- Prismenbrillen: siehe Produktgruppe 25 "Sehhilfen"&#xd;
+&#xd;
+&#xd;
+</hv:QUERVERWEISE>
+    </hv:HMV_GRUPPE>
+    <hv:HMV_GRUPPE>
+        <hv:GRUPPE>3</hv:GRUPPE>
+        <hv:BEZEICHNUNG>Applikationshilfen</hv:BEZEICHNUNG>
+        <hv:DEFINITION>Die Produktgruppe 03 „Applikationshilfen“ beinhaltet insbesondere folgende Hilfsmittel:&#xd;
+&#xd;
+- Spritzen, &#xd;
+- Pens,&#xd;
+- Insulinpumpen,&#xd;
+- Infusionspumpen,&#xd;
+- Spritzenpumpen,&#xd;
+- Spülsysteme,&#xd;
+- Transnasale Ernährungssonden,&#xd;
+- Ernährungspumpen und Zubehör.&#xd;
+&#xd;
+Applikationshilfen und deren Zubehör dienen vorrangig der Verabreichung von Arzneimitteln und/oder der medizinisch indizierten enteralen oder parenteralen Ernährung. Des Weiteren werden Applikationshilfen zur rektalen Einleitung von Spülflüssigkeit in den Darm eingesetzt.&#xd;
+&#xd;
+&#xd;
+SPRITZEN &#xd;
+Spritzen dienen vorrangig der Applikation von flüssigen Arzneimitteln. Außerdem werden sie bei der Zufuhr von enteraler und parenteraler Ernährung, zum Spülen von Ernährungssonden etc. eingesetzt. Daher weisen Spritzen verschiedene Ausführungsformen und Konstruktionsmerkmale auf. In der Produktuntergruppe 03.29.01 Spritzen wird zwischen Insulin-Kunststoffspritzen, Kunststoffspritzen und Spritzen zur Verwendung mit Spritzenpumpen unterschieden.&#xd;
+&#xd;
+&#xd;
+PENS&#xd;
+Pens sind mehrfach verwendbare Injektionshilfen zur subkutanen Injektion in Form eines Füllfederhalters, in die befüllte Ampullen (Arzneimittelpatronen) eingesetzt werden. Die ärztlich angeordnete Dosis wird mittels eines Druck-/Drehknopfes eingestellt und durch Knopfdruck über die Pen-Kanüle (Pen-Nadel) in die Unterhaut (subkutan) injiziert. Bei Pen-Kanülen handelt es sich um Einmalprodukte, die nach erfolgter Injektion zu entsorgen sind.&#xd;
+&#xd;
+&#xd;
+INSULINPUMPEN &#xd;
+Insulinpumpen sind kompakte Geräte und bestehen in der Regel aus einem Insulinreservoir, einem Pumpenkörper und einer elektronischen Steuereinheit mit Display zur Insulindosierung. Das Insulin wird über einen Schlauch, der mit einer subkutanen Dauerkanüle verbunden ist, in die Unterhaut (subkutan) appliziert.&#xd;
+&#xd;
+Die Pumpen sind zum mobilen Einsatz geeignet und werden z. B. von Versicherten am Gürtel mit Gürtelclips befestigt.&#xd;
+&#xd;
+Eine technische Variante der Insulinpumpen stellen Pumpen mit integriertem/eingebautem Blutzuckermessgerät (Blutzuckermesssystem) sowie Insulinpumpen mit rtCGM-Schnittstelle (Real-Time-Messung) dar. &#xd;
+&#xd;
+In Bezug auf die rtCGM-Schnittstelle hat der Gemeinsame Bundesausschuss (G-BA) am 16. Juni 2016 beschlossen, die Anlage I („Anerkannte Untersuchungs- und Behandlungsmethoden“) der Richtlinie des Gemeinsamen Bundesausschusses zu Untersuchungs- und Behandlungsmethoden der vertragsärztlichen Versorgung (Richtlinie „Methoden vertragsärztliche Versorgung“) um die kontinuierliche interstitielle Glukosemessung mit Real-Time-Messgeräten (rtCGM) zur Therapie-steuerung bei Patientinnen und Patienten mit insulinpflichtigem Diabetes mellitus zu erweitern.&#xd;
+&#xd;
+Im Rahmen dieser Methode wird mittels eines Sensors eine kontinuierliche Messung des Glukosegehalts in der interstitiellen Flüssigkeit des Unterhautfettgewebes durchführt. Über einen mit dem Sensor verbundenen Transmitter werden die ermittelten Messwerte automatisch an das Empfangsgerät übertragen. Das Empfangsgerät kann gemäß § 3 Absatz 5 des G-BA-Beschlusses in der Insulinpumpe integriert sein. Zusätzlich muss das Gerät mittels einer Alarmfunktion mit individuell einstellbaren Grenzwerten vor dem Erreichen zu hoher oder zu niedriger Glukosewerte warnen können. Geräte ohne einstellbare Alarmfunktion sind nicht vom vorgenannten G-BA-Beschluss umfasst. Die rtCGM-Systeme ersetzen die konventionelle Selbstmessung des Blutzuckers nicht. Die Selbstmessung sollte weiterhin von der Versicherten oder dem Versicherten bedarfsbezogen, u. a. vor einer Mahlzeit mit herkömmlichen Blutzuckermessgeräten (siehe Produktgruppe 21 „Messgeräte für Körperzustände/-funktionen“) ermittelt werden. &#xd;
+&#xd;
+Die für die Messung (Sensoren) und Übertragung (Transmitter) erforderlichen Komponenten sowie die Empfangsgeräte sind als Einzelgeräte ebenfalls in der Produktgruppe 21 „Messgeräte für Körperzustände/-funktionen“ gelistet. &#xd;
+&#xd;
+Gemäß der Richtlinie „Methoden vertragsärztliche Versorgung“ des G-BA muss die Versicherte oder der Versicherte zeitnah im Zuge der Verordnung und vor der ersten Anwendung des rtCGM über die Schulungsinhalte zur intensivierten Insulintherapie (ICT und gegebenenfalls zur Insulinpumpe) hinausgehend hinsichtlich der sicheren Anwendung des Gerätes, insbesondere der Bedeutung der Blutglukose-Selbstmessung und der durch das Gerät zur Verfügung gestellten Trends unter Berücksichtigung des individuellen Bedarfs, geschult werden. Die Ärztin oder der Arzt und die Versicherte oder der Versicherte legen gemeinsam ein individuelles Therapieziel unter Nutzung der rtCGM fest. &#xd;
+&#xd;
+Entsprechend dem individuell festgelegten Therapieziel erfolgt unter Bewertung der rtCGM-Werte sowie der Blutglukoseselbstmessung (BGSM) die Abgabe oder Unterbrechung der Insulinzufuhr.&#xd;
+&#xd;
+&#xd;
+INSULIN-PATCH-PUMPEN &#xd;
+Insulin-Patch-Pumpen bestehen aus zwei getrennten technischen Einheiten: der externen Steuereinheit und der Patch-Pumpe. Die mehrfach verwendbare Steuereinheit, die entsprechend den individuellen Bedürfnissen der Versicherten oder des Versicherten programmierbar ist, reguliert funkgesteuert die Patch-Pumpe. &#xd;
+&#xd;
+Die Patch-Pumpen lassen sich in folgende Varianten unterscheiden. Bei der einen Variante sind alle notwendigen Komponenten in einem Gehäuse fest verbaut. Sie bestehen aus dem Empfänger, einem befüllbaren Insulinreservoir, der Batterie, dem Pumpmechanismus sowie der Kanüle mit einer Einführhilfe, z. B. eine Führungsnadel. Die Pumpenunterseite bildet eine Grundplatte, die mit einer Klebefläche wie bei einem Pflaster versehen ist und die Pumpe auf der Haut fixiert.&#xd;
+&#xd;
+Bei der zweiten Variante wird der Pumpmechanismus mit dem Insulinbehälter zusammengesteckt. Der Insulinbehälter beinhaltet das befüllbare Insulinreservoir sowie die Kanüle mit einer Einführhilfe, z. B. eine Führungsnadel. Batterie und Empfänger können entweder in der Pumpeinheit oder im Insulinbehälter verbaut sein. Über eine Grundplatte, die mit einer Klebefläche wie bei einem Pflaster versehen ist, wird die Pumpe auf der Haut fixiert. Der Insulinbehälter wird gemäß Herstellervorgabe verwendet. Der Pumpmechanismus ist mehrfach zu verwenden. &#xd;
+&#xd;
+Die Steuereinheiten von Patch-Pumpen verfügen teilweise über ein integriertes Blutzuckermessgerät oder über Schnittstellen zum Empfang von Werten der rtCGM-Sensoren bzw. anderen externen Blutzuckermesssystemen. &#xd;
+&#xd;
+Hinsichtlich der kontinuierlichen interstitiellen Glukosemessung mit Real-Time-Messgeräten (rtCGM) wird oben auf die Ausführungen bei den Insulinpumpen verwiesen.&#xd;
+&#xd;
+&#xd;
+PUMPEN ZUR INFUSIONS-/ARZNEIMITTELTHERAPIE&#xd;
+Pumpen zur Infusions-/Arzneimitteltherapie ermöglichen durch die Regulierbarkeit der Förderrate/Flussrate eine definierte und/oder kontinuierliche Applikation. Sie werden mechanisch, hy- draulisch, pneumatisch, chemisch oder elektromotorisch betrieben. Elektromotorische Infusionspumpen gibt es in netzabhängigen oder netzunabhängigen Modellen. Netzunabhängige Infusionspumpen sind portable Geräte, die am Körper getragen werden können und die Mobilität der Versicherten oder des Versicherten nur wenig einschränken. Die Doppelversorgung mit einer netzabhängigen und einer netzunabhängigen Infusionspumpe kommt in der Regel nicht in Betracht. Einige Pumpenarten verfügen neben der Applikation von Basalraten über die Funktion zusätzlicher Bolusgaben.&#xd;
+&#xd;
+a) Pumpen zur Infusions-/Arzneimitteltherapie (mechanisch, hydraulisch, pneumatisch, chemisch)&#xd;
+Pumpen zur Infusions-/Arzneimitteltherapie (mechanisch, hydraulisch, pneumatisch, chemisch) bestehen in der Regel aus einem Reservoir, das mit der erforderlichen Infusionslösung/mit dem erforderlichen Arzneimittel in der häuslichen Umgebung/im sonstigen privaten Umfeld der Versicherten oder des Versicherten befüllt wird. Der erforderliche Überdruck wird auf unterschiedliche Weise erzeugt, z. B. mit dem Befüllen des Reservoirs durch einen Federmechanismus oder durch Gasdruck. &#xd;
+&#xd;
+Die Pumpen haben in der Regel den Vorteil, dass sie klein, leicht und einfach in der Handhabung sind. Im Vergleich zu elektromotorischen Pumpen zur Infusions-/Arzneimitteltherapie ist das Volumen des Reservoirs der Pumpe relativ gering und die Einstellung der Förderraten in der Regel nur begrenzt möglich. &#xd;
+&#xd;
+b) Pumpen zur Infusions-/Arzneimitteltherapie, elektromotorisch (netzabhängig und netzunabhängig)&#xd;
+Elektromotorische Pumpen zur Infusions-/Arzneimitteltherapie werden über einen Netzanschluss und/oder Akku betrieben. Sie verfügen in der Regel über ein großes Funktionsspektrum. Im Vergleich zu mechanischen, hydraulischen, pneumatischen oder chemischen Pumpen ist die Förderrate differenzierter einstellbar.&#xd;
+&#xd;
+&#xd;
+SPRITZENPUMPEN&#xd;
+Spritzenpumpen ermöglichen durch die Regulierbarkeit der Förderrate eine definierte, kontinuierliche Applikation von Arzneimitteln. Sie sind elektromotorisch betrieben und verfügen teilweise über einen Akku, wodurch ein mobiler Einsatz ermöglicht wird. Als Arzneimittelreservoir dienen Spritzen, die für die jeweiligen Spritzenpumpe entsprechend der Herstellerangaben ausgewiesen sind. Diese Spritzen werden in der häuslichen Umgebung/im sonstigen privaten Umfeld der Versicherten oder des Versicherten mit dem entsprechenden Arzneimittel befüllt. &#xd;
+&#xd;
+Die Zufuhr des Arzneimittels erfolgt einerseits kontinuierlich in Form einer Grundrate (der sogenannten Basalrate), andererseits bedarfsabhängig in Form von Bolusgaben. Mit programmierbaren Pumpen kann die Basalrate nach einem wählbaren Profil vorgegeben werden. Dies erleichtert die Anpassung an tageszeitabhängige Schwankungen des Basisbedarfs. &#xd;
+&#xd;
+Einige Pumpenarten verfügen zudem über die Funktion der zusätzlichen Applikation von Arzneimitteln, die von der Versicherten oder dem Versicherten je nach Notwendigkeit ausgelöst werden kann.&#xd;
+&#xd;
+&#xd;
+SPÜLSYSTEME&#xd;
+Bei den Spülsystemen handelt es sich um schwerkraftabhängige, pumpenabhängige, elektrische oder mit einem Akku betriebene Spülsysteme zur rektalen Einleitung von Spülflüssigkeit in den Mastdarmarm, um eine Darmentleerung zu erreichen. &#xd;
+&#xd;
+&#xd;
+TRANSNASALE ERNÄHRUNGSSONDEN&#xd;
+Transnasale Ernährungssonden bestehen in der Regel aus dünnlumigen Kunststoffschläuchen und dienen der Verabreichung von Sondennahrung in den Magen.&#xd;
+&#xd;
+&#xd;
+ERNÄHRUNGSPUMPEN&#xd;
+Ernährungspumpen ermöglichen durch die Regulierbarkeit der Förderrate eine kontinuierliche, intermittierende oder variable Applikation von Sondennahrung über eine Ernährungssonde in den Magen. Sie werden unterschieden in netzabhängige und netzunabhängige Pumpen. &#xd;
+&#xd;
+Die enterale Ernährung mithilfe einer Ernährungspumpe über eine Ernährungssonde in den Magen ist in der Regel dann erforderlich, wenn andere Formen der Applikation der enteralen Ernährung wie z. B. Spritzen oder Schwerkraft nicht möglich oder nicht ausreichend sind.&#xd;
+&#xd;
+&#xd;
+LEISTUNGSRECHTLICHE HINWEISE&#xd;
+Die Produkte der Produktgruppe 03 „Applikationshilfen“ sind Hilfsmittel im Sinne § 33 SGB V, die in der häuslichen Umgebung/im sonstigen privaten Umfeld der Versicherten oder des Versicherten funktionsgerecht, sicher sowie indikations- und einsatzgerecht abgegeben und gebraucht werden können. In der Regel werden diese Hilfsmittel von der Versicherten oder dem Versicherten eigenständig oder von anderen medizinischen Laien bedient und genutzt. &#xd;
+&#xd;
+Demgegenüber sind Produkte, die im Rahmen einer ambulant ärztlichen Versorgung, stationären Versorgung oder Notfallversorgung (Rettungsdienst) abgegeben werden, keine Hilfsmittel. Ebenfalls sind Produkte, die Bestandteil einer ärztlichen Leistung sind und als solche abgerechnet werden können, wie z. B. Venenkatheter/Verweilkanülen, perkutane Sonden, Ports etc., keine Hilfsmittel im Sinne des § 33 SGB V.&#xd;
+&#xd;
+Implantate sind nicht den Hilfsmitteln gemäß § 33 SGB V zuzuordnen und können daher nicht im Hilfsmittelverzeichnis gemäß § 139 SGB V berücksichtigt werden.&#xd;
+&#xd;
+Vorgefüllte Produkte wie Fertigspritzen, Pens, Arzneimittelpatronen für Pens oder Pumpen sind keine Hilfsmittel im Sinne des § 33 SGB V, sondern gegebenenfalls als Arzneimittel nach § 31 SGB V zu beurteilen. Bei den im Hilfsmittelverzeichnis enthaltenen Produkten wie Spritzen, Pens, Pumpen und Behältnisse (Beuteln/Containern) handelt es sich hingegen um unbefüllte Produkte, die in der häuslichen Umgebung/im sonstigen privaten Umfeld der Versicherten oder des Versicherten befüllbar sein müssen. Ebenso müssen diese für die zugelassenen Arzneimittel gemäß § 11a „Fachinformation“ des Gesetzes über den Verkehr mit Arzneimitteln (Arzneimittelgesetz-AMG) zugelassen sein. In diesen Fachinformationen der Arzneimittelhersteller ist die jeweilige Indikation, die Art der Applikation, das Hilfsmittel und ob die Applikation in der häuslichen Umgebung/im sonstigen privaten Umfeld der Versicherten oder des Versicherten zugelassen ist, angegeben.&#xd;
+&#xd;
+Des Weiteren sind Produkte, die als allgemeine Gebrauchsgegenstände des täglichen Lebens anzusehen sind wie z. B. Mörser, Tablettenzerteiler, Tablettenspender, Aufbewahrungs- und Kühlbehältnissen für Arzneimittel keine Hilfsmittel im Sinne des § 33 SGB V.&#xd;
+&#xd;
+Geräte zur Iontophorese, die der Unterstützung des Transports von Arzneimittelbestandteilen in bzw. durch die Haut mithilfe von elektrischem Strom dienen, sind keine Leistung der gesetzlichen Krankenversicherung, da ihr Einsatz in der häuslichen Umgebung/im sonstigen privaten Umfeld der Versicherten oder des Versicherten aus medizinischer Sicht weder notwendig noch zweckmäßig ist. Geräte zur Leitungswasseriontophorese werden in der Produktgruppe 09 „Elektrostimula-tionsgeräte“ berücksichtigt.&#xd;
+&#xd;
+Die Versorgung der Versicherten oder des Versicherten mit einer netzunabhängigen (mobilen) und einer netzabhängigen (stationären) Pumpe (Doppelversorgung) kommt in der Regel nicht zu Lasten der gesetzlichen Krankenversicherung in Betracht.&#xd;
+&#xd;
+</hv:DEFINITION>
+        <hv:INDIKATION>Die Indikationen sind den Produktarten der jeweiligen Produktuntergruppe zu entnehmen.&#xd;
+&#xd;
+</hv:INDIKATION>
+        <hv:QUERVERWEISE>Produktgruppe 09 „Elektrostimulationsgeräte“: Leitungswasseriontophoresegeräte zur Behandlung von Hyperhidrosis&#xd;
+&#xd;
+Produktgruppe 12 „Hilfsmittel bei Tracheostoma und Laryngektomie“: Verbrauchsmaterial&#xd;
+&#xd;
+Produktgruppe 14 „Inhalations- und Atemtherapiegeräte“: Inhalationsgeräte&#xd;
+&#xd;
+Produktgruppe 21 „Messgeräte für Körperzustände/-funktionen“: Real-Time-Messgeräte (rtCGM)&#xd;
+&#xd;
+Produktgruppe 29 „Stomaartikel“: Irrigatoren für Stomaträger&#xd;
+&#xd;
+</hv:QUERVERWEISE>
+    </hv:HMV_GRUPPE>
+    <hv:HMV_GRUPPE>
+        <hv:GRUPPE>4</hv:GRUPPE>
+        <hv:BEZEICHNUNG>Bade- und Duschhilfen</hv:BEZEICHNUNG>
+        <hv:DEFINITION>Bade- und Duschhilfen ermöglichen bzw. erhöhen die Selbständigkeit bei der Durchführung der Körperpflege und körperhygienischen Maßnahmen im Rahmen der allgemeinen Grundbedürfnisse, insbesondere indem sie beeinträchtigte oder fehlende Funktionen des Bewegungs- oder Halteapparates kompensieren.&#xd;
+&#xd;
+Der Anwendungsort der Produkte dieser Produktgruppe begrenzt sich auf den häuslichen Bereich. Bei einem Wohnungswechsel des Versicherten können diese mitgenommen werden. &#xd;
+&#xd;
+Die Produktgruppe beinhaltet folgende Produktuntergruppen: Badewannenlifter, Badewannensitze, Duschhilfen, Badewanneneinsätze sowie Sicherheitsgriffe und Aufrichtehilfen. &#xd;
+&#xd;
+&#xd;
+&#xd;
+Badewannenlifter&#xd;
+&#xd;
+Badewannenlifter dienen der Absenkung von der Wannenrandhöhe in Richtung Wannenboden bzw. umgekehrt. Der Einsatz kommt in Betracht, wenn beim Versicherten erhebliche Funktionseinschränkungen an der oberen und /oder unteren Extremität vorliegen, die ein selbständiges Ein- und Aussteigen aus der Badewanne bzw. das Hin- und Aufsetzen unmöglich machen und durch den Einsatz des Lifters das weitgehend selbständige Baden wieder ermöglicht wird. Badewannenlifter können bei Bedarf aus der Badewanne entfernt und wieder eingesetzt werden. &#xd;
+&#xd;
+Von der Leistungspflicht der Gesetzlichen Krankenversicherung sind Lifter, die an die jeweiligen räumlichen Verhältnissen individuell angepasst und/oder deren Liegefläche an die Badewanne angepasst und/oder mit dem Baukörper fest verbunden werden, ausgeschlossen.&#xd;
+&#xd;
+&#xd;
+Badewannensitze&#xd;
+&#xd;
+Badewannensitze werden vom Badewannenrand ausgehend in die Badewanne eingehangen und/oder auf den Badewannenrand aufgelegt. Die zu überwindende Höhe wird durch die Badewannensitze reduziert, so dass der  Wechsel zwischen stehender und sitzender Position innerhalb der Badewanne erleichtert wird. Zu den Produktarten der Badewannensitze zählen Badewannenbretter, Badewannnensitze ohne Rückenlehne, Badewannensitze mit Rückenlehne und Badewannensitze mit Rückenlehne, drehbar.&#xd;
+&#xd;
+&#xd;
+Duschhilfen&#xd;
+Duschhilfen finden bei der Durchführung der Körperpflege/Hygiene in Form von Duschen Anwendung. Bei den Duschhilfen werden folgende Produktarten unterschieden: an der Wand montierte Duschsitze, Duschhocker, Duschstühle, Duschliegen, fahrbare Duschliegen und Duschstühle für Kinder und Jugendliche. &#xd;
+&#xd;
+Grundsätzlich sind Hocker oder andere Sitzgelegenheiten ohne belastungsstabile Armlehnen allgemeine Gebrauchsgegenstände des täglichen Lebens, da sie üblicherweise in einem Haushalt vorhanden sind. Gebrauchsgegenstände des täglichen Lebens sind keine Leistung der Gesetzlichen Krankenversicherung. Maßgebend für die Abgrenzung ist vor allem, ob der veränderte Gegenstand ausschließlich bei Kranken bzw. Behinderten Verwendung findet, oder ob er auch von Gesunden bzw. Nichtbehinderten benutzt und ohne weiteres gegen einen demselben Zweck dienenden handelsüblichen Gegenstand ausgetauscht werden kann. &#xd;
+&#xd;
+&#xd;
+Badewanneneinsätze&#xd;
+&#xd;
+Badewanneneinsätze sind Badeliegen, die in die Badewanne eingesetzt werden und aus dieser herausgenommen werden können.&#xd;
+&#xd;
+&#xd;
+Sicherheitsgriffe und Aufrichtehilfen&#xd;
+&#xd;
+Sicherheitsgriffe und Aufrichtehilfen finden sich in verschiedenen Ausführungen.&#xd;
+Ihr Einsatzort begrenzt sich grundsätzlich auf den Sanitärbereich der Häuslichkeit des Versicherten.&#xd;
+Die Ausstattung von anderen räumlichen Bereichen fällt nicht in den Leistungsbereich der Gesetzlichen Krankenversicherung.&#xd;
+&#xd;
+Grundsätzlich sind Handgriffe sowie festmontierte Badewannengriffe Gebrauchsgegenstände des täglichen Lebens, da sie üblicherweise in Badezimmern vorhanden sind. Allgemeine Gebrauchsgegenstände des täglichen Lebens sind keine Leistung der Gesetzlichen Krankenversicherung. Maßgebend für die Abgrenzung ist vor allem, ob der veränderte Gegenstand ausschließlich bei Kranken bzw. Behinderten Verwendung findet, oder ob er auch von Gesunden bzw. Nichtbehinderten benutzt und ohne weiteres gegen einen demselben Zweck dienenden handelsüblichen Gegenstand ausgetauscht werden kann.  &#xd;
+&#xd;
+Im Badezimmer übliche Gegenstände wie z.B. Badewanneneinstieghilfen (Fußbänkchen, Trittstufen), Bade- und Duschmatten, Nacken- und Schulterpolster, Seifenschalen, Toilettenpapierhalter, Brausehalter, Brauseköpfe jeglicher Art, Form und/oder deren verschiedenartiger Funktionen, Brauseschläuche, Handtuchhalter und Spritzschutzvorrichtungen sind gleichfalls den allgemeinen Gebrauchsgegenständen des täglichen Lebens zuzuordnen. Diese sind von der Leistungspflicht der Gesetzlichen Krankenversicherung ausgenommen.&#xd;
+&#xd;
+&#xd;
+Doppelversorgung mit Bade- und Duschilfen &#xd;
+&#xd;
+Der Anspruch auf Hilfsmittelgewährung unterliegt allgemein dem Wirtschaftlichkeitsgebot des § 12 Absatz 1 SGB V. Danach müssen Leistungen ausreichend, zweckmäßig und wirtschaftlich sein; sie dürfen das Maß des Notwendigen nicht überschreiten. Leistungen, die nicht notwendig oder unwirtschaftlich sind, können Versicherte nicht beanspruchen, dürfen die Leistungserbringer nicht bewirken und die Krankenkassen nicht bewilligen.&#xd;
+&#xd;
+&#xd;
+Doppelfunktionale Hilfsmittel&#xd;
+&#xd;
+Zur Vereinfachung der Abgrenzung der Leistungszuständigkeit bei der Gewährung von Hilfsmitteln und Pflegehilfsmitteln hat der Gesetzgeber den GKV-Spitzenverband ermächtigt, in Richtlinien die Hilfsmittel und Pflegehilfsmittel zu bestimmen, die sowohl Vorsorgezwecken (§ 23 SGB V), der Krankenbehandlung, der Vorbeugung einer drohenden Behinderung oder dem Behinderungsausgleich (§ 33 SGB V) als auch der Pflegeerleichterung, der Linderung von Beschwerden des Pflegebedürftigen oder der Ermöglichung einer selbständigeren Lebensführung (§ 40 SGB XI) dienen können (doppelfunktionale Hilfsmittel), und das Verhältnis zur Aufteilung der Ausgaben für die doppelfunktionalen Hilfsmittel zwischen gesetzlicher Krankenversicherung und sozialer Pflegeversicherung für alle Kassen nach einheitlichen Maßstäben festzulegen. Dadurch entfällt bei den Kranken- und Pflegekassen die bisher erforderliche aufwändige Abgrenzung der Leistungszuständigkeit im Einzelfall. Für die Prüfung des Leistungsanspruchs nach §§ 23 und 33 SGB V sowie § 40 SGB XI gilt § 275 Abs. 3 SGB V. Auf eine genaue Zuordnung zu dem jeweiligen Leistungsträger kommt es dabei nicht mehr an. Die Richtlinien zur Festlegung der doppelfunktionalen Hilfsmitteln (RidoHiMi) können auf der Internetseite des GKV-Spitzenverbandes abgerufen werden.&#xd;
+&#xd;
+</hv:DEFINITION>
+        <hv:INDIKATION>Siehe Produktarten&#xd;
+&#xd;
+&#xd;
+</hv:INDIKATION>
+        <hv:QUERVERWEISE>Querverweise:&#xd;
+Produktgruppe 12 „Hilfsmittel bei Tracheostoma“: „Schutzzubehör für Tracheostoma“, „Abrechnungspositionen für Tracheostoma“&#xd;
+&#xd;
+Produktgruppe 18 „ Kranken-/Behindertenfahrzeuge“: Innenraum/Duschrollstühle&#xd;
+&#xd;
+Produktgruppe 22 „ Mobilitätshilfen“: Ganzkörper/Umsetz- und Hebehilfen, Häuslicher Bereich/Lifter &#xd;
+&#xd;
+&#xd;
+&#xd;
+</hv:QUERVERWEISE>
+    </hv:HMV_GRUPPE>
+    
+    
+  <hv:HMV_ORT>
+        <hv:ORT>1</hv:ORT>
+        <hv:BEZEICHNUNG>Vor- und Mittelfuß</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>2</hv:ORT>
+        <hv:BEZEICHNUNG>Sprunggelenk</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>3</hv:ORT>
+        <hv:BEZEICHNUNG>Fuß</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>4</hv:ORT>
+        <hv:BEZEICHNUNG>Knie</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>5</hv:ORT>
+        <hv:BEZEICHNUNG>Hüfte</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>6</hv:ORT>
+        <hv:BEZEICHNUNG>Bein</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>7</hv:ORT>
+        <hv:BEZEICHNUNG>Hand</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>8</hv:ORT>
+        <hv:BEZEICHNUNG>Ellenbogen</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>9</hv:ORT>
+        <hv:BEZEICHNUNG>Schulter</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>10</hv:ORT>
+        <hv:BEZEICHNUNG>Arm</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>11</hv:ORT>
+        <hv:BEZEICHNUNG>Leib/Rumpf</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>12</hv:ORT>
+        <hv:BEZEICHNUNG>Halswirbelsäule</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>13</hv:ORT>
+        <hv:BEZEICHNUNG>Brustwirbelsäule</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>14</hv:ORT>
+        <hv:BEZEICHNUNG>Lendenwirbelsäule</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>15</hv:ORT>
+        <hv:BEZEICHNUNG>Wirbelsäule</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>16</hv:ORT>
+        <hv:BEZEICHNUNG>Bruch (Hernie) am jeweiligen Ort</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>17</hv:ORT>
+        <hv:BEZEICHNUNG>Kopf</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>18</hv:ORT>
+        <hv:BEZEICHNUNG>Behaarte Kopfhaut</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>19</hv:ORT>
+        <hv:BEZEICHNUNG>Äußeres Ohr</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>20</hv:ORT>
+        <hv:BEZEICHNUNG>Hörorgan</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>21</hv:ORT>
+        <hv:BEZEICHNUNG>Auge/Sehorgan</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>22</hv:ORT>
+        <hv:BEZEICHNUNG>Gebiß/Mundhöhle</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>23</hv:ORT>
+        <hv:BEZEICHNUNG>Kehlkopf</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>24</hv:ORT>
+        <hv:BEZEICHNUNG>Atmungsorgane</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>25</hv:ORT>
+        <hv:BEZEICHNUNG>Harn-/Verdauungsorgane</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>26</hv:ORT>
+        <hv:BEZEICHNUNG>Künstliche Körperöffnungen (Stoma)</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>27</hv:ORT>
+        <hv:BEZEICHNUNG>Geschlechtsorgane</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>28</hv:ORT>
+        <hv:BEZEICHNUNG>Peripherer Kreislauf</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>29</hv:ORT>
+        <hv:BEZEICHNUNG>Ganzkörper</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>30</hv:ORT>
+        <hv:BEZEICHNUNG>Haut</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>31</hv:ORT>
+        <hv:BEZEICHNUNG>Nerven</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>32</hv:ORT>
+        <hv:BEZEICHNUNG>Skelett</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>33</hv:ORT>
+        <hv:BEZEICHNUNG>Muskel/Bindegewebe</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>34</hv:ORT>
+        <hv:BEZEICHNUNG>Blut/Blutbildende Organe</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>35</hv:ORT>
+        <hv:BEZEICHNUNG>Brust</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>36</hv:ORT>
+        <hv:BEZEICHNUNG>Verdauungsorgane</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>37</hv:ORT>
+        <hv:BEZEICHNUNG>Nerven/Muskel</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>38</hv:ORT>
+        <hv:BEZEICHNUNG>Zentrales Nervensystem / Rückenmark</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>39</hv:ORT>
+        <hv:BEZEICHNUNG>Gesäß</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>40</hv:ORT>
+        <hv:BEZEICHNUNG>Häuslicher Bereich</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>41</hv:ORT>
+        <hv:BEZEICHNUNG>Rücken</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>42</hv:ORT>
+        <hv:BEZEICHNUNG>Nase</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>43</hv:ORT>
+        <hv:BEZEICHNUNG>Interstitium/subkutanes Gewebe</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>45</hv:ORT>
+        <hv:BEZEICHNUNG>Pflegebereich</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>46</hv:ORT>
+        <hv:BEZEICHNUNG>Innenraum</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>50</hv:ORT>
+        <hv:BEZEICHNUNG>Innenraum und Außenbereich/Straßenverkehr</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>51</hv:ORT>
+        <hv:BEZEICHNUNG>Straßenverkehr</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>65</hv:ORT>
+        <hv:BEZEICHNUNG>Treppen</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>71</hv:ORT>
+        <hv:BEZEICHNUNG>Unterschenkel</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>72</hv:ORT>
+        <hv:BEZEICHNUNG>Oberschenkel</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>73</hv:ORT>
+        <hv:BEZEICHNUNG>Fuß-Passteil</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>74</hv:ORT>
+        <hv:BEZEICHNUNG>Kniegelenk-Passteil</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>75</hv:ORT>
+        <hv:BEZEICHNUNG>Hüftgelenk-Passteil</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>79</hv:ORT>
+        <hv:BEZEICHNUNG>Beinprothesen-Strukturteil/Zusatz/Zubehör ohne speziellen Anwendungsort</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>80</hv:ORT>
+        <hv:BEZEICHNUNG>Finger-/Teilhand</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>81</hv:ORT>
+        <hv:BEZEICHNUNG>Unterarm</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>82</hv:ORT>
+        <hv:BEZEICHNUNG>Oberarm</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>87</hv:ORT>
+        <hv:BEZEICHNUNG>Finger-/Hand-/Handgelenks-Passteil</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>88</hv:ORT>
+        <hv:BEZEICHNUNG>Ellenbogen-Passteil</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>89</hv:ORT>
+        <hv:BEZEICHNUNG>Schulter-Passteil</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>90</hv:ORT>
+        <hv:BEZEICHNUNG>Armprothesen-Strukturteil/Zusatz/Zubehör ohne speziellen Anwendungsort</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_ORT>
+        <hv:ORT>99</hv:ORT>
+        <hv:BEZEICHNUNG>Ohne speziellen Anwendungsort/Zusätze</hv:BEZEICHNUNG>
+    </hv:HMV_ORT>
+    <hv:HMV_UNTERGRUPPE>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:BEZEICHNUNG>Sekret-Absauggeräte, netzabhängig</hv:BEZEICHNUNG>
+        <hv:ANFORDERUNGEN>Anforderungen gemäß § 139 SGB V&#xd;
+In dem Antragsformular der entsprechenden Produktgruppe ist die Art und Weise der Nachweisführung beschrieben und angegeben, welche Dokumentationen beizubringen sind.&#xd;
+&#xd;
+&#xd;
+I. Funktionstauglichkeit &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die Funktionstauglichkeit des Produktes&#xd;
+&#xd;
+- Aufgrund von § 139 Abs. 5 SGB V gilt für Medizinprodukte im Sinne des § 3 Nr. 1 des Medizinproduktegesetzes (MPG) der Nachweis der Funktionstauglichkeit durch die CE-Kennzeichnung grundsätzlich als erbracht. Dies gilt auch für Zubehör im Sinne des § 3 Nr. 9 MPG.&#xd;
+&#xd;
+II. Sicherheit &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die unbedenkliche Verwendung des Produktes&#xd;
+&#xd;
+- Aufgrund von § 139 Abs. 5 SGB V gilt für Medizinprodukte im Sinne des § 3 Nr. 1 des Medizinproduktegesetzes (MPG) der Nachweis der Sicherheit durch die CE-Kennzeichnung grundsätzlich als erbracht. Dies gilt auch für Zubehör im Sinne des § 3 Nr. 9 MPG.&#xd;
+&#xd;
+III. Besondere Qualitätsanforderungen &#xd;
+&#xd;
+&#xd;
+III.1 Indikations-/einsatzbezogene Qualitätsanforderungen &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die indikations-/einsatzbezogenen Eigenschaften des angemeldeten Produktes für die beanspruchte(n) Produktart/Indikation(en) im allgemeinen Lebensbereich/häuslichen Bereich der Versicherten oder des Versicherten durch:&#xd;
+&#xd;
+- Herstellererklärungen&#xd;
+&#xd;
+- Aussagekräftige Unterlagen (gemäß Antragsformular zur Aufnahme eines neuen Hilfsmittels &#xd;
+nach § 139 SGB V) &#xd;
+&#xd;
+Die Herstellererklärungen und aussagekräftigen Unterlagen müssen auch folgende Parameter belegen:&#xd;
+&#xd;
+- Einfache Reinigung und Desinfizierung&#xd;
+&#xd;
+- Thermische Desinfizierbarkeit aller Teile, die mit Körperflüssigkeit in Kontakt kommen&#xd;
+&#xd;
+- Tragbares Tischgerät für Netzbetrieb (230 V)&#xd;
+&#xd;
+- Sterile Einmal-Absaugkatheter anschließbar&#xd;
+&#xd;
+- Fingertip im Lieferumfang enthalten&#xd;
+&#xd;
+- Volumen des Sekretbehälters mindestens 0,5 l&#xd;
+&#xd;
+- Spülbehälter, mehrfach verwendbar, im Lieferumfang&#xd;
+&#xd;
+- Volumen des Spülbehälters mindestens 0,5 l&#xd;
+&#xd;
+&#xd;
+Zusätzliche Anforderungen an 01.24.02.0 „Absauggeräte mit geringer Saugleistung“: &#xd;
+&#xd;
+- Saugleistung größer 10 l/min und maximal 20 l/min (gemessen gegen Luft)&#xd;
+&#xd;
+&#xd;
+Zusätzliche Anforderungen an 01.24.02.1 „Absauggeräte mit normaler Saugleistung“: &#xd;
+&#xd;
+- Saugleistung größer 20 l/min (gemessen gegen Luft) &#xd;
+&#xd;
+&#xd;
+III.2 Qualitätsanforderungen hinsichtlich der Nutzungsdauer &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die Nutzungsdauer/Dauerbelastbarkeit des Produktes durch:&#xd;
+&#xd;
+- Herstellererklärungen&#xd;
+&#xd;
+Die Herstellererklärungen müssen auch folgende Parameter belegen:&#xd;
+&#xd;
+- Wartungsfreies Gerät&#xd;
+&#xd;
+&#xd;
+III.3 Qualitätsanforderungen hinsichtlich des Wiedereinsatzes&#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Das Produkt muss für einen Wiedereinsatz bei weiteren Versicherten geeignet sein. &#xd;
+&#xd;
+Der Nachweis erfolgt durch: &#xd;
+&#xd;
+- Herstellererklärungen&#xd;
+&#xd;
+IV. Medizinischer Nutzen &#xd;
+&#xd;
+- Nicht besetzt&#xd;
+&#xd;
+V. Anforderungen an die Produktinformationen &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+&#xd;
+- Technische Daten durch Auflistung derselben gemäß Antragsformular Abschnitt V&#xd;
+&#xd;
+- Die ordnungsgemäße und sichere Handhabung durch eine allgemeinverständliche Gebrauchsanweisung in deutscher Sprache mit mindestens folgenden Angaben:&#xd;
+&#xd;
+-- Anwendungshinweise&#xd;
+-- Zweckbestimmung des Produktes/Indikation&#xd;
+-- Zulässige Betriebsbedingungen/Einsatzorte&#xd;
+-- Bestehende Anwendungsrisiken und Kontraindikationen&#xd;
+-- Reinigungshinweise/Desinfektionshinweise&#xd;
+-- Technische Daten/Parameter&#xd;
+-- Hinweise zum Wiedereinsatz bei weiteren Versicherten und zu den dabei erforderlichen &#xd;
+Maßnahmen&#xd;
+-- Zusammenbau- und Montageanweisung&#xd;
+&#xd;
+- Herstellererklärung über die Verfügbarkeit der Gebrauchsanweisung, in einer für blinde und sehbehinderte Versicherte geeigneten Form, gemäß den Angaben im Antragsformular Abschnitt V&#xd;
+&#xd;
+- Produktkennzeichnung auf dem Produkt&#xd;
+&#xd;
+VI. Sonstige Anforderungen &#xd;
+&#xd;
+- Nicht besetzt &#xd;
+&#xd;
+&#xd;
+VII. Anforderungen an die zusätzlich zur Bereitstellung des Hilfsmittels zu erbringenden Leistungen&#xd;
+&#xd;
+Die folgenden Anforderungen richten sich an die Leistungserbringer gemäß § 127 SGB V und sind den Verträgen nach § 127 SGB V zugrunde zu legen. &#xd;
+&#xd;
+Im Rahmen der Hilfsmittelversorgung ist den besonderen Belangen der Versicherten oder des Versicherten, z. B. hinsichtlich Alter, Geschlecht, Behinderung und chronischer Erkrankungen, Rechnung zu tragen.&#xd;
+&#xd;
+Sofern die Termini „die Versicherte“ oder „der Versicherte“ verwendet werden, sind je nach Erfordernis auch deren oder dessen Angehörige/Eltern, Betreuungspersonen etc. zu verstehen. &#xd;
+&#xd;
+&#xd;
+VII.1 Beratung und Auswahl des Produktes&#xd;
+&#xd;
+- Persönliche Beratung der Versicherten oder des Versicherten über die für die konkrete Versorgungssituation geeigneten und notwendigen Hilfsmittel durch geschulte Fachkräfte&#xd;
+&#xd;
+- Aufklärung der Versicherten oder des Versicherten über ihren oder seinen Anspruch hinsichtlich einer mehrkostenfreien Versorgung&#xd;
+&#xd;
+- Angebot einer hinreichenden Auswahl an mehrkostenfreien Hilfsmitteln&#xd;
+&#xd;
+- Das Beratungsgespräch einschließlich der mehrkostenfreien Versorgungsvorschläge ist zu dokumentieren, sofern in den Verträgen gemäß § 127 SGB V keine Ausnahmen für bestimmte Versorgungsfälle geregelt sind.	&#xd;
+&#xd;
+- Bedarfsermittlung und Auswahl eines individuell geeigneten Hilfsmittels unter Berücksichtigung der Verordnung, der möglichen Wechselwirkung mit anderen Hilfsmitteln, der Indikationen/Diagnose und der Versorgungssituation&#xd;
+&#xd;
+- Dokumentation und Begründung bei einer Versorgung mit Mehrkosten&#xd;
+&#xd;
+&#xd;
+VII.2 Lieferung und Abgabe des Produktes&#xd;
+&#xd;
+- Lieferung des Hilfsmittels inklusive des erforderlichen Zubehörs in die Häuslichkeit der Versicherten oder des Versicherten; bei Bedarf nach Terminvereinbarung &#xd;
+&#xd;
+- Aufbau/Montage bis zur vollständigen Gebrauchsfähigkeit des Hilfsmittels in der Häuslichkeit &#xd;
+&#xd;
+- Bei Wiedereinsatzversorgung ist das Hilfsmittel gemäß den Hinweisen des Herstellers hygienisch aufbereitet und funktionstauglich zu liefern.&#xd;
+&#xd;
+&#xd;
+VII.3 Einweisung in den Gebrauch&#xd;
+&#xd;
+- Die Einweisung bezieht sich auf die vom Hersteller vorgegebene fachgerechte Nutzung des Hilfsmittels und des Zubehörs sowie deren Pflege und Reinigung. Ziel der Einweisung ist, dass die Versicherte oder der Versicherte in den Stand versetzt wird, das Hilfsmittel im alltäglichen Gebrauch in technischer Hinsicht sicher zu bedienen und zu beherrschen.&#xd;
+&#xd;
+- Der Leistungserbringer überzeugt sich davon, dass die Versicherte oder der Versicherte das Hilfsmittel in technischer Hinsicht sachgerecht anwenden kann.&#xd;
+&#xd;
+- Aushändigung einer allgemeinverständlichen Gebrauchsanweisung in deutscher Sprache. Diese ist im Bedarfsfall unter Verwendung der vom Hersteller bereitgestellten Dokumente in einem für blinde und sehbehinderte Versicherte geeigneten Format (z. B. in elektronischer Form) zur Verfügung zu stellen.&#xd;
+&#xd;
+- Die Einweisung in den Gebrauch des Produktes ist durch den Leistungserbringer und die Versicherte oder den Versicherten schriftlich zu dokumentieren, sofern dies in den Verträgen gemäß § 127 SGB V nicht anders geregelt ist.&#xd;
+&#xd;
+&#xd;
+VII.4 Sonstiges&#xd;
+&#xd;
+- Der Leistungserbringer stellt sicher, dass die Versicherte oder der Versicherte ein funktionsgerechtes, hygienisch und technisch einwandfreies Hilfsmittel erhält.&#xd;
+&#xd;
+- Telefonische Erreichbarkeit und ggf. persönliche Verfügbarkeit an Arbeitstagen während der üblichen Geschäftszeiten zur Nachbetreuung oder Klärung etwaiger Komplikationen&#xd;
+&#xd;
+- Die Versicherte oder der Versicherte sind auf die Verfahrensweise bei notwendigen Änderungen, Instandsetzungen und Ersatzbeschaffungen hinzuweisen.&#xd;
+</hv:ANFORDERUNGEN>
+    </hv:HMV_UNTERGRUPPE>
+    <hv:HMV_UNTERGRUPPE>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>2</hv:UNTERGRUPPE>
+        <hv:BEZEICHNUNG>Sekret-Absauggeräte, netzunabhängig</hv:BEZEICHNUNG>
+        <hv:ANFORDERUNGEN>Anforderungen gemäß § 139 SGB V&#xd;
+In dem Antragsformular der entsprechenden Produktgruppe ist die Art und Weise der Nachweisführung beschrieben und angegeben, welche Dokumentationen beizubringen sind.&#xd;
+&#xd;
+&#xd;
+I. Funktionstauglichkeit &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die Funktionstauglichkeit des Produktes&#xd;
+&#xd;
+- Aufgrund von § 139 Abs. 5 SGB V gilt für Medizinprodukte im Sinne des § 3 Nr. 1 des Medizinproduktegesetzes (MPG) der Nachweis der Funktionstauglichkeit durch die CE-Kennzeichnung grundsätzlich als erbracht. Dies gilt auch für Zubehör im Sinne des § 3 Nr. 9 MPG.&#xd;
+&#xd;
+II. Sicherheit &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die unbedenkliche Verwendung des Produktes&#xd;
+&#xd;
+- Aufgrund von § 139 Abs. 5 SGB V gilt für Medizinprodukte im Sinne des § 3 Nr. 1 des Medizinproduktegesetzes (MPG) der Nachweis der Sicherheit durch die CE-Kennzeichnung grundsätzlich als erbracht. Dies gilt auch für Zubehör im Sinne des § 3 Nr. 9 MPG.&#xd;
+&#xd;
+III. Besondere Qualitätsanforderungen&#xd;
+&#xd;
+&#xd;
+III.1 Indikations-/einsatzbezogene Qualitätsanforderungen &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die indikations-/einsatzbezogenen Eigenschaften des angemeldeten Produktes für die beanspruchte(n) Produktart/Indikation(en) im allgemeinen Lebensbereich/häuslichen Bereich der Versicherten oder des Versicherten durch:&#xd;
+&#xd;
+- Herstellererklärungen&#xd;
+&#xd;
+- Aussagekräftige Unterlagen (gemäß Antragsformular zur Aufnahme eines neuen Hilfsmittels &#xd;
+nach § 139 SGB V) &#xd;
+&#xd;
+Die Herstellererklärungen und aussagekräftigen Unterlagen müssen auch folgende Parameter belegen:&#xd;
+&#xd;
+- Einfache Reinigung und Desinfizierung&#xd;
+&#xd;
+- Thermische Desinfizierbarkeit aller Teile, die mit Körperflüssigkeit in Kontakt kommen&#xd;
+&#xd;
+- Sterile Absaugkatheter anschließbar&#xd;
+&#xd;
+- Fingertip im Lieferumfang enthalten&#xd;
+&#xd;
+- Volumen des Sekretbehälters mindestens 0,5 l&#xd;
+&#xd;
+- Spülbehälter, mehrfach verwendbar, im Lieferumfang&#xd;
+&#xd;
+ - Volumen des Spülbehälters mindestens 0,5 l&#xd;
+&#xd;
+- Tragbares, mobiles Gerät, welches über 230 V - Netz, Akku und/oder Gleichstromadapter für Autonetz betrieben werden kann.&#xd;
+&#xd;
+- Das Gerät muss auch bei völlig entladenem Akku über das 230 V - Netz betrieben werden können.&#xd;
+&#xd;
+- Eine Akkuladung muss bei den maximal angegebenen Betriebsdaten (Vakuum, Saugleistung) für einen insgesamt mindestens 20-minütigen Betrieb ausreichen.&#xd;
+&#xd;
+&#xd;
+Zusätzliche Anforderungen an 01.24.02.0 „Absauggeräte mit geringer Saugleistung: &#xd;
+&#xd;
+- Saugleistung größer 10 l/min und maximal 20 l/min (gemessen gegen Luft)&#xd;
+&#xd;
+&#xd;
+Zusätzliche Anforderungen an 01.24.02.1 „Absauggeräte mit normaler Saugleistung“: &#xd;
+&#xd;
+- Saugleistung größer 20 l/min (gemessen gegen Luft) &#xd;
+&#xd;
+&#xd;
+III.2 Qualitätsanforderungen hinsichtlich der Nutzungsdauer &#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Die Nutzungsdauer/Dauerbelastbarkeit des Produktes durch:&#xd;
+&#xd;
+- Herstellererklärungen&#xd;
+&#xd;
+Die Herstellererklärungen müssen auch folgende Parameter belegen:&#xd;
+&#xd;
+- Wartungsfreies Gerät&#xd;
+&#xd;
+&#xd;
+III.3 Qualitätsanforderungen hinsichtlich des Wiedereinsatzes&#xd;
+&#xd;
+Nachzuweisen ist:&#xd;
+Das Produkt muss für einen Wiedereinsatz bei weiteren Versicherten geeignet sein. &#xd;
+&#xd;
+Der Nachweis erfolgt durch: &#xd;
+&#xd;
+- Herstellererklärungen&#xd;
+&#xd;
+IV. Medizinischer Nutzen &#xd;
+&#xd;
+- Nicht besetzt&#xd;
+&#xd;
+V. Anforderungen an die Produktinformationen&#xd;
+&#xd;
+Nachzuweisen ist: &#xd;
+&#xd;
+- Technische Daten durch Auflistung derselben gemäß Abschnitt V Antragsformular &#xd;
+&#xd;
+- Die ordnungsgemäße und sichere Handhabung durch eine allgemeinverständliche Gebrauchsanweisung in deutscher Sprache mit mindestens folgenden Angaben:&#xd;
+&#xd;
+-- Anwendungshinweise&#xd;
+-- Zweckbestimmung des Produktes/Indikation&#xd;
+-- Zulässige Betriebsbedingungen/Einsatzorte&#xd;
+-- Bestehende Anwendungsrisiken und Kontraindikationen&#xd;
+-- Reinigungshinweise/Desinfektionshinweise&#xd;
+-- Technische Daten/Parameter&#xd;
+-- Hinweise zum Wiedereinsatz bei weiteren Versicherten und zu den dabei erforderlichen Maßnahmen&#xd;
+-- Zusammenbau- und Montageanweisung&#xd;
+&#xd;
+- Herstellererklärung über die Verfügbarkeit der Gebrauchsanweisung, in einer für blinde und sehbehinderte Versicherte geeigneten Form, gemäß den Angaben im Antragsformular Abschnitt &#xd;
+&#xd;
+- Produktkennzeichnung auf dem Produkt&#xd;
+&#xd;
+VI. Sonstige Anforderungen &#xd;
+&#xd;
+- Nicht besetzt &#xd;
+&#xd;
+&#xd;
+VII. Anforderungen an die zusätzlich zur Bereitstellung des Hilfsmittels zu erbringenden Leistungen&#xd;
+&#xd;
+Die folgenden Anforderungen richten sich an die Leistungserbringer gemäß § 127 SGB V und sind den Verträgen nach § 127 SGB V zugrunde zu legen. &#xd;
+&#xd;
+Im Rahmen der Hilfsmittelversorgung ist den besonderen Belangen der Versicherten oder des Versicherten, z. B. hinsichtlich Alter, Geschlecht, Behinderung und chronischer Erkrankungen, Rechnung zu tragen.&#xd;
+&#xd;
+Sofern die Termini „die Versicherte“ oder „der Versicherte“ verwendet werden, sind je nach Erfordernis auch deren oder dessen Angehörige/Eltern, Betreuungspersonen etc. zu verstehen. &#xd;
+&#xd;
+&#xd;
+VII.1 Beratung und Auswahl des Produktes&#xd;
+&#xd;
+- Persönliche Beratung der Versicherten oder des Versicherten über die für die konkrete Versorgungssituation geeigneten und notwendigen Hilfsmittel durch geschulte Fachkräfte&#xd;
+&#xd;
+- Aufklärung der Versicherten oder des Versicherten über ihren oder seinen Anspruch hinsichtlich einer mehrkostenfreien Versorgung&#xd;
+&#xd;
+- Angebot einer hinreichenden Auswahl an mehrkostenfreien Hilfsmitteln&#xd;
+&#xd;
+- Das Beratungsgespräch einschließlich der mehrkostenfreien Versorgungsvorschläge ist zu dokumentieren, sofern in den Verträgen gemäß § 127 SGB V keine Ausnahmen für bestimmte Versorgungsfälle geregelt sind.	&#xd;
+&#xd;
+- Bedarfsermittlung und Auswahl eines individuell geeigneten Hilfsmittels unter Berücksichtigung der Verordnung, der möglichen Wechselwirkung mit anderen Hilfsmitteln, der Indikationen/Diagnose und der Versorgungssituation&#xd;
+&#xd;
+- Dokumentation und Begründung bei einer Versorgung mit Mehrkosten&#xd;
+&#xd;
+&#xd;
+VII.2 Lieferung und Abgabe des Produktes&#xd;
+&#xd;
+- Lieferung des Hilfsmittels inklusive des erforderlichen Zubehörs in die Häuslichkeit der Versicherten oder des Versicherten; bei Bedarf nach Terminvereinbarung &#xd;
+&#xd;
+- Aufbau/Montage bis zur vollständigen Gebrauchsfähigkeit des Hilfsmittels in der Häuslichkeit &#xd;
+&#xd;
+- Bei Wiedereinsatzversorgung ist das Hilfsmittel gemäß den Hinweisen des Herstellers hygienisch aufbereitet und funktionstauglich zu liefern.&#xd;
+&#xd;
+&#xd;
+VII.3 Einweisung in den Gebrauch&#xd;
+&#xd;
+- Die Einweisung bezieht sich auf die vom Hersteller vorgegebene fachgerechte Nutzung des Hilfsmittels und des Zubehörs sowie deren Pflege und Reinigung. Ziel der Einweisung ist, dass die Versicherte oder der Versicherte in den Stand versetzt wird, das Hilfsmittel im alltäglichen Gebrauch in technischer Hinsicht sicher zu bedienen und zu beherrschen.&#xd;
+&#xd;
+- Der Leistungserbringer überzeugt sich davon, dass die Versicherte oder der Versicherte das Hilfsmittel in technischer Hinsicht sachgerecht anwenden kann.&#xd;
+&#xd;
+- Aushändigung einer allgemeinverständlichen Gebrauchsanweisung in deutscher Sprache. Diese ist im Bedarfsfall unter Verwendung der vom Hersteller bereitgestellten Dokumente in einem für blinde und sehbehinderte Versicherte geeigneten Format (z. B. in elektronischer Form) zur Verfügung zu stellen.&#xd;
+&#xd;
+- Die Einweisung in den Gebrauch des Produktes ist durch den Leistungserbringer und die Versicherte oder den Versicherten schriftlich zu dokumentieren, sofern dies in den Verträgen gemäß § 127 SGB V nicht anders geregelt ist.&#xd;
+&#xd;
+&#xd;
+VII.4 Sonstiges&#xd;
+&#xd;
+- Der Leistungserbringer stellt sicher, dass die Versicherte oder der Versicherte ein funktionsgerechtes, hygienisch und technisch einwandfreies Hilfsmittel erhält.&#xd;
+&#xd;
+- Telefonische Erreichbarkeit und ggf. persönliche Verfügbarkeit an Arbeitstagen während der üblichen Geschäftszeiten zur Nachbetreuung oder Klärung etwaiger Komplikationen&#xd;
+&#xd;
+- Die Versicherte oder der Versicherte sind auf die Verfahrensweise bei notwendigen Änderungen, Instandsetzungen und Ersatzbeschaffungen hinzuweisen.&#xd;
+</hv:ANFORDERUNGEN>
+    </hv:HMV_UNTERGRUPPE>
+      
+     <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:BEZEICHNUNG>Sekret-Absauggerät mit geringer Saugleistung, netzabhängig</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Sekret-Absauggeräte bestehen aus einem elektrischen Grundgerät - der Saugpumpe - und dem eigentlichen Sauginstrument, bestehend aus Schlauchsystem, Sekretbehälter und Absaugkatheter.
+
+Die verwendeten Membran- und Kolbenpumpen sind grundsätzlich wartungsfrei. Nach dem Verdrängungsprinzip saugen sie Luft von einer Seite her an und stoßen sie zur anderen wieder aus. Das erzeugte Vakuum steht dabei in einer festen Beziehung zu den mechanischen Vorgaben der Pumpe und kann sehr konstant gehalten werden. Da das Vakuum über entsprechende Regeleinrichtungen direkt steuerbar ist, kann ein beliebiger Unterdruck zwischen 0 Pascal (Pa)/Bar (bar)/ Millimeter Quecksilber (mmHg) und dem angegebenen maximalen Endvakuum eingestellt werden. Dieser Wert ist bei einigen Geräten fest vorgegeben, bei anderen kann er von der Versicherten oder dem Versicherten eingestellt werden. Der einzusetzende Unterdruck variiert u. a. in Abhängigkeit vom Alter der Versicherten und der Konsistenz des Bronchialsekrets. Der eingestellte Druck kann – in der Regel bei verschlossenem Absaugschlauch - an einem Manometer abgelesen werden. Mit Hilfe des Unterdruckes kann über einen angeschlossenen Schlauch, der gewöhnlich durch einen Absaugkatheter verlängert wird, das zu entfernende Sekret in den Sekretbehälter gesaugt werden. Der Sekretbehälter muss so gefertigt sein, dass die abgesaugten Materialien im Gefäß verbleiben und nicht in die Pumpe gelangen können.
+
+Die transportablen Tischgeräte werden ausschließlich am 230 V - Netz betrieben und haben eine Saugleistung, welche zwischen 10 l/min und 20 l/min (gemessen gegen Luft) liegt.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>Schädigung der Atmungs-/Hustenfunktion mit Störung der trachealen, bronchialen oder oralen Sekretelimination bei dauerhaft leicht abzusaugendem (flüssigen) Sekret bei: 
+
+- Tracheotomie ( z. B. bei invasiver Beatmung) oder Tracheotomie bei Laryngektomie
+
+und/oder 
+
+- Muskulären und/oder neurologischen Erkrankungen (ohne Tracheotomie)
+
+- Nach erfolgter ärztlicher Einweisung der Versicherten oder der Hilfs-/Pflegeperson unter Beachtung des je nach Altersgruppe spezifisch erforderlichen Vakuums
+
+zur Sekretabsaugung
+
+Es ist sicherzustellen, dass auch in Situationen mit veränderter Sekretmenge und -qualität (z. B. bei Infektexacerbationen) eine adäquate Absaugung erfolgen kann.
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01B
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>1</hv:ART>
+        <hv:BEZEICHNUNG>Sekret-Absauggerät mit normaler Saugleistung, netzabhängig</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Sekret-Absauggeräte bestehen aus einem elektrischen Grundgerät - der Saugpumpe- und dem eigentlichen Sauginstrument, bestehend aus Schlauchsystem, Sekretbehälter und Absaugkatheter.
+
+Die verwendeten Membran- und Kolbenpumpen sind grundsätzlich wartungsfrei. Nach dem Verdrängungsprinzip saugen sie Luft von einer Seite her an und stoßen sie zur anderen wieder aus. Das erzeugte Vakuum steht dabei in einer festen Beziehung zu den mechanischen Vorgaben der Pumpe und kann sehr konstant gehalten werden. Da das Vakuum über entsprechende Regeleinrichtungen direkt steuerbar ist, kann ein beliebiger Unterdruck zwischen 0 Pascal (Pa)/Bar (bar)/ Millimeter Quecksilber (mmHg) und dem angegebenen maximalen Endvakuum eingestellt werden.
+Dieser Wert ist bei einigen Geräten fest vorgegeben, bei anderen kann er von der Versicherten oder dem Versicherten eingestellt werden. Der einzusetzende Unterdruck variiert u. a. in Abhängigkeit vom Alter der Versicherten und der Konsistenz des Bronchialsekrets. Der eingestellte Druck kann - in der Regel bei verschlossenem Absaugschlauch - an einem Manometer abgelesen werden. Mit Hilfe des Unterdruckes kann über einen angeschlossenen Schlauch, der gewöhnlich durch einen Absaugkatheter verlängert wird, das zu entfernende Sekret in ein Sammelgefäß gesaugt werden. Der Sekretbehälter muss so gefertigt sein, dass die abgesaugten Materialien im Gefäß verbleiben und nicht in die Pumpe gelangen können.
+
+Die transportablen Tischgeräte werden ausschließlich am 230 V - Netz betrieben und haben eine Saugleistung, welche zwischen 20 l/min und 25 l/min (gemessen gegen Luft) liegt.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>Schädigung der Atmungs-/Hustenfunktion mit Störung der trachealen, bronchialen oder oralen Sekretelimination bei 
+
+- Tracheotomie ( z. B. bei invasiver Beatmung) oder Tracheotomie bei Laryngektomie
+
+und/oder 
+
+- Muskulären und/oder neurologischen Erkrankungen (ohne Tracheotomie)
+
+- Nach erfolgter ärztlicher Einweisung der Versicherten oder der Hilfs-/Pflegeperson unter Beachtung des je nach Altersgruppe spezifisch erforderlichen Vakuums
+zur Sekretabsaugung.
+
+Es ist sicherzustellen, dass auch in Situationen mit veränderter Sekretmenge und —qualität (z. B. bei Infektexacerbationen) eine adäquate Absaugung erfolgen kann.
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01B
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>2</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:BEZEICHNUNG>Sekret-Absauggeräte mit geringer Saugleistung, netzunabhängig</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Sekret-Absauggeräte bestehen aus einem elektrischen Grundgerät - der Saugpumpe- und dem eigentlichen Sauginstrument, bestehend aus Schlauchsystem, Sekretbehälter und Absaugkatheter.
+
+Die verwendeten Membran- und Kolbenpumpen sind grundsätzlich wartungsfrei. Nach dem Verdrängungsprinzip saugen sie Luft von einer Seite her an und stoßen sie zur anderen wieder aus. Das erzeugte Vakuum steht dabei in einer festen Beziehung zu den mechanischen Vorgaben der Pumpe und kann sehr konstant gehalten werden. Da das Vakuum über entsprechende Regeleinrichtungen direkt steuerbar ist, kann ein beliebiger Unterdruck zwischen 0 Pascal (Pa)/Bar (bar)/ Millimeter Quecksilber (mmHg) und dem angegebenen maximalen Endvakuum eingestellt werden. Dieser Wert ist bei einigen Geräten fest vorgegeben, bei anderen kann er von der Versicherten oder dem Versicherten eingestellt werden. Der einzusetzende Unterdruck variiert u. a. in Abhängigkeit vom Alter der Versicherten und der Konsistenz des Bronchialsekrets. Der eingestellte Druck kann - in der Regel bei verschlossenem Absaugschlauch - an einem Manometer abgelesen werden. Mit Hilfe des Unterdruckes kann über einen angeschlossenen Schlauch, der gewöhnlich durch einen Absaugkatheter verlängert wird, das zu entfernende Sekret in ein Sammelgefäß gesaugt werden. Der Sekretbehälter muss so gefertigt sein, dass die abgesaugten Materialien im Gefäß verbleiben und nicht in die Pumpe gelangen können. 
+
+Die transportablen Geräte können entweder über einen eingebauten Akkumulator, dem 230 V - Netz oder dem 12 V – Autonetz betrieben werden und haben eine Saugleistung, welche zwischen 10 l/min und 20 l/min (gemessen gegen Luft) liegt.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>Schädigung der Atmungs-/Hustenfunktion mit Störung der trachealen, bronchialen oder oralen Sekretelimination bei dauerhaft leicht abzusaugendem (flüssigen) Sekret bei: 
+
+- Tracheotomie ( z. B. bei invasiver Beatmung) oder Tracheotomie bei Laryngektomie
+
+und/oder 
+
+- Muskulären und/oder neurologischen Erkrankungen (ohne Tracheotomie)
+
+- Nach erfolgter ärztlicher Einweisung der Versicherten oder der Hilfs-/Pflegeperson unter Beachtung des je nach Altersgruppe spezifisch erforderlichen Vakuums
+
+zur Sekretabsaugung und Erhaltung einer ausreichenden alltagsrelevanten Mobilität im Rahmen der Grundbedürfnisse des täglichen Lebens 
+
+Es ist sicherzustellen, dass auch in Situationen mit veränderter Sekretmenge und —qualität (z. B. bei Infektexacerbationen) eine adäquate Absaugung erfolgen kann.
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01B
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>2</hv:UNTERGRUPPE>
+        <hv:ART>1</hv:ART>
+        <hv:BEZEICHNUNG>Sekret-Absauggeräte mit normaler Saugleistung, netzunabhängig</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Sekret-Absauggeräte bestehen aus einem elektrischen Grundgerät - der Saugpumpe- und dem eigentlichen Sauginstrument, bestehend aus Schlauchsystem, Sekretbehälter und Absaugkatheter.
+
+Die verwendeten Membran- und Kolbenpumpen sind grundsätzlich wartungsfrei. Nach dem Verdrängungsprizip saugen sie Luft von einer Seite her an und stoßen sie zur anderen wieder aus. Das erzeugte Vakuum steht dabei in einer festen Beziehung zu den mechanischen Vorgaben der Pumpe und kann sehr konstant gehalten werden. Da das Vakuum über entsprechende Regeleinrichtungen direkt steuerbar ist, kann ein beliebiger Unterdruck zwischen 0 Pascal (Pa)/Bar (bar)/ Millimeter Quecksilber (mmHg) und dem angegebenen maximalen Endvakuum eingestellt werden. Dieser Wert ist bei einigen Geräten fest vorgegeben, bei anderen kann er von der Versicherten oder dem Versicherten eingestellt werden. Der einzusetzende Unterdruck variiert u. a. in Abhängigkeit vom Alter der Versicherten und der Konsistenz des Bronchialsekrets. Der eingestellte Druck kann – in der Regel bei verschlossenem Absaugschlauch - an einem Manometer abgelesen werden. Mit Hilfe des Unterdruckes kann über einen angeschlossenen Schlauch, der gewöhnlich durch einen Absaugkatheter verlängert wird, das zu entfernende Sekret in ein Sammelgefäß gesaugt werden. Der Sekretbehälter muss so gefertigt sein, dass die abgesaugten Materialien nicht in die Pumpe gelangen können.
+
+Die transportablen Geräte können entweder über einen eingebauten Akkumulator, dem 230 V - Netz oder dem 12 V – Autonetz betrieben werden und haben eine Saugleistung, welche zwischen 20 l/min und 25 l/min (gemessen gegen Luft) liegt.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>Schädigung der Atmungs-/Hustenfunktion mit Störung der trachealen, bronchialen oder oralen Sekretelimination bei:
+
+- Tracheotomie ( z. B. bei invasiver Beatmung) oder Tracheotomie bei Laryngektomie
+
+und/oder 
+
+- Muskulären und/oder neurologischen Erkrankungen (ohne Tracheotomie)
+
+- Nach erfolgter ärztlicher Einweisung der Versicherten oder der Hilfs-/Pflegeperson unter Beachtung des je nach Altersgruppe spezifisch erforderlichen Vakuums
+
+zur Sekretabsaugung und Erhaltung einer ausreichenden alltagsrelevanten Mobilität im Rahmen der Grundbedürfnisse des täglichen Lebens
+
+Es ist sicherzustellen, dass auch in Situationen mit veränderter Sekretmenge und —qualität (z. B. bei Infektexacerbationen) eine adäquate Absaugung erfolgen kann.
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01B
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>4</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:BEZEICHNUNG>zur Löschung vorgesehen</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>zur Löschung vorgesehen</hv:BESCHREIBUNG>
+        <hv:INDIKATION>zur Löschung vorgesehen</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>4</hv:UNTERGRUPPE>
+        <hv:ART>1</hv:ART>
+        <hv:BEZEICHNUNG>zur Löschung vorgesehen</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>zur Löschung vorgesehen</hv:BESCHREIBUNG>
+        <hv:INDIKATION>zur Löschung vorgesehen</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>5</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:BEZEICHNUNG>NN (geplante Produktart: Wunddrainage bei Pleuraerguss)</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>- Nicht besetzt
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>- Nicht besetzt
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>35</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:BEZEICHNUNG>Milchpumpen, manuell betrieben</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Manuelle Milchpumpen bestehen aus einem Kolbenmechanismus bzw. einem Balg und einem Sammelgefäß. Die Pumpe wird auf die abzusaugende Brust aufgesetzt und durch manuelle Betätigung des Pumpmechanismus wird ein Unterdruck erzeugt. Die so aus der Brust ausströmende Milch wird dann im Sammelgefäß aufgefangen.
+
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>- Schädigung des Stillens/der Brustfütterung mütterlicherseits (z. B. durch Anomalien der Brust/Brustwarzen, Brustwarzenentzündung, vermehrte oder verminderte Muttermilchbildung)
+
+und/oder
+
+- Schädigung des Saug-/Trinkvorgangs kindlicherseits (z. B. bei Lippen-Kiefer-Gaumenspalte, Unreife des Kindes, allgemeine muskuläre Schwäche, neurologische Störungen, neuromuskuläre Erkrankungen)
+
+zur Sicherstellung der Ernährung des Säuglings mit Muttermilch
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01A
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>35</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>1</hv:ART>
+        <hv:BEZEICHNUNG>Milchpumpen, elektrisch betrieben</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Milchpumpen bestehen aus einem elektrischen Grundgerät – der Saugpumpe - und dem eigentlichen Sauginstrument, bestehend aus Schlauchsystem, Milchbehälter und Brustaufsatz.
+
+Die verwendeten Membran - und Kolbenpumpen sind grundsätzlich wartungsfrei. Nach dem Verdrängungsprinzip saugen sie Luft von einer Seite her an und stoßen sie zur anderen wieder aus. Das erzeugte Vakuum steht dabei in einer festen Beziehung zu den mechanischen Vorgaben der Pumpe und kann sehr konstant gehalten werden. Da das Vakuum über entsprechende Regeleinrichtungen direkt steuerbar ist, kann ein Absaugprogramm durchlaufen werden, welches dem natürlichen Saugrhythmus des Babys entspricht.
+
+Mit Hilfe des Unterdruckes kann die Milch in ein Sammelgefäß gesaugt werden. Das Sammelgefäß muss so gefertigt sein, dass die Milch im Gefäß verbleibt und nicht in die Pumpe gelangen
+kann.
+
+Milchpumpen sollten vorrangig leihweise zur Verfügung gestellt werden und sind für einen Wiedereinsatz geeignet.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>- Schädigung des Stillens/der Brustfütterung mütterlicherseits (z. B. durch Anomalien der Brust/Brustwarzen, Brustwarzenentzündung, vermehrte oder verminderte Muttermilchbildung)
+
+und/oder
+
+- Schädigung des Saug-/Trinkvorgangs kindlicherseits (z. B. bei Lippen-Kiefer-Gaumenspalte, Unreife des Kindes, allgemeine muskuläre Schwäche, neurologische Störungen, neuromuskuläre Erkrankungen)
+
+zur Sicherstellung der Ernährung des Säuglings mit Muttermilch
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01A
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>99</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:BEZEICHNUNG>Einmal-Absaugkatheter</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Zum Absaugen von Schleim mit Hilfe eines Absauggerätes werden Absaugkatheter benutzt, die auf das Schlauchleitungssystem mit Hilfe des Fingertips aufgesetzt werden können. Absaugkatheter bestehen aus weichen Kunststoffen, die jedoch genügend Festigkeit besitzen, damit sie nicht durch den Unterdruck kollabieren. Je nach Verwendungszweck sind Absaugkatheter mit mindestens zwei Absaugöffnungen (zentral und/oder seitlich) zu verwenden. Bei Absaugkathetern handelt es sich um steril verpackte Einmalprodukte.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>- Regelmäßig erforderliche Sekretabsaugung der Atemwege
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01D
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>99</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>1</hv:ART>
+        <hv:BEZEICHNUNG>Absaugrohre bei Laryngektomierte und Versorgung mit Shunt-Ventil</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Zum Absaugen durch ein Tracheostoma werden neben Einmal-Absaugkathetern auch sogenannte Absaugrohre benutzt. Diese werden wie Absaugkatheter an das Absauggerät angeschlossen. Zur besseren Ausleuchtung des Tracheostomas sind die Rohre mit einer aufgesteckten, taschenlampenähnlichen, batteriebetriebenen Tracheostomaleuchte versehen.
+
+Die mehrfach verwendbaren Absaugrohre können mit Reinigungsmitteln, wie sie auch für Trachealkanülen üblich sind, gereinigt werden und sind sterilisierbar. 
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>- Regelmäßig erforderliche Sekretabsaugung der Atemwege über das Tracheostoma bei Laryng-ektomie und Versorgung mit Shunt-Ventil
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01D
+
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>99</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>2</hv:ART>
+        <hv:BEZEICHNUNG>Absaugsets für elektrische Milchpumpen</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Zum elektrischen Abpumpen (-saugen) von Muttermilch wird ein sogenanntes Absaugset benötigt. Dieses Set besteht aus einem weichen, durchsichtigen Brusttrichter und einem Schlauch. Am Brusttrichter können in der Regel handelsübliche Muttermilchflaschen befestigt werden. Die Pumpe wird über den Schlauch an den Trichter angeschlossen.
+
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>- Erforderlicher Einsatz einer elektrischen Milchpumpe
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01A
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>99</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>3</hv:ART>
+        <hv:BEZEICHNUNG>Sonstiges Zubehör</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Für Absauggeräte sind in Einzelfällen spezielle Anpassungen im Sinne von Zubehör (z. B. Fingertips) erforderlich, um eine Nutzung des Hilfsmittels zu ermöglichen.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>- Nicht besetzt 
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01D
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    <hv:HMV_ART>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>99</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>4</hv:ART>
+        <hv:BEZEICHNUNG>Geschlossene Absaugsysteme für mindestens 24 Stunden</hv:BEZEICHNUNG>
+        <hv:BESCHREIBUNG>Geschlossene Absaugsysteme werden anstelle eines Einmal-Absaugkatheters eingesetzt und an der Trachealkanüle konnektiert. Eine ggf. laufende Beatmung kann während des Absaugens fortgeführt werden, ein PEEP-Verlust findet nicht statt. Das geschlossene Absaugsystem ist dann in das Beatmungssystem an der Versicherten oder dem Versicherten integriert, sodass hier eine Diskonnektion vom Respirator während eines Vorgangs nicht stattfindet. 
+
+Bei den geschlossenen Absaugsystemen wird der Katheter von einer transparenten Hülle, einer sogenannten Sterilverpackung, geschützt und mit einem Adapter an die Trachealkanüle der Versicherten oder des Versicherten konnektiert. Der Absaugkatheter verbleibt in dieser Sterilverpackung, sodass hier eine Non-Touch-Technik angewendet wird. Die geschlossenen Absaugkatheter sind mit einem Spülport, auch Spülkammer genannt, ausgestattet. Bei einem Spülvorgang wird im Bereich des Spülports sterile Spülflüssigkeit eingespritzt und in diesem auch wieder abgesaugt. Somit wird der Katheter/die Katheterspitze gereinigt bzw. durchgespült. Die geschlossenen Absaugsysteme dürfen aus hygienischen Gründen nur einmal verwendet werden, verweilen jedoch, je nach Angaben des Herstellers, an der Versicherten oder dem Versicherten und müssen nach Ablauf dieser Verweildauer entsorgt werden. Während dieser Verweildauer kann er jedoch mehrmals in die Trachea eingeführt werden. Über den oben genannten Spülport kann der innenliegende Katheter gereinigt werden, eine Sterilisation und/oder Wiederverwendung ist nicht möglich (Einmalprodukte).
+
+Die Verweildauer bzw. die Wechselintervalle solcher Systeme betragen für diese Produktart mindestens 24 Stunden und maximal 48 Stunden. Während dieser Zeit kann der Katheter beliebig oft verwendet werden. 
+
+Die geschlossenen Absaugsysteme sind bei der Versicherten oder dem Versicherten mehrfach anwendbare Produkte und werden nach der vom Hersteller angegebenen Verweildauer entsorgt.
+</hv:BESCHREIBUNG>
+        <hv:INDIKATION>Erheblich bzw. voll ausgeprägte Schädigung der Atmungsfunktion mit Störung der trachealen/bronchialen Sekretelimination bei:
+
+- Invasiver Beatmung mit positivem endexpiratorischem Druck (PEEP), wenn offene Absaugsysteme nicht genutzt werden können
+
+zur Sekretelimination und Vermeidung absauginduzierter Hypoxien.
+
+
+____________________________________________________
+Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01D
+</hv:INDIKATION>
+    </hv:HMV_ART>
+    
+    
+    
+       <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>1</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER> nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2019-08-22</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>2</hv:PRODUKT>
+        <hv:BEZEICHNUNG>HICO-Rapidovac 791-16, Art.-Nr. 490060</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>Hirtz &amp; Co. Hospitalwerk Köln</hv:HERSTELLER>
+        <hv:MERKMALE>Artikel:               portables Absauggerät für Netzbetrieb&#xd;
+Größe (H x B x T):     380 mm x 330 mm x 190 mm&#xd;
+Gewicht:               4,5 kg &#xd;
+Saugleistung:          16 l/min&#xd;
+Endvakuum:             - 0,8 bar, einstellbar &#xd;
+Vakuumanzeige:         analog&#xd;
+max. Betriebsgeräusch: 66 dB(A)     &#xd;
+Anschlussspannung:     230 V~&#xd;
+Leistungsaufnahme:     100 VA&#xd;
+Lieferumfang:          - separates Spülglas&#xd;
+                       - Bakterienfilter&#xd;
+                       - Fingertip&#xd;
+                       - Saugschlauch&#xd;
+Sonstiges:             Kunststoffgehäuse (ABS)&#xd;
+Das Gerät muss mit einem separaten Spülglas, z.B. Art.-Nr. 441002, ausgeliefert werden.</hv:MERKMALE>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>3</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt&#xd;
+</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2017-08-29</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>4</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt&#xd;
+</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2017-12-14</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>5</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt&#xd;
+</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2017-12-14</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>6</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>7</hv:PRODUKT>
+        <hv:BEZEICHNUNG>Vacumaster M 20, Art.-Nr. M 201</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>MediTrade Medical Trading GmbH</hv:HERSTELLER>
+        <hv:MERKMALE>Artikel:               portables Absauggerät für Netzbetrieb&#xd;
+Größe (H x B x T):     215 mm x 195 mm x 200 mm&#xd;
+Gewicht:               3,0 kg &#xd;
+Saugleistung:          15 l/min&#xd;
+Endvakuum:             - 0,8 bar, einstellbar&#xd;
+Vakuumanzeige:         analog&#xd;
+max. Betriebsgeräusch: 60 dB(A)     &#xd;
+Anschlussspannung:     230 V~&#xd;
+Leistungsaufnahme:     - VA&#xd;
+Netzteil:              im Gerät integriert&#xd;
+Lieferumfang:          - separates Spülglas &#xd;
+                       - Bakterienfilter&#xd;
+                       - Fingertip&#xd;
+                       - Saugschlauch&#xd;
+Sonstiges:             Kunststoffgehäuse&#xd;
+</hv:MERKMALE>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>8</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>9</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2017-12-14</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>10</hv:PRODUKT>
+        <hv:BEZEICHNUNG>Tracheominor Art.-Nr. 61000</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>Andreas Fahl Medizintechnik-Vertrieb GmbH</hv:HERSTELLER>
+        <hv:MERKMALE>Artikel:               portables Absauggerät für Netzbetrieb&#xd;
+Größe (HxBxT):         206 mm x 362 mm x 174 mm&#xd;
+Gewicht:               3,5 kg &#xd;
+Saugleistung:          16 l/min&#xd;
+Endvakuum:             - 0,8 bar, einstellbar &#xd;
+Vakuumanzeige:         analog&#xd;
+max. Betriebsgeräusch: 50 dB(A)    &#xd;
+Anschlussspannung:     230 V~&#xd;
+Leistungsaufnahme:     61 VA&#xd;
+Lieferumfang:          Greundgerät + Nachrüstsatz inkl.&#xd;
+                       - separates Spülglas&#xd;
+                       - Bakterienfilter&#xd;
+                       - Fingertip&#xd;
+                       - Saugschlauch + Halterung&#xd;
+                       - Spiegel/Ausleuchtung&#xd;
+Sonstiges:             Sekretbehälter aus Glas 1 l&#xd;
+</hv:MERKMALE>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>11</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>DeVilbiss Healthcare LLC</hv:HERSTELLER>
+        <hv:MERKMALE>Produkt wurde umgruppiert, neue Pos.-Nr 01.24.01.1022</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2013-12-02</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>12</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2016-01-15</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>13</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2016-01-15</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>14</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2018-04-20</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>15</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2017-12-14</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>16</hv:PRODUKT>
+        <hv:BEZEICHNUNG>Clario Home Care Pumpe, Standardversion, Art.-Nr. 014.0010</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>Medela Medizintechnik GmbH &amp; Co. Handels KG</hv:HERSTELLER>
+        <hv:MERKMALE>Artikel:               portables Absauggerät für Netzbetrieb&#xd;
+Gewicht:               1,7 kg &#xd;
+Saugleistung:          15 l/min&#xd;
+Endvakuum:             - 0,73 kPa&#xd;
+Anschlussspannung:     230 V &#xd;
+Lieferumfang:          Grundgerät incl. Netzkabel, Einweg-&#xd;
+                       schlauch mit Fingertip und Gebrauchs-&#xd;
+                       anweisung&#xd;
+                       Manometer incl. Y-Stück&#xd;
+                       Spülglas&#xd;
+</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2018-02-15</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>17</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>nicht besetzt</hv:MERKMALE>
+        <hv:AENDERUNGSDATUM>2017-12-14</hv:AENDERUNGSDATUM>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>18</hv:PRODUKT>
+        <hv:BEZEICHNUNG>nicht besetzt</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>nicht besetzt</hv:HERSTELLER>
+        <hv:MERKMALE>Produkt wurde umgruppiert, neue Pos.-Nr. 01.24.01.1015&#xd;
+Geändert am: 15.03.2008&#xd;
+</hv:MERKMALE>
+    </hv:HMV_PRODUKT>
+    <hv:HMV_PRODUKT>
+        <hv:GRUPPE>1</hv:GRUPPE>
+        <hv:ORT>24</hv:ORT>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
+        <hv:ART>0</hv:ART>
+        <hv:PRODUKT>19</hv:PRODUKT>
+        <hv:BEZEICHNUNG>Atmos C 161 Aspirator DDS, Art.-Nr. REF K313.0000.0</hv:BEZEICHNUNG>
+        <hv:HERSTELLER>Atmos Medizintechnik GmbH &amp; Co.</hv:HERSTELLER>
+        <hv:MERKMALE>Artikel:           Absauggerät für Netzbetrieb&#xd;
+Größe (H x B x T): ca. 250 mm x 255 mm x 180 mm Gewicht:           ca. 3,5 kg &#xd;
+Saugleistung:      ca. 16 l/min &#xd;
+Endvakuum:         ca. 0,8 kPa&#xd;
+Anschlussspannung: 230 V 50 - 60 Hz&#xd;
+Lieferumfang:      - Grundgerät incl. Netzkabel, Einweg-&#xd;
+                     schlauch und Gebrauchsanweisung&#xd;
+                   - Wiederverwendbares Sekretgefäß&#xd;
+                   - Gutschein für Spülglas&#xd;
+</hv:MERKMALE>
+    </hv:HMV_PRODUKT>
+ 
+ </hv:HMV> 

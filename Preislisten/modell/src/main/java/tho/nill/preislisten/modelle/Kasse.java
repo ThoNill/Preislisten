@@ -20,6 +20,7 @@ public class Kasse extends ObjectModell implements Entity, Aggregate {
 	public String ort;
 	public String straße;
 	public String telefon;
+	public String name;
 	public String email;
 		
 	

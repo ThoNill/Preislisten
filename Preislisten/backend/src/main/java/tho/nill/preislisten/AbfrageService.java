@@ -19,6 +19,10 @@ import entities.PreislistePosition;
 import lombok.extern.slf4j.Slf4j;
 import repositories.KasseRepository;
 import repositories.KundeRepository;
+import tho.nill.preislisten.abfrage.AbfrageDaten;
+import tho.nill.preislisten.abfrage.AbfrageDatum;
+import tho.nill.preislisten.abfrage.AbfragePreislisteBezug;
+import tho.nill.preislisten.abfrage.AddOrList;
 import tho.nill.preislisten.simpleAttributes.BezugArt;
 import tho.nill.preislisten.simpleAttributes.DatumArt;
 

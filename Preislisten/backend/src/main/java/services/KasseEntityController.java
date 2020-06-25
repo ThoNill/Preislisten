@@ -10,9 +10,28 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import entities.Kasse;
+
 import tho.nill.preislisten.simpleAttributes.IK;
+
 import tho.nill.preislisten.simpleAttributes.KasseArt;
+
 import tho.nill.preislisten.simpleAttributes.KassenFunktion;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
 
 
 
@@ -51,6 +70,8 @@ public class KasseEntityController  {
      // value
     , @RequestParam(name = "telefon") String telefon
      // value
+    , @RequestParam(name = "name") String name
+     // value
     , @RequestParam(name = "email") String email
      // value
     , @RequestParam(name = "versandziel") long versandziel // VersandZiel
@@ -58,7 +79,7 @@ public class KasseEntityController  {
     ) {
 
     		try {
-    			Kasse d = service.create(ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, email, versandziel);
+    			Kasse d = service.create(ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, name, email, versandziel);
     			return DER_DATENSATZ_MIT_DER + d.getKasseId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines Kasse Datensatzes trat ein Fehler auf";
@@ -86,6 +107,8 @@ public class KasseEntityController  {
     	               // value
     	              , @RequestParam(name = "telefon") String telefon
     	               // value
+    	              , @RequestParam(name = "name") String name
+    	               // value
     	              , @RequestParam(name = "email") String email
     	               // value
     	              , @RequestParam(name = "versandziel") long versandziel // VersandZiel
@@ -93,7 +116,7 @@ public class KasseEntityController  {
     ) {
 
     		try {
-    			service.update(id,ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, email, versandziel);
+    			service.update(id,ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, name, email, versandziel);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des Kasse Datensatzes mit der " + id + " trat ein Fehler auf";

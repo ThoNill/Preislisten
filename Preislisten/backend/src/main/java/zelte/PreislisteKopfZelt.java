@@ -1,25 +1,92 @@
 package zelte;
 
-import java.time.LocalDate;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.List;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.persistence.Enumerated;
+import javax.persistence.Lob;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import entities.*;
 
-import entities.PreislisteBezug;
-import entities.PreislisteKopf;
-import entities.PreislistePosition;
-import repositories.PreislisteKopfRepository;
-import tho.nill.preislisten.simpleAttributes.DatumArt;
-import tho.nill.preislisten.simpleAttributes.PreislisteArt;
+    import tho.nill.preislisten.simpleAttributes.PreislisteArt;
+
+
+    import entities.PreislisteKopf;
+    import repositories.PreislisteKopfRepository;
+    import java.lang.String;
+
+
+    import entities.PreislisteKopf;
+    import repositories.PreislisteKopfRepository;
+    import java.time.LocalDate;
+
+
+    import entities.PreislisteKopf;
+    import repositories.PreislisteKopfRepository;
+    import tho.nill.preislisten.simpleAttributes.DatumArt;
+
+
+    import entities.PreislisteKopf;
+    import repositories.PreislisteKopfRepository;
+
+    import entities.PreislisteKopf;
+    import repositories.PreislisteKopfRepository;
+
+    import entities.PreislisteBezug;
+    import zelte.PreislisteBezugZelt;
+    import entities.PreislisteKopf;
+    import repositories.PreislisteKopfRepository;
+
+    import entities.PreislistePosition;
+    import zelte.PreislistePositionZelt;
+
+
+import zelte.StandardZelt;
 
 public class PreislisteKopfZelt extends StandardZelt {
 
 
 	private PreislisteKopf entity;
 
-	@Autowired
 	private PreislisteKopfRepository repo;
 
-	@Override
+	public PreislisteKopfZelt(PreislisteKopfRepository repo) {
+		super();
+		this.repo = repo;
+	}
+
+
 	public void save() {
 		if (entity != null ) {
 			entity = repo.saveAndFlush(entity);
@@ -36,14 +103,13 @@ public class PreislisteKopfZelt extends StandardZelt {
 
 
 
-	@Override
 	public void create() {
 		save();
 		entity = new PreislisteKopf();
 	}
 
 
-	PreislisteKopf getEntity() {
+	public PreislisteKopf getEntity() {
 		return entity;
 	}
 
@@ -62,7 +128,7 @@ public class PreislisteKopfZelt extends StandardZelt {
      	        }
 
      	   public PreislisteArt convertToPreislisteArt(String value) {
-     					return PreislisteArt.valueOf(value);
+     					return PreislisteArt.search(value);
      				}   
 
 
@@ -92,27 +158,38 @@ public class PreislisteKopfZelt extends StandardZelt {
      	        }
 
      	   public DatumArt convertToDatumArt(String value) {
-     					return DatumArt.valueOf(value);
+     					return DatumArt.search(value);
      				}   
 
 
 
 
      	    public void connectPreislisteKopf(PreislisteBezugZelt x) {
-     	        PreislisteBezug target = x.getEntity();
 
-     	        saveIfNeeded();
-     	        x.saveIfNeeded();
+     	        if (entity!=null) {
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
 
-     	        entity.addPreislisteBezug(target);
-     	        target.setPreislisteKopf(entity);
+     	        	PreislisteBezug target = x.getEntity();
+     	        	entity.addPreislisteBezug(target);
+     	        	target.setPreislisteKopf(entity);
+
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
+     	        };
+
      	    }
 
 
      	    public void disconnectPreislisteKopf(PreislisteBezugZelt x) {
+     	      if (entity!=null) {
      	        PreislisteBezug target = x.getEntity();
      	        entity.removePreislisteBezug(target);
      	        target.setPreislisteKopf(null);
+
+     	        saveIfNeeded();
+     	        x.saveIfNeeded();
+     	      };
      	    }
 
          
@@ -121,20 +198,31 @@ public class PreislisteKopfZelt extends StandardZelt {
 
 
      	    public void connectPreislisteKopf(PreislistePositionZelt x) {
-     	        PreislistePosition target = x.getEntity();
 
-     	        saveIfNeeded();
-     	        x.saveIfNeeded();
+     	        if (entity!=null) {
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
 
-     	        entity.addPreislistePosition(target);
-     	        target.setPreislisteKopf(entity);
+     	        	PreislistePosition target = x.getEntity();
+     	        	entity.addPreislistePosition(target);
+     	        	target.setPreislisteKopf(entity);
+
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
+     	        };
+
      	    }
 
 
      	    public void disconnectPreislisteKopf(PreislistePositionZelt x) {
+     	      if (entity!=null) {
      	        PreislistePosition target = x.getEntity();
      	        entity.removePreislistePosition(target);
      	        target.setPreislisteKopf(null);
+
+     	        saveIfNeeded();
+     	        x.saveIfNeeded();
+     	      };
      	    }
 
 

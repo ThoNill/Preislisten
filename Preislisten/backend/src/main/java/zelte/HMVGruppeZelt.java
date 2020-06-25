@@ -1,20 +1,92 @@
 package zelte;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.List;
 
-import entities.HMVGruppe;
-import entities.HMVUntergruppe;
-import repositories.HMVGruppeRepository;
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.persistence.Enumerated;
+import javax.persistence.Lob;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import entities.*;
+
+    import java.lang.Long;
+
+
+    import entities.HMVGruppe;
+    import repositories.HMVGruppeRepository;
+    import java.lang.String;
+
+
+    import entities.HMVGruppe;
+    import repositories.HMVGruppeRepository;
+    import java.lang.String;
+
+
+    import entities.HMVGruppe;
+    import repositories.HMVGruppeRepository;
+    import java.lang.String;
+
+
+    import entities.HMVGruppe;
+    import repositories.HMVGruppeRepository;
+    import java.lang.String;
+
+
+    import entities.HMVGruppe;
+    import repositories.HMVGruppeRepository;
+
+    import entities.HMVGruppe;
+    import repositories.HMVGruppeRepository;
+
+    import entities.HMVUntergruppe;
+    import zelte.HMVUntergruppeZelt;
+
+
+import zelte.StandardZelt;
 
 public class HMVGruppeZelt extends StandardZelt {
 
 
 	private HMVGruppe entity;
 
-	@Autowired
 	private HMVGruppeRepository repo;
 
-	@Override
+	public HMVGruppeZelt(HMVGruppeRepository repo) {
+		super();
+		this.repo = repo;
+	}
+
+
 	public void save() {
 		if (entity != null ) {
 			entity = repo.saveAndFlush(entity);
@@ -31,14 +103,13 @@ public class HMVGruppeZelt extends StandardZelt {
 
 
 
-	@Override
 	public void create() {
 		save();
 		entity = new HMVGruppe();
 	}
 
 
-	HMVGruppe getEntity() {
+	public HMVGruppe getEntity() {
 		return entity;
 	}
 
@@ -97,20 +168,31 @@ public class HMVGruppeZelt extends StandardZelt {
 
 
      	    public void connectHMVGruppe(HMVUntergruppeZelt x) {
-     	        HMVUntergruppe target = x.getEntity();
 
-     	        saveIfNeeded();
-     	        x.saveIfNeeded();
+     	        if (entity!=null) {
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
 
-     	        entity.addHMVUntergruppe(target);
-     	        target.setHMVGruppe(entity);
+     	        	HMVUntergruppe target = x.getEntity();
+     	        	entity.addHMVUntergruppe(target);
+     	        	target.setHMVGruppe(entity);
+
+     	        	saveIfNeeded();
+     	        	x.saveIfNeeded();
+     	        };
+
      	    }
 
 
      	    public void disconnectHMVGruppe(HMVUntergruppeZelt x) {
+     	      if (entity!=null) {
      	        HMVUntergruppe target = x.getEntity();
      	        entity.removeHMVUntergruppe(target);
      	        target.setHMVGruppe(null);
+
+     	        saveIfNeeded();
+     	        x.saveIfNeeded();
+     	      };
      	    }
 
 

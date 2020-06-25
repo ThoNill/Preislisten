@@ -1,4 +1,4 @@
-package tho.nill.preislisten;
+package tho.nill.preislisten.abfrage;
 
 import java.time.LocalDate;
 

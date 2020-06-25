@@ -10,8 +10,9 @@ import tho.nill.preislisten.simpleAttributes.DFÜMedium;
 import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
 import tho.nill.preislisten.simpleAttributes.IK;
 import tho.nill.preislisten.simpleAttributes.KVBezirk;
-import tho.nill.preislisten.simpleAttributes.Kostenträger;
+import tho.nill.preislisten.simpleAttributes.Leistungserbringergruppe;
 import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
+import tho.nill.preislisten.simpleAttributes.VerweisArt;
 import tho.nill.preislisten.verknüpfungen.Verknüpfungen;
 
 public class VersandZiel extends ObjectModell implements Entity, Aggregate {
@@ -21,12 +22,13 @@ public class VersandZiel extends ObjectModell implements Entity, Aggregate {
 	public IK abrechnungsstelle;
 	
 	public DatenlieferungsArt art;
-	public Kostenträger verweis;
+	public VerweisArt verweis;
 	public DFÜMedium medium;
 	public Bundesland land;
 	public KVBezirk   bezirk;
 	public Abrechnungscode abrechnungscode;
 	public Tarifkennzeichen tarifkennzeichen;
+	public Leistungserbringergruppe leistungserbringergruppe;
 	
 	/*
 	VKG Segment Verknüpfung M C 3 wdh. VKG  Art der Verknüpfung M N 2  

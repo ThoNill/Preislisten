@@ -9,6 +9,21 @@ import org.springframework.stereotype.Service;
 import entities.HMVUntergruppe;
 import repositories.HMVUntergruppeRepository;
 
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+
+
+
+
+import java.util.concurrent.atomic.AtomicLong;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 @Service
 public class HMVUntergruppeEntityService  {
 

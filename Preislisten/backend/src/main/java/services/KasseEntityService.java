@@ -8,9 +8,35 @@ import org.springframework.stereotype.Service;
 
 import entities.Kasse;
 import repositories.KasseRepository;
+
 import tho.nill.preislisten.simpleAttributes.IK;
+
 import tho.nill.preislisten.simpleAttributes.KasseArt;
+
 import tho.nill.preislisten.simpleAttributes.KassenFunktion;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+import java.lang.String;
+
+
+
+import java.util.concurrent.atomic.AtomicLong;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @Service
 public class KasseEntityService  {
@@ -30,18 +56,18 @@ public class KasseEntityService  {
     		return repo.findById(id);
     	}
 
-    	public Kasse create(IK  ik, KasseArt  art, KassenFunktion  funktion, String  ansprechpartner, String  firma, String  plz, String  ort, String  straße, String  telefon, String  email, long versandziel 
+    	public Kasse create(IK  ik, KasseArt  art, KassenFunktion  funktion, String  ansprechpartner, String  firma, String  plz, String  ort, String  straße, String  telefon, String  name, String  email, long versandziel 
     ) {
     		Kasse d = new Kasse();
-    		felderSetzen(d, ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, email, versandziel
+    		felderSetzen(d, ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, name, email, versandziel
     );
     		return repo.save(d);
     	}
 
-    	public void update(long id, IK  ik, KasseArt  art, KassenFunktion  funktion, String  ansprechpartner, String  firma, String  plz, String  ort, String  straße, String  telefon, String  email, long versandziel 
+    	public void update(long id, IK  ik, KasseArt  art, KassenFunktion  funktion, String  ansprechpartner, String  firma, String  plz, String  ort, String  straße, String  telefon, String  name, String  email, long versandziel 
     ) {
     		Kasse d = repo.getOne(id);
-    		felderSetzen(d, ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, email, versandziel
+    		felderSetzen(d, ik, art, funktion, ansprechpartner, firma, plz, ort, straße, telefon, name, email, versandziel
     );
     		repo.save(d);
     	}
@@ -51,7 +77,7 @@ public class KasseEntityService  {
     	}
 
     	private void felderSetzen(Kasse d, 
-    	IK  ik, KasseArt  art, KassenFunktion  funktion, String  ansprechpartner, String  firma, String  plz, String  ort, String  straße, String  telefon, String  email, long versandziel 
+    	IK  ik, KasseArt  art, KassenFunktion  funktion, String  ansprechpartner, String  firma, String  plz, String  ort, String  straße, String  telefon, String  name, String  email, long versandziel 
 
     	) {
     	d.setIk(ik);
@@ -63,6 +89,7 @@ public class KasseEntityService  {
     	d.setOrt(ort);
     	d.setStraße(straße);
     	d.setTelefon(telefon);
+    	d.setName(name);
     	d.setEmail(email);
 
     	if (versandziel > 0) {

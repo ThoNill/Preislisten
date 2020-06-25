@@ -24,6 +24,8 @@ import repositories.PositionRepository;
 import repositories.PreislisteBezugRepository;
 import repositories.PreislisteKopfRepository;
 import repositories.PreislistePositionRepository;
+import tho.nill.preislisten.abfrage.AbfrageDaten;
+import tho.nill.preislisten.abfrage.AbfrageDatum;
 import tho.nill.preislisten.simpleAttributes.BezugArt;
 import tho.nill.preislisten.simpleAttributes.DatumArt;
 import tho.nill.preislisten.simpleAttributes.IK;

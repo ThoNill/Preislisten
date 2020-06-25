@@ -1,10 +1,10 @@
 package zelte;
 
-import tho.nill.grundgestein.zelt.DefaultZelt;
+import tho.nill.grundgestein.zelt.EntityZelt;
 import tho.nill.preislisten.simpleAttributes.IK;
 import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
 
-public class StandardZelt extends DefaultZelt {
+public class StandardZelt implements EntityZelt {
 
 	public StandardZelt() {
 		// TODO Auto-generated constructor stub
@@ -23,6 +23,9 @@ public class StandardZelt extends DefaultZelt {
 	}
 
 	protected IK convertToIK(String value) {
+		if ("".contentEquals(value.strip())) {
+			return null;
+		}
 		return new IK(Integer.parseInt(value));
 	}
 	

@@ -132,6 +132,11 @@
 			<artifactId>JavaGenerator</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>tho.nill</groupId>
+			<artifactId>Edifact</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

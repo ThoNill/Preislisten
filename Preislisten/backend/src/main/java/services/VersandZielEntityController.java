@@ -10,14 +10,28 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import entities.VersandZiel;
-import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
-import tho.nill.preislisten.simpleAttributes.Bundesland;
-import tho.nill.preislisten.simpleAttributes.DFÜMedium;
-import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
+
 import tho.nill.preislisten.simpleAttributes.IK;
+
+import tho.nill.preislisten.simpleAttributes.IK;
+
+import tho.nill.preislisten.simpleAttributes.IK;
+
+import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
+
+import tho.nill.preislisten.simpleAttributes.VerweisArt;
+
+import tho.nill.preislisten.simpleAttributes.DFÜMedium;
+
+import tho.nill.preislisten.simpleAttributes.Bundesland;
+
 import tho.nill.preislisten.simpleAttributes.KVBezirk;
-import tho.nill.preislisten.simpleAttributes.Kostenträger;
+
+import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
+
 import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
+
+import tho.nill.preislisten.simpleAttributes.Leistungserbringergruppe;
 
 
 
@@ -46,7 +60,7 @@ public class VersandZielEntityController  {
      // value
     , @RequestParam(name = "art") DatenlieferungsArt art
      // enumeration
-    , @RequestParam(name = "verweis") Kostenträger verweis
+    , @RequestParam(name = "verweis") VerweisArt verweis
      // enumeration
     , @RequestParam(name = "medium") DFÜMedium medium
      // enumeration
@@ -58,12 +72,14 @@ public class VersandZielEntityController  {
      // enumeration
     , @RequestParam(name = "tarifkennzeichen") Tarifkennzeichen tarifkennzeichen
      // value
+    , @RequestParam(name = "leistungserbringergruppe") Leistungserbringergruppe leistungserbringergruppe
+     // enumeration
     , @RequestParam(name = "kasse") long kasse // Kasse
      // toone2many
     ) {
 
     		try {
-    			VersandZiel d = service.create(von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, kasse);
+    			VersandZiel d = service.create(von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse);
     			return DER_DATENSATZ_MIT_DER + d.getVersandZielId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines VersandZiel Datensatzes trat ein Fehler auf";
@@ -81,7 +97,7 @@ public class VersandZielEntityController  {
     	               // value
     	              , @RequestParam(name = "art") DatenlieferungsArt art
     	               // enumeration
-    	              , @RequestParam(name = "verweis") Kostenträger verweis
+    	              , @RequestParam(name = "verweis") VerweisArt verweis
     	               // enumeration
     	              , @RequestParam(name = "medium") DFÜMedium medium
     	               // enumeration
@@ -93,12 +109,14 @@ public class VersandZielEntityController  {
     	               // enumeration
     	              , @RequestParam(name = "tarifkennzeichen") Tarifkennzeichen tarifkennzeichen
     	               // value
+    	              , @RequestParam(name = "leistungserbringergruppe") Leistungserbringergruppe leistungserbringergruppe
+    	               // enumeration
     	              , @RequestParam(name = "kasse") long kasse // Kasse
     	               // toone2many
     ) {
 
     		try {
-    			service.update(id,von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, kasse);
+    			service.update(id,von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des VersandZiel Datensatzes mit der " + id + " trat ein Fehler auf";

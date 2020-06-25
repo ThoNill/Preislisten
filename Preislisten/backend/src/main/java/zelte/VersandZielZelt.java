@@ -1,27 +1,122 @@
 package zelte;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.List;
 
-import entities.VersandZiel;
-import repositories.VersandZielRepository;
-import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
-import tho.nill.preislisten.simpleAttributes.Bundesland;
-import tho.nill.preislisten.simpleAttributes.DFÜMedium;
-import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
-import tho.nill.preislisten.simpleAttributes.IK;
-import tho.nill.preislisten.simpleAttributes.KVBezirk;
-import tho.nill.preislisten.simpleAttributes.Kostenträger;
-import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.persistence.Enumerated;
+import javax.persistence.Lob;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import entities.*;
+
+    import tho.nill.preislisten.simpleAttributes.IK;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.IK;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.IK;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.VerweisArt;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.DFÜMedium;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.Bundesland;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.KVBezirk;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+    import tho.nill.preislisten.simpleAttributes.Leistungserbringergruppe;
+
+
+    import entities.VersandZiel;
+    import repositories.VersandZielRepository;
+
+    import entities.Kasse;
+    import repositories.KasseRepository;
+
+    import entities.VersandZiel;
+    import zelte.VersandZielZelt;
+
+
+import zelte.StandardZelt;
 
 public class VersandZielZelt extends StandardZelt {
 
 
 	private VersandZiel entity;
 
-	@Autowired
 	private VersandZielRepository repo;
 
-	@Override
+	public VersandZielZelt(VersandZielRepository repo) {
+		super();
+		this.repo = repo;
+	}
+
+
 	public void save() {
 		if (entity != null ) {
 			entity = repo.saveAndFlush(entity);
@@ -38,14 +133,13 @@ public class VersandZielZelt extends StandardZelt {
 
 
 
-	@Override
 	public void create() {
 		save();
 		entity = new VersandZiel();
 	}
 
 
-	VersandZiel getEntity() {
+	public VersandZiel getEntity() {
 		return entity;
 	}
 
@@ -91,19 +185,19 @@ public class VersandZielZelt extends StandardZelt {
      	        }
 
      	   public DatenlieferungsArt convertToDatenlieferungsArt(String value) {
-     					return DatenlieferungsArt.valueOf(value);
+     					return DatenlieferungsArt.search(value);
      				}   
 
 
-     	    public Kostenträger getVerweis() {
+     	    public VerweisArt getVerweis() {
      	         return entity.getVerweis(); 
      	    }
      	    public void setVerweisWithString(String value) {
-     	        	entity.setVerweis(convertToKostenträger( value));
+     	        	entity.setVerweis(convertToVerweisArt( value));
      	        }
 
-     	   public Kostenträger convertToKostenträger(String value) {
-     					return Kostenträger.valueOf(value);
+     	   public VerweisArt convertToVerweisArt(String value) {
+     					return VerweisArt.search(value);
      				}   
 
 
@@ -115,7 +209,7 @@ public class VersandZielZelt extends StandardZelt {
      	        }
 
      	   public DFÜMedium convertToDFÜMedium(String value) {
-     					return DFÜMedium.valueOf(value);
+     					return DFÜMedium.search(value);
      				}   
 
 
@@ -127,7 +221,7 @@ public class VersandZielZelt extends StandardZelt {
      	        }
 
      	   public Bundesland convertToBundesland(String value) {
-     					return Bundesland.valueOf(value);
+     					return Bundesland.search(value);
      				}   
 
 
@@ -139,7 +233,7 @@ public class VersandZielZelt extends StandardZelt {
      	        }
 
      	   public KVBezirk convertToKVBezirk(String value) {
-     					return KVBezirk.valueOf(value);
+     					return KVBezirk.search(value);
      				}   
 
 
@@ -151,7 +245,7 @@ public class VersandZielZelt extends StandardZelt {
      	        }
 
      	   public Abrechnungscode convertToAbrechnungscode(String value) {
-     					return Abrechnungscode.valueOf(value);
+     					return Abrechnungscode.search(value);
      				}   
 
 
@@ -162,6 +256,18 @@ public class VersandZielZelt extends StandardZelt {
      	        	entity.setTarifkennzeichen(convertToTarifkennzeichen( value));
      	        }
          
+
+
+     	    public Leistungserbringergruppe getLeistungserbringergruppe() {
+     	         return entity.getLeistungserbringergruppe(); 
+     	    }
+     	    public void setLeistungserbringergruppeWithString(String value) {
+     	        	entity.setLeistungserbringergruppe(convertToLeistungserbringergruppe( value));
+     	        }
+
+     	   public Leistungserbringergruppe convertToLeistungserbringergruppe(String value) {
+     					return Leistungserbringergruppe.search(value);
+     				}   
 
 
 }

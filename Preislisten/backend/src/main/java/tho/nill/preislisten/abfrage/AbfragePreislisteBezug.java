@@ -1,4 +1,4 @@
-package tho.nill.preislisten;
+package tho.nill.preislisten.abfrage;
 
 import lombok.Data;
 import tho.nill.preislisten.simpleAttributes.BezugArt;
