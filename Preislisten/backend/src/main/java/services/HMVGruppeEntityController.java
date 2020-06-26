@@ -11,16 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import entities.HMVGruppe;
 
-import java.lang.Long;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
 
 
 @RestController
@@ -40,22 +30,22 @@ public class HMVGruppeEntityController  {
 
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvgruppe/insert", produces = "application/json", method = RequestMethod.POST)
-    	public String create(@RequestParam(name = "nummer") Long nummer
+    	public String create(@RequestParam(name = "gruppe") Long gruppe
      // value
     , @RequestParam(name = "bezeichnung") String bezeichnung
-     // value
+     // CharBLOB
     , @RequestParam(name = "definition") String definition
-     // value
+     // CharBLOB
     , @RequestParam(name = "indikation") String indikation
-     // value
+     // CharBLOB
     , @RequestParam(name = "querverweise") String querverweise
-     // value
+     // CharBLOB
     , @RequestParam(name = "hmvuntergruppe") long hmvuntergruppe // HMVUntergruppe
      // fromone2many
     ) {
 
     		try {
-    			HMVGruppe d = service.create(nummer, bezeichnung, definition, indikation, querverweise, hmvuntergruppe);
+    			HMVGruppe d = service.create(gruppe, bezeichnung, definition, indikation, querverweise, hmvuntergruppe);
     			return DER_DATENSATZ_MIT_DER + d.getHMVGruppeId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines HMVGruppe Datensatzes trat ein Fehler auf";
@@ -65,22 +55,22 @@ public class HMVGruppeEntityController  {
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvgruppe/update/{id}", produces = "application/json", method = RequestMethod.PUT)
     	public String update(@PathVariable(name = "id") long id,
-    	              @RequestParam(name = "nummer") Long nummer
+    	              @RequestParam(name = "gruppe") Long gruppe
     	               // value
     	              , @RequestParam(name = "bezeichnung") String bezeichnung
-    	               // value
+    	               // CharBLOB
     	              , @RequestParam(name = "definition") String definition
-    	               // value
+    	               // CharBLOB
     	              , @RequestParam(name = "indikation") String indikation
-    	               // value
+    	               // CharBLOB
     	              , @RequestParam(name = "querverweise") String querverweise
-    	               // value
+    	               // CharBLOB
     	              , @RequestParam(name = "hmvuntergruppe") long hmvuntergruppe // HMVUntergruppe
     	               // fromone2many
     ) {
 
     		try {
-    			service.update(id,nummer, bezeichnung, definition, indikation, querverweise, hmvuntergruppe);
+    			service.update(id,gruppe, bezeichnung, definition, indikation, querverweise, hmvuntergruppe);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des HMVGruppe Datensatzes mit der " + id + " trat ein Fehler auf";

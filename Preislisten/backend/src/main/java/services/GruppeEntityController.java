@@ -10,14 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import entities.Gruppe;
-
 import tho.nill.preislisten.simpleAttributes.GruppeArt;
-
-import java.lang.Long;
-
-import java.lang.String;
-
-import java.lang.String;
 
 
 @RestController

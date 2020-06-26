@@ -11,12 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import entities.HMVUntergruppe;
 
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
 
 
 
@@ -38,12 +32,12 @@ public class HMVUntergruppeEntityController  {
 
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvuntergruppe/insert", produces = "application/json", method = RequestMethod.POST)
-    	public String create(@RequestParam(name = "untergruppe") String untergruppe
+    	public String create(@RequestParam(name = "untergruppe") Long untergruppe
      // value
     , @RequestParam(name = "bezeichnung") String bezeichnung
-     // value
+     // CharBLOB
     , @RequestParam(name = "anforderungen") String anforderungen
-     // value
+     // CharBLOB
     , @RequestParam(name = "hmvgruppe") long hmvgruppe // HMVGruppe
      // toone2many
     , @RequestParam(name = "hmvort") long hmvort // HMVOrt
@@ -63,12 +57,12 @@ public class HMVUntergruppeEntityController  {
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvuntergruppe/update/{id}", produces = "application/json", method = RequestMethod.PUT)
     	public String update(@PathVariable(name = "id") long id,
-    	              @RequestParam(name = "untergruppe") String untergruppe
+    	              @RequestParam(name = "untergruppe") Long untergruppe
     	               // value
     	              , @RequestParam(name = "bezeichnung") String bezeichnung
-    	               // value
+    	               // CharBLOB
     	              , @RequestParam(name = "anforderungen") String anforderungen
-    	               // value
+    	               // CharBLOB
     	              , @RequestParam(name = "hmvgruppe") long hmvgruppe // HMVGruppe
     	               // toone2many
     	              , @RequestParam(name = "hmvort") long hmvort // HMVOrt

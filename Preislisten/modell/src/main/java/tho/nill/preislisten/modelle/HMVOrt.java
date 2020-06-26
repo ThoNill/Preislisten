@@ -8,7 +8,7 @@ import tho.nill.preislisten.verknüpfungen.Verknüpfungen;
 
 public class HMVOrt extends ObjectModell implements Entity, Aggregate {
 	
-	public String ort;
+	public Long ort;
 	public String bezeichnung;
 	
 	public HMVOrt() throws Exception {

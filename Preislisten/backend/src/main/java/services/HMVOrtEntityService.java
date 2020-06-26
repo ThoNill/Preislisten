@@ -9,17 +9,6 @@ import org.springframework.stereotype.Service;
 import entities.HMVOrt;
 import repositories.HMVOrtRepository;
 
-import java.lang.String;
-
-import java.lang.String;
-
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 @Service
 public class HMVOrtEntityService  {
 
@@ -38,7 +27,7 @@ public class HMVOrtEntityService  {
     		return repo.findById(id);
     	}
 
-    	public HMVOrt create(String  ort, String  bezeichnung, long hmvuntergruppe 
+    	public HMVOrt create(Long  ort, String  bezeichnung, long hmvuntergruppe 
     ) {
     		HMVOrt d = new HMVOrt();
     		felderSetzen(d, ort, bezeichnung, hmvuntergruppe
@@ -46,7 +35,7 @@ public class HMVOrtEntityService  {
     		return repo.save(d);
     	}
 
-    	public void update(long id, String  ort, String  bezeichnung, long hmvuntergruppe 
+    	public void update(long id, Long  ort, String  bezeichnung, long hmvuntergruppe 
     ) {
     		HMVOrt d = repo.getOne(id);
     		felderSetzen(d, ort, bezeichnung, hmvuntergruppe
@@ -59,7 +48,7 @@ public class HMVOrtEntityService  {
     	}
 
     	private void felderSetzen(HMVOrt d, 
-    	String  ort, String  bezeichnung, long hmvuntergruppe 
+    	Long  ort, String  bezeichnung, long hmvuntergruppe 
 
     	) {
     	d.setOrt(ort);

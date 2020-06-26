@@ -1,6 +1,7 @@
 package services;
 
 
+import java.time.LocalDate;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,23 +9,6 @@ import org.springframework.stereotype.Service;
 
 import entities.HMVProdukt;
 import repositories.HMVProduktRepository;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 @Service
 public class HMVProduktEntityService  {
@@ -44,18 +28,18 @@ public class HMVProduktEntityService  {
     		return repo.findById(id);
     	}
 
-    	public HMVProdukt create(String  hilfsmittelnr, String  produkt, String  bezeichnung, String  hersteller, String  merkmal, long hmvart 
+    	public HMVProdukt create(Long  produkt, String  hilfsmittelnr, String  bezeichnung, String  hersteller, String  merkmale, LocalDate  änderung, long hmvart 
     ) {
     		HMVProdukt d = new HMVProdukt();
-    		felderSetzen(d, hilfsmittelnr, produkt, bezeichnung, hersteller, merkmal, hmvart
+    		felderSetzen(d, produkt, hilfsmittelnr, bezeichnung, hersteller, merkmale, änderung, hmvart
     );
     		return repo.save(d);
     	}
 
-    	public void update(long id, String  hilfsmittelnr, String  produkt, String  bezeichnung, String  hersteller, String  merkmal, long hmvart 
+    	public void update(long id, Long  produkt, String  hilfsmittelnr, String  bezeichnung, String  hersteller, String  merkmale, LocalDate  änderung, long hmvart 
     ) {
     		HMVProdukt d = repo.getOne(id);
-    		felderSetzen(d, hilfsmittelnr, produkt, bezeichnung, hersteller, merkmal, hmvart
+    		felderSetzen(d, produkt, hilfsmittelnr, bezeichnung, hersteller, merkmale, änderung, hmvart
     );
     		repo.save(d);
     	}
@@ -65,14 +49,14 @@ public class HMVProduktEntityService  {
     	}
 
     	private void felderSetzen(HMVProdukt d, 
-    	String  hilfsmittelnr, String  produkt, String  bezeichnung, String  hersteller, String  merkmal, long hmvart 
+    	Long  produkt, String  hilfsmittelnr, String  bezeichnung, String  hersteller, String  merkmale, LocalDate  änderung, long hmvart 
 
     	) {
-    	d.setHilfsmittelnr(hilfsmittelnr);
     	d.setProdukt(produkt);
+    	d.setHilfsmittelnr(hilfsmittelnr);
     	d.setBezeichnung(bezeichnung);
     	d.setHersteller(hersteller);
-    	d.setMerkmal(merkmal);
+    	d.setMerkmale(merkmale);
 
     	if (hmvart > 0) {
     	   Optional<entities.HMVArt> hmvartEntity =  hmvartRepo.findById(hmvart);

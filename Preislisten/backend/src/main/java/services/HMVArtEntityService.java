@@ -9,22 +9,6 @@ import org.springframework.stereotype.Service;
 import entities.HMVArt;
 import repositories.HMVArtRepository;
 
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 @Service
 public class HMVArtEntityService  {
 
@@ -45,21 +29,21 @@ public class HMVArtEntityService  {
     		return repo.findById(id);
     	}
 
-    	public HMVArt create(String  art, String  bezeichnung, String  definition, String  indikation, long hmvuntergruppe 
+    	public HMVArt create(String  art, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
     , long hmvprodukt 
     ) {
     		HMVArt d = new HMVArt();
-    		felderSetzen(d, art, bezeichnung, definition, indikation, hmvuntergruppe
+    		felderSetzen(d, art, bezeichnung, beschreibung, indikation, hmvuntergruppe
     , hmvprodukt
     );
     		return repo.save(d);
     	}
 
-    	public void update(long id, String  art, String  bezeichnung, String  definition, String  indikation, long hmvuntergruppe 
+    	public void update(long id, String  art, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
     , long hmvprodukt 
     ) {
     		HMVArt d = repo.getOne(id);
-    		felderSetzen(d, art, bezeichnung, definition, indikation, hmvuntergruppe
+    		felderSetzen(d, art, bezeichnung, beschreibung, indikation, hmvuntergruppe
     , hmvprodukt
     );
     		repo.save(d);
@@ -70,14 +54,12 @@ public class HMVArtEntityService  {
     	}
 
     	private void felderSetzen(HMVArt d, 
-    	String  art, String  bezeichnung, String  definition, String  indikation, long hmvuntergruppe 
+    	String  art, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
     	, long hmvprodukt 
 
     	) {
     	d.setArt(art);
     	d.setBezeichnung(bezeichnung);
-    	d.setDefinition(definition);
-    	d.setIndikation(indikation);
 
     	if (hmvuntergruppe > 0) {
     	   Optional<entities.HMVUntergruppe> hmvuntergruppeEntity =  hmvuntergruppeRepo.findById(hmvuntergruppe);

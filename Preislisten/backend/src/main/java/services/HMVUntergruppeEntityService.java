@@ -9,21 +9,6 @@ import org.springframework.stereotype.Service;
 import entities.HMVUntergruppe;
 import repositories.HMVUntergruppeRepository;
 
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-
-
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 @Service
 public class HMVUntergruppeEntityService  {
 
@@ -46,7 +31,7 @@ public class HMVUntergruppeEntityService  {
     		return repo.findById(id);
     	}
 
-    	public HMVUntergruppe create(String  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
+    	public HMVUntergruppe create(Long  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
     , long hmvort 
     , long hmvart 
     ) {
@@ -58,7 +43,7 @@ public class HMVUntergruppeEntityService  {
     		return repo.save(d);
     	}
 
-    	public void update(long id, String  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
+    	public void update(long id, Long  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
     , long hmvort 
     , long hmvart 
     ) {
@@ -75,14 +60,12 @@ public class HMVUntergruppeEntityService  {
     	}
 
     	private void felderSetzen(HMVUntergruppe d, 
-    	String  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
+    	Long  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
     	, long hmvort 
     	, long hmvart 
 
     	) {
     	d.setUntergruppe(untergruppe);
-    	d.setBezeichnung(bezeichnung);
-    	d.setAnforderungen(anforderungen);
 
     	if (hmvgruppe > 0) {
     	   Optional<entities.HMVGruppe> hmvgruppeEntity =  hmvgruppeRepo.findById(hmvgruppe);

@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import entities.HMVOrt;
 
-import java.lang.String;
-
-import java.lang.String;
-
 
 
 @RestController
@@ -34,7 +30,7 @@ public class HMVOrtEntityController  {
 
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvort/insert", produces = "application/json", method = RequestMethod.POST)
-    	public String create(@RequestParam(name = "ort") String ort
+    	public String create(@RequestParam(name = "ort") Long ort
      // value
     , @RequestParam(name = "bezeichnung") String bezeichnung
      // value
@@ -53,7 +49,7 @@ public class HMVOrtEntityController  {
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvort/update/{id}", produces = "application/json", method = RequestMethod.PUT)
     	public String update(@PathVariable(name = "id") long id,
-    	              @RequestParam(name = "ort") String ort
+    	              @RequestParam(name = "ort") Long ort
     	               // value
     	              , @RequestParam(name = "bezeichnung") String bezeichnung
     	               // value

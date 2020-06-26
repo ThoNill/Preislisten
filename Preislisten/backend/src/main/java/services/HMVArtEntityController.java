@@ -11,14 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import entities.HMVArt;
 
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
 
 
 
@@ -43,10 +35,10 @@ public class HMVArtEntityController  {
      // value
     , @RequestParam(name = "bezeichnung") String bezeichnung
      // value
-    , @RequestParam(name = "definition") String definition
-     // value
+    , @RequestParam(name = "beschreibung") String beschreibung
+     // CharBLOB
     , @RequestParam(name = "indikation") String indikation
-     // value
+     // CharBLOB
     , @RequestParam(name = "hmvuntergruppe") long hmvuntergruppe // HMVUntergruppe
      // toone2many
     , @RequestParam(name = "hmvprodukt") long hmvprodukt // HMVProdukt
@@ -54,7 +46,7 @@ public class HMVArtEntityController  {
     ) {
 
     		try {
-    			HMVArt d = service.create(art, bezeichnung, definition, indikation, hmvuntergruppe, hmvprodukt);
+    			HMVArt d = service.create(art, bezeichnung, beschreibung, indikation, hmvuntergruppe, hmvprodukt);
     			return DER_DATENSATZ_MIT_DER + d.getHMVArtId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines HMVArt Datensatzes trat ein Fehler auf";
@@ -68,10 +60,10 @@ public class HMVArtEntityController  {
     	               // value
     	              , @RequestParam(name = "bezeichnung") String bezeichnung
     	               // value
-    	              , @RequestParam(name = "definition") String definition
-    	               // value
+    	              , @RequestParam(name = "beschreibung") String beschreibung
+    	               // CharBLOB
     	              , @RequestParam(name = "indikation") String indikation
-    	               // value
+    	               // CharBLOB
     	              , @RequestParam(name = "hmvuntergruppe") long hmvuntergruppe // HMVUntergruppe
     	               // toone2many
     	              , @RequestParam(name = "hmvprodukt") long hmvprodukt // HMVProdukt
@@ -79,7 +71,7 @@ public class HMVArtEntityController  {
     ) {
 
     		try {
-    			service.update(id,art, bezeichnung, definition, indikation, hmvuntergruppe, hmvprodukt);
+    			service.update(id,art, bezeichnung, beschreibung, indikation, hmvuntergruppe, hmvprodukt);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des HMVArt Datensatzes mit der " + id + " trat ein Fehler auf";

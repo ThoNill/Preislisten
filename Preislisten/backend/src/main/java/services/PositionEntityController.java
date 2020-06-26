@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import entities.Position;
-
 import tho.nill.preislisten.simpleAttributes.PositionsArt;
-
-import java.lang.String;
 
 
 

@@ -8,35 +8,15 @@ import org.springframework.stereotype.Service;
 
 import entities.VersandZiel;
 import repositories.VersandZielRepository;
-
-import tho.nill.preislisten.simpleAttributes.IK;
-
-import tho.nill.preislisten.simpleAttributes.IK;
-
-import tho.nill.preislisten.simpleAttributes.IK;
-
-import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
-
-import tho.nill.preislisten.simpleAttributes.VerweisArt;
-
-import tho.nill.preislisten.simpleAttributes.DFÜMedium;
-
-import tho.nill.preislisten.simpleAttributes.Bundesland;
-
-import tho.nill.preislisten.simpleAttributes.KVBezirk;
-
 import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
-
-import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
-
+import tho.nill.preislisten.simpleAttributes.Bundesland;
+import tho.nill.preislisten.simpleAttributes.DFÜMedium;
+import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
+import tho.nill.preislisten.simpleAttributes.IK;
+import tho.nill.preislisten.simpleAttributes.KVBezirk;
 import tho.nill.preislisten.simpleAttributes.Leistungserbringergruppe;
-
-
-
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import tho.nill.preislisten.simpleAttributes.Tarifkennzeichen;
+import tho.nill.preislisten.simpleAttributes.VerweisArt;
 
 @Service
 public class VersandZielEntityService  {

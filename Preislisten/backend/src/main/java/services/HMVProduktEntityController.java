@@ -1,4 +1,5 @@
 package services;
+import java.time.LocalDate;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,16 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import entities.HMVProdukt;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
-
-import java.lang.String;
 
 
 
@@ -40,22 +31,24 @@ public class HMVProduktEntityController  {
 
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvprodukt/insert", produces = "application/json", method = RequestMethod.POST)
-    	public String create(@RequestParam(name = "hilfsmittelnr") String hilfsmittelnr
+    	public String create(@RequestParam(name = "produkt") Long produkt
      // value
-    , @RequestParam(name = "produkt") String produkt
+    , @RequestParam(name = "hilfsmittelnr") String hilfsmittelnr
      // value
     , @RequestParam(name = "bezeichnung") String bezeichnung
      // value
     , @RequestParam(name = "hersteller") String hersteller
      // value
-    , @RequestParam(name = "merkmal") String merkmal
+    , @RequestParam(name = "merkmale") String merkmale
      // value
+    , @RequestParam(name = "änderung") LocalDate änderung
+     // LocalDate
     , @RequestParam(name = "hmvart") long hmvart // HMVArt
      // toone2many
     ) {
 
     		try {
-    			HMVProdukt d = service.create(hilfsmittelnr, produkt, bezeichnung, hersteller, merkmal, hmvart);
+    			HMVProdukt d = service.create(produkt, hilfsmittelnr, bezeichnung, hersteller, merkmale, änderung, hmvart);
     			return DER_DATENSATZ_MIT_DER + d.getHMVProduktId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines HMVProdukt Datensatzes trat ein Fehler auf";
@@ -65,22 +58,24 @@ public class HMVProduktEntityController  {
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvprodukt/update/{id}", produces = "application/json", method = RequestMethod.PUT)
     	public String update(@PathVariable(name = "id") long id,
-    	              @RequestParam(name = "hilfsmittelnr") String hilfsmittelnr
+    	              @RequestParam(name = "produkt") Long produkt
     	               // value
-    	              , @RequestParam(name = "produkt") String produkt
+    	              , @RequestParam(name = "hilfsmittelnr") String hilfsmittelnr
     	               // value
     	              , @RequestParam(name = "bezeichnung") String bezeichnung
     	               // value
     	              , @RequestParam(name = "hersteller") String hersteller
     	               // value
-    	              , @RequestParam(name = "merkmal") String merkmal
+    	              , @RequestParam(name = "merkmale") String merkmale
     	               // value
+    	              , @RequestParam(name = "änderung") LocalDate änderung
+    	               // LocalDate
     	              , @RequestParam(name = "hmvart") long hmvart // HMVArt
     	               // toone2many
     ) {
 
     		try {
-    			service.update(id,hilfsmittelnr, produkt, bezeichnung, hersteller, merkmal, hmvart);
+    			service.update(id,produkt, hilfsmittelnr, bezeichnung, hersteller, merkmale, änderung, hmvart);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des HMVProdukt Datensatzes mit der " + id + " trat ein Fehler auf";

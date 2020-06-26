@@ -147,6 +147,12 @@
 			<artifactId>Edifact</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.github.thonill</groupId>
+			<artifactId>XMLReader</artifactId>
+			<version>0.9.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>
