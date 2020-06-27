@@ -60,6 +60,42 @@ public class HMVProduktZelt extends StandardZelt {
          
 
 
+     	    public Long getArt() {
+     	         return entity.getArt(); 
+     	    }
+     	    public void setArtWithString(String value) {
+     	        	entity.setArt(convertToLong( value));
+     	        }
+         
+
+
+     	    public Long getGruppe() {
+     	         return entity.getGruppe(); 
+     	    }
+     	    public void setGruppeWithString(String value) {
+     	        	entity.setGruppe(convertToLong( value));
+     	        }
+         
+
+
+     	    public Long getUntergruppe() {
+     	         return entity.getUntergruppe(); 
+     	    }
+     	    public void setUntergruppeWithString(String value) {
+     	        	entity.setUntergruppe(convertToLong( value));
+     	        }
+         
+
+
+     	    public Long getOrt() {
+     	         return entity.getOrt(); 
+     	    }
+     	    public void setOrtWithString(String value) {
+     	        	entity.setOrt(convertToLong( value));
+     	        }
+         
+
+
      	    public String getHilfsmittelnr() {
      	         return entity.getHilfsmittelnr(); 
      	    }
@@ -68,14 +104,9 @@ public class HMVProduktZelt extends StandardZelt {
      	        }
          
 
-
-     	    public String getBezeichnung() {
-     	         return entity.getBezeichnung(); 
-     	    }
-     	    public void setBezeichnungWithString(String value) {
-     	        	entity.setBezeichnung(convertToString( value));
-     	        }
-         
+     	     public void setBezeichnungWithString(String value) {
+     	         	entity.setBezeichnung(convertToString( value));
+     	         } 
 
 
      	    public String getHersteller() {
@@ -86,14 +117,9 @@ public class HMVProduktZelt extends StandardZelt {
      	        }
          
 
-
-     	    public String getMerkmale() {
-     	         return entity.getMerkmale(); 
-     	    }
-     	    public void setMerkmaleWithString(String value) {
-     	        	entity.setMerkmale(convertToString( value));
-     	        }
-         
+     	     public void setMerkmaleWithString(String value) {
+     	         	entity.setMerkmale(convertToString( value));
+     	         } 
 
 
      		    public LocalDate getÄnderung() {

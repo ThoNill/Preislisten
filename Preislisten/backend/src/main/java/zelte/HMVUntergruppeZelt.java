@@ -50,11 +50,29 @@ public class HMVUntergruppeZelt extends StandardZelt {
          
 
 
+     	    public Long getGruppe() {
+     	         return entity.getGruppe(); 
+     	    }
+     	    public void setGruppeWithString(String value) {
+     	        	entity.setGruppe(convertToLong( value));
+     	        }
+         
+
+
      	    public Long getUntergruppe() {
      	         return entity.getUntergruppe(); 
      	    }
      	    public void setUntergruppeWithString(String value) {
      	        	entity.setUntergruppe(convertToLong( value));
+     	        }
+         
+
+
+     	    public Long getOrt() {
+     	         return entity.getOrt(); 
+     	    }
+     	    public void setOrtWithString(String value) {
+     	        	entity.setOrt(convertToLong( value));
      	        }
          
 

@@ -32,7 +32,11 @@ public class HMVUntergruppeEntityController  {
 
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvuntergruppe/insert", produces = "application/json", method = RequestMethod.POST)
-    	public String create(@RequestParam(name = "untergruppe") Long untergruppe
+    	public String create(@RequestParam(name = "gruppe") Long gruppe
+     // value
+    , @RequestParam(name = "untergruppe") Long untergruppe
+     // value
+    , @RequestParam(name = "ort") Long ort
      // value
     , @RequestParam(name = "bezeichnung") String bezeichnung
      // CharBLOB
@@ -47,7 +51,7 @@ public class HMVUntergruppeEntityController  {
     ) {
 
     		try {
-    			HMVUntergruppe d = service.create(untergruppe, bezeichnung, anforderungen, hmvgruppe, hmvort, hmvart);
+    			HMVUntergruppe d = service.create(gruppe, untergruppe, ort, bezeichnung, anforderungen, hmvgruppe, hmvort, hmvart);
     			return DER_DATENSATZ_MIT_DER + d.getHMVUntergruppeId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines HMVUntergruppe Datensatzes trat ein Fehler auf";
@@ -57,7 +61,11 @@ public class HMVUntergruppeEntityController  {
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvuntergruppe/update/{id}", produces = "application/json", method = RequestMethod.PUT)
     	public String update(@PathVariable(name = "id") long id,
-    	              @RequestParam(name = "untergruppe") Long untergruppe
+    	              @RequestParam(name = "gruppe") Long gruppe
+    	               // value
+    	              , @RequestParam(name = "untergruppe") Long untergruppe
+    	               // value
+    	              , @RequestParam(name = "ort") Long ort
     	               // value
     	              , @RequestParam(name = "bezeichnung") String bezeichnung
     	               // CharBLOB
@@ -72,7 +80,7 @@ public class HMVUntergruppeEntityController  {
     ) {
 
     		try {
-    			service.update(id,untergruppe, bezeichnung, anforderungen, hmvgruppe, hmvort, hmvart);
+    			service.update(id,gruppe, untergruppe, ort, bezeichnung, anforderungen, hmvgruppe, hmvort, hmvart);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des HMVUntergruppe Datensatzes mit der " + id + " trat ein Fehler auf";

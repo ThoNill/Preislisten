@@ -29,21 +29,21 @@ public class HMVArtEntityService  {
     		return repo.findById(id);
     	}
 
-    	public HMVArt create(String  art, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
+    	public HMVArt create(Long  art, Long  gruppe, Long  untergruppe, Long  ort, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
     , long hmvprodukt 
     ) {
     		HMVArt d = new HMVArt();
-    		felderSetzen(d, art, bezeichnung, beschreibung, indikation, hmvuntergruppe
+    		felderSetzen(d, art, gruppe, untergruppe, ort, bezeichnung, beschreibung, indikation, hmvuntergruppe
     , hmvprodukt
     );
     		return repo.save(d);
     	}
 
-    	public void update(long id, String  art, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
+    	public void update(long id, Long  art, Long  gruppe, Long  untergruppe, Long  ort, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
     , long hmvprodukt 
     ) {
     		HMVArt d = repo.getOne(id);
-    		felderSetzen(d, art, bezeichnung, beschreibung, indikation, hmvuntergruppe
+    		felderSetzen(d, art, gruppe, untergruppe, ort, bezeichnung, beschreibung, indikation, hmvuntergruppe
     , hmvprodukt
     );
     		repo.save(d);
@@ -54,11 +54,14 @@ public class HMVArtEntityService  {
     	}
 
     	private void felderSetzen(HMVArt d, 
-    	String  art, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
+    	Long  art, Long  gruppe, Long  untergruppe, Long  ort, String  bezeichnung, String  beschreibung, String  indikation, long hmvuntergruppe 
     	, long hmvprodukt 
 
     	) {
     	d.setArt(art);
+    	d.setGruppe(gruppe);
+    	d.setUntergruppe(untergruppe);
+    	d.setOrt(ort);
     	d.setBezeichnung(bezeichnung);
 
     	if (hmvuntergruppe > 0) {

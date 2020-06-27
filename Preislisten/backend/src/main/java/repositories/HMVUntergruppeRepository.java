@@ -8,5 +8,5 @@ import entities.HMVUntergruppe;
 @Repository
 public interface HMVUntergruppeRepository extends JpaRepository<HMVUntergruppe, Long> {
 
-
+	HMVUntergruppe findByGruppeAndUntergruppeAndOrt(long gruppe,long unterGruppe,long ort);
 }

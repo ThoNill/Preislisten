@@ -8,5 +8,5 @@ import entities.HMVGruppe;
 @Repository
 public interface HMVGruppeRepository extends JpaRepository<HMVGruppe, Long> {
 
-
+	HMVGruppe findByGruppe(long gruppe);
 }

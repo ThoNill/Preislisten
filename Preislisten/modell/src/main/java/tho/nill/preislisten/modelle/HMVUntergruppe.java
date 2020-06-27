@@ -9,7 +9,9 @@ import tho.nill.preislisten.verknüpfungen.Verknüpfungen;
 
 public class HMVUntergruppe extends ObjectModell implements Entity, Aggregate {
 	
+	public Long gruppe;
 	public Long untergruppe;
+	public Long ort;
 	public CharBLOB bezeichnung;
 	public CharBLOB anforderungen;
 

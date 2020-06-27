@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -57,6 +58,74 @@ public class HMVProdukt  {
 
 
      		@Basic
+     	    @Column(name = "ART")
+     	    private Long art;
+
+
+     	    public Long getArt() {
+     	    	return art;
+     	    }
+
+     	    public void setArt(Long value) {
+     	    	art = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "GRUPPE")
+     	    private Long gruppe;
+
+
+     	    public Long getGruppe() {
+     	    	return gruppe;
+     	    }
+
+     	    public void setGruppe(Long value) {
+     	    	gruppe = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "UNTERGRUPPE")
+     	    private Long untergruppe;
+
+
+     	    public Long getUntergruppe() {
+     	    	return untergruppe;
+     	    }
+
+     	    public void setUntergruppe(Long value) {
+     	    	untergruppe = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "ORT")
+     	    private Long ort;
+
+
+     	    public Long getOrt() {
+     	    	return ort;
+     	    }
+
+     	    public void setOrt(Long value) {
+     	    	ort = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
      	    @Column(name = "HILFSMITTELNR")
      	    private String hilfsmittelnr;
 
@@ -70,22 +139,11 @@ public class HMVProdukt  {
      	    }
 
          
-        // Kind: (value)
+        // Kind: (CharBLOB)
 
-
-     		@Basic
-     	    @Column(name = "BEZEICHNUNG")
+     		@Lob
+     	    @Column(name = "BEZEICHNUNG", columnDefinition="clob")
      	    private String bezeichnung;
-
-
-     	    public String getBezeichnung() {
-     	    	return bezeichnung;
-     	    }
-
-     	    public void setBezeichnung(String value) {
-     	    	bezeichnung = value;
-     	    }
-
          
         // Kind: (value)
 
@@ -104,22 +162,11 @@ public class HMVProdukt  {
      	    }
 
          
-        // Kind: (value)
+        // Kind: (CharBLOB)
 
-
-     		@Basic
-     	    @Column(name = "MERKMALE")
+     		@Lob
+     	    @Column(name = "MERKMALE", columnDefinition="clob")
      	    private String merkmale;
-
-
-     	    public String getMerkmale() {
-     	    	return merkmale;
-     	    }
-
-     	    public void setMerkmale(String value) {
-     	    	merkmale = value;
-     	    }
-
          
         // Kind: (LocalDate)
 

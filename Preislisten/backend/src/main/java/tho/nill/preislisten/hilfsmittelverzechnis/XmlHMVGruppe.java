@@ -20,6 +20,23 @@ public class XmlHMVGruppe {
 	public void setBezeichnung(String value ) {
 		entity.setBezeichnung(value);
 	}
+
+	@XmlPath(path = "hv:DEFINITION")
+	public void setDefinition(String value ) {
+		entity.setDefinition(value);
+	}
+
+	@XmlPath(path = "hv:INDIKATION")
+	public void setIndikation(String value ) {
+		entity.setIndikation(value);
+	}
+
+
+	@XmlPath(path = "hv:QUERVERWEISE")
+	public void setQuerverweise(String value ) {
+		entity.setQuerverweise(value);
+	}
+
 	
 	public HMVGruppe getEntity() {
 		return entity;

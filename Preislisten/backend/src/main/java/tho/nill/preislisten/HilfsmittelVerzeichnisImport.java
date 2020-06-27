@@ -68,6 +68,7 @@ public class HilfsmittelVerzeichnisImport extends BasisServiceWithoutResult<Stri
 			reader.read(dateiName);
 			while (reader.hasNext()) {
 				Object elem = reader.next();
+				log.info("Element {}", elem);
 				if (elem instanceof XmlHMVArt) {
 					bearbeiteArt((XmlHMVArt) elem);
 				}
@@ -83,7 +84,6 @@ public class HilfsmittelVerzeichnisImport extends BasisServiceWithoutResult<Stri
 				if (elem instanceof XmlHMVProdukt) {
 					bearbeiteProdukt((XmlHMVProdukt) elem);
 				}
-				log.info("Element {}", elem);
 				zeile++;
 			}
 		} catch (RuntimeException e) {
@@ -95,6 +95,8 @@ public class HilfsmittelVerzeichnisImport extends BasisServiceWithoutResult<Stri
 
 	private void bearbeiteArt(XmlHMVArt elem) {
 		art = hmvArtRepository.save(elem.getEntity());
+		art.setHMVUntergruppe(hmvUntergruppeRepository.findByGruppeAndUntergruppeAndOrt(elem.getGruppe(),elem.getUntergruppe(),elem.getOrt()));
+		hmvArtRepository.save(art);
 	}
 	
 	private void bearbeiteGruppe(XmlHMVGruppe elem) {
@@ -107,10 +109,15 @@ public class HilfsmittelVerzeichnisImport extends BasisServiceWithoutResult<Stri
 	
 	private void bearbeiteProdukt(XmlHMVProdukt elem) {
 		produkt = hmvProduktRepository.save(elem.getEntity());
+		produkt.setHMVArt(hmvArtRepository.findByGruppeAndUntergruppeAndArtAndOrt(elem.getGruppe(),elem.getUntergruppe(),elem.getArt(),elem.getOrt()));
+		hmvProduktRepository.save(produkt);
 	}
 	
 	private void bearbeiteUnterGruppe(XmlHMVUntergruppe elem) {
 		unterGruppe = hmvUntergruppeRepository.save(elem.getEntity());
+		unterGruppe.setHMVOrt(hmvOrtRepository.findByOrt(elem.getOrt()));
+		unterGruppe.setHMVGruppe(hmvGruppeRepository.findByGruppe(elem.getGruppe()));
+		hmvUntergruppeRepository.save(unterGruppe);
 	}
 
 }

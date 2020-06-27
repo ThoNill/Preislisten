@@ -31,24 +31,24 @@ public class HMVUntergruppeEntityService  {
     		return repo.findById(id);
     	}
 
-    	public HMVUntergruppe create(Long  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
+    	public HMVUntergruppe create(Long  gruppe, Long  untergruppe, Long  ort, String  bezeichnung, String  anforderungen, long hmvgruppe 
     , long hmvort 
     , long hmvart 
     ) {
     		HMVUntergruppe d = new HMVUntergruppe();
-    		felderSetzen(d, untergruppe, bezeichnung, anforderungen, hmvgruppe
+    		felderSetzen(d, gruppe, untergruppe, ort, bezeichnung, anforderungen, hmvgruppe
     , hmvort
     , hmvart
     );
     		return repo.save(d);
     	}
 
-    	public void update(long id, Long  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
+    	public void update(long id, Long  gruppe, Long  untergruppe, Long  ort, String  bezeichnung, String  anforderungen, long hmvgruppe 
     , long hmvort 
     , long hmvart 
     ) {
     		HMVUntergruppe d = repo.getOne(id);
-    		felderSetzen(d, untergruppe, bezeichnung, anforderungen, hmvgruppe
+    		felderSetzen(d, gruppe, untergruppe, ort, bezeichnung, anforderungen, hmvgruppe
     , hmvort
     , hmvart
     );
@@ -60,12 +60,14 @@ public class HMVUntergruppeEntityService  {
     	}
 
     	private void felderSetzen(HMVUntergruppe d, 
-    	Long  untergruppe, String  bezeichnung, String  anforderungen, long hmvgruppe 
+    	Long  gruppe, Long  untergruppe, Long  ort, String  bezeichnung, String  anforderungen, long hmvgruppe 
     	, long hmvort 
     	, long hmvart 
 
     	) {
+    	d.setGruppe(gruppe);
     	d.setUntergruppe(untergruppe);
+    	d.setOrt(ort);
 
     	if (hmvgruppe > 0) {
     	   Optional<entities.HMVGruppe> hmvgruppeEntity =  hmvgruppeRepo.findById(hmvgruppe);

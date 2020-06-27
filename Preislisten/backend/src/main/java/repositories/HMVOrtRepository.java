@@ -8,5 +8,5 @@ import entities.HMVOrt;
 @Repository
 public interface HMVOrtRepository extends JpaRepository<HMVOrt, Long> {
 
-
+	HMVOrt findByOrt(long ort);
 }

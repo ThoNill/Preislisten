@@ -1049,7 +1049,7 @@ Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01B
     <hv:HMV_ART>
         <hv:GRUPPE>1</hv:GRUPPE>
         <hv:ORT>24</hv:ORT>
-        <hv:UNTERGRUPPE>4</hv:UNTERGRUPPE>
+        <hv:UNTERGRUPPE>2</hv:UNTERGRUPPE>
         <hv:ART>0</hv:ART>
         <hv:BEZEICHNUNG>zur Löschung vorgesehen</hv:BEZEICHNUNG>
         <hv:BESCHREIBUNG>zur Löschung vorgesehen</hv:BESCHREIBUNG>
@@ -1058,7 +1058,7 @@ Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01B
     <hv:HMV_ART>
         <hv:GRUPPE>1</hv:GRUPPE>
         <hv:ORT>24</hv:ORT>
-        <hv:UNTERGRUPPE>4</hv:UNTERGRUPPE>
+        <hv:UNTERGRUPPE>1</hv:UNTERGRUPPE>
         <hv:ART>1</hv:ART>
         <hv:BEZEICHNUNG>zur Löschung vorgesehen</hv:BEZEICHNUNG>
         <hv:BESCHREIBUNG>zur Löschung vorgesehen</hv:BESCHREIBUNG>
@@ -1067,7 +1067,7 @@ Versorgungsbereich gemäß den Empfehlungen nach § 126 SGB V: 01B
     <hv:HMV_ART>
         <hv:GRUPPE>1</hv:GRUPPE>
         <hv:ORT>24</hv:ORT>
-        <hv:UNTERGRUPPE>5</hv:UNTERGRUPPE>
+        <hv:UNTERGRUPPE>2</hv:UNTERGRUPPE>
         <hv:ART>0</hv:ART>
         <hv:BEZEICHNUNG>NN (geplante Produktart: Wunddrainage bei Pleuraerguss)</hv:BEZEICHNUNG>
         <hv:BESCHREIBUNG>- Nicht besetzt

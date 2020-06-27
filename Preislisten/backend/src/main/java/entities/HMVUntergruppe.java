@@ -44,6 +44,23 @@ public class HMVUntergruppe  {
 
 
      		@Basic
+     	    @Column(name = "GRUPPE")
+     	    private Long gruppe;
+
+
+     	    public Long getGruppe() {
+     	    	return gruppe;
+     	    }
+
+     	    public void setGruppe(Long value) {
+     	    	gruppe = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
      	    @Column(name = "UNTERGRUPPE")
      	    private Long untergruppe;
 
@@ -54,6 +71,23 @@ public class HMVUntergruppe  {
 
      	    public void setUntergruppe(Long value) {
      	    	untergruppe = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "ORT")
+     	    private Long ort;
+
+
+     	    public Long getOrt() {
+     	    	return ort;
+     	    }
+
+     	    public void setOrt(Long value) {
+     	    	ort = value;
      	    }
 
          

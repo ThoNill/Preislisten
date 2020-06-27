@@ -10,6 +10,18 @@ public class XmlHMVUntergruppe {
 		super();
 		entity = new HMVUntergruppe();
 	}
+
+	
+	@XmlPath(path = "hv:GRUPPE")
+	public void setGruppe(String value ) {
+		entity.setGruppe(Long.parseLong(value));
+	}
+	
+	@XmlPath(path = "hv:ORT")
+	public void setOrt(String value ) {
+		entity.setOrt(Long.parseLong(value));
+	}
+	
 	
 	@XmlPath(path = "hv:UNTERGRUPPE")
 	public void setUntergruppe(String value ) {
@@ -29,5 +41,25 @@ public class XmlHMVUntergruppe {
 	
 	public HMVUntergruppe getEntity() {
 		return entity;
+	}
+
+	@Override
+	public String toString() {
+		return "XmlHMVUntergruppe [gruppe=" + getGruppe() + ", ort=" + getOrt() + "]";
+	}
+
+
+	public Long getGruppe() {
+		return entity.getGruppe();
+	}
+
+
+	public Long getUntergruppe() {
+		return entity.getUntergruppe();
+	}
+
+
+	public Long getOrt() {
+		return entity.getOrt();
 	}
 }

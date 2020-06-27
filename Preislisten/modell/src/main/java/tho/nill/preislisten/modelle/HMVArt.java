@@ -10,7 +10,10 @@ import tho.nill.preislisten.verknüpfungen.Verknüpfungen;
 
 public class HMVArt extends ObjectModell implements Entity, Aggregate {
 	
-	public String art;
+	public Long art;
+	public Long gruppe;
+	public Long untergruppe;
+	public Long ort;
 	public String bezeichnung;
 	public CharBLOB beschreibung;
 	public CharBLOB indikation;

@@ -8,5 +8,5 @@ import entities.HMVArt;
 @Repository
 public interface HMVArtRepository extends JpaRepository<HMVArt, Long> {
 
-
+	HMVArt findByGruppeAndUntergruppeAndArtAndOrt(long gruppe,long untergruppe,long art,long ort);
 }

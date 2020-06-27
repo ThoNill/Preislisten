@@ -45,15 +45,66 @@ public class HMVArt  {
 
      		@Basic
      	    @Column(name = "ART")
-     	    private String art;
+     	    private Long art;
 
 
-     	    public String getArt() {
+     	    public Long getArt() {
      	    	return art;
      	    }
 
-     	    public void setArt(String value) {
+     	    public void setArt(Long value) {
      	    	art = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "GRUPPE")
+     	    private Long gruppe;
+
+
+     	    public Long getGruppe() {
+     	    	return gruppe;
+     	    }
+
+     	    public void setGruppe(Long value) {
+     	    	gruppe = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "UNTERGRUPPE")
+     	    private Long untergruppe;
+
+
+     	    public Long getUntergruppe() {
+     	    	return untergruppe;
+     	    }
+
+     	    public void setUntergruppe(Long value) {
+     	    	untergruppe = value;
+     	    }
+
+         
+        // Kind: (value)
+
+
+     		@Basic
+     	    @Column(name = "ORT")
+     	    private Long ort;
+
+
+     	    public Long getOrt() {
+     	    	return ort;
+     	    }
+
+     	    public void setOrt(Long value) {
+     	    	ort = value;
      	    }
 
          

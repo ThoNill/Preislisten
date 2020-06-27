@@ -31,7 +31,13 @@ public class HMVArtEntityController  {
 
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvart/insert", produces = "application/json", method = RequestMethod.POST)
-    	public String create(@RequestParam(name = "art") String art
+    	public String create(@RequestParam(name = "art") Long art
+     // value
+    , @RequestParam(name = "gruppe") Long gruppe
+     // value
+    , @RequestParam(name = "untergruppe") Long untergruppe
+     // value
+    , @RequestParam(name = "ort") Long ort
      // value
     , @RequestParam(name = "bezeichnung") String bezeichnung
      // value
@@ -46,7 +52,7 @@ public class HMVArtEntityController  {
     ) {
 
     		try {
-    			HMVArt d = service.create(art, bezeichnung, beschreibung, indikation, hmvuntergruppe, hmvprodukt);
+    			HMVArt d = service.create(art, gruppe, untergruppe, ort, bezeichnung, beschreibung, indikation, hmvuntergruppe, hmvprodukt);
     			return DER_DATENSATZ_MIT_DER + d.getHMVArtId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines HMVArt Datensatzes trat ein Fehler auf";
@@ -56,7 +62,13 @@ public class HMVArtEntityController  {
     	@CrossOrigin
     	@RequestMapping(path = "/entity/hmvart/update/{id}", produces = "application/json", method = RequestMethod.PUT)
     	public String update(@PathVariable(name = "id") long id,
-    	              @RequestParam(name = "art") String art
+    	              @RequestParam(name = "art") Long art
+    	               // value
+    	              , @RequestParam(name = "gruppe") Long gruppe
+    	               // value
+    	              , @RequestParam(name = "untergruppe") Long untergruppe
+    	               // value
+    	              , @RequestParam(name = "ort") Long ort
     	               // value
     	              , @RequestParam(name = "bezeichnung") String bezeichnung
     	               // value
@@ -71,7 +83,7 @@ public class HMVArtEntityController  {
     ) {
 
     		try {
-    			service.update(id,art, bezeichnung, beschreibung, indikation, hmvuntergruppe, hmvprodukt);
+    			service.update(id,art, gruppe, untergruppe, ort, bezeichnung, beschreibung, indikation, hmvuntergruppe, hmvprodukt);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des HMVArt Datensatzes mit der " + id + " trat ein Fehler auf";
