@@ -37,9 +37,6 @@ public class HilfsmittelVerzeichnisImportTest {
 	@Test
 	public void test() throws IOException {
 		hilfsmittelVerzeichnisImport.performService("src/test/resources/hmv_test.xml");
-	//	hilfsmittelVerzeichnisImport.performService("src/test/resources/20200403_HMV.xml");
-//		assertEquals("da302@syntela.de",k.getKommunikationskanal());
-		
 	}
 
 }
