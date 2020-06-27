@@ -1,5 +1,7 @@
 package tho.nill.preislisten;
 
+import java.util.NoSuchElementException;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -86,6 +88,8 @@ public class HilfsmittelVerzeichnisImport extends BasisServiceWithoutResult<Stri
 				}
 				zeile++;
 			}
+		} catch (NoSuchElementException e) {
+			log.info("Datei wurde eingelesen");
 		} catch (RuntimeException e) {
 			e.printStackTrace();
 			log.error("Fehler in Zeile {} {} {}", zeile, seg, e.getLocalizedMessage());
