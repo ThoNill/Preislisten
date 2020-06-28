@@ -68,8 +68,14 @@ public class KostenträgerImportTest {
 	@Test
 	public void doppeltEinlesen() throws IOException {
 		kostenträgerImportService.performService("src/test/resources/BK05Q220.ke0");
+		long anzKassen = kasseRepository.count();
+		long anzVersandZiele = versandZielRepository.count();
 		kostenträgerImportService.performService("src/test/resources/BK05Q220.ke0");
 		List<Kasse> kl = kasseRepository.findByIk(new IK(661430046));
 		assertEquals(1,kl.size());
+		assertEquals(anzKassen,kasseRepository.count());
+		assertEquals(anzVersandZiele,versandZielRepository.count());
+
+	
 	}
 }

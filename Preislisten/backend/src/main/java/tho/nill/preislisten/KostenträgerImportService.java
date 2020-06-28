@@ -23,6 +23,7 @@ import tho.nill.edifact.EdifactReader;
 import tho.nill.edifact.Segment;
 import tho.nill.edifact.TagProvider;
 import tho.nill.edifact.zelt.SetterList;
+import tho.nill.preislisten.simpleAttributes.Leistungserbringergruppe;
 import zelte.KasseZelt;
 import zelte.VersandZielZelt;
 
@@ -42,6 +43,8 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 	KasseZelt kasseZelt;
 	VersandZielZelt versandZielZelt;
 
+	private boolean versandZieleEntfernen = false;
+	
 	Consumer<Segment> idkFelder;
 	Consumer<Segment> ansFelder;
 	Consumer<Segment> vkgFelder;
@@ -51,6 +54,8 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 	Consumer<Segment> aspFelder;
 	Consumer<Segment> uemFelder;
 	Consumer<Segment> dfuFelder;
+
+	private Leistungserbringergruppe lg;
 
 	public KostenträgerImportService(PlatformTransactionManager transactionManager) {
 		super(transactionManager);
@@ -129,6 +134,7 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 		case "VDT":
 			vdtFelder.accept(seg);
 			bisherigeKassenEinträgeBerücksichtigen();
+			versandZieleEntfernen = true;
 			break;
 		case "KTO":
 			ktoFelder.accept(seg);
@@ -156,6 +162,9 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 		case "VKG": {
 			versandZielZelt.create();
 			vkgFelder.accept(seg);
+			if (versandZieleEntfernen) {
+				bisherigeVersandZieleEntfernen();
+			}
 			kasseZelt.connectKasse(versandZielZelt);
 			versandZielZelt.getEntity().setVon_ik(kasseZelt.getIk());
 			versandZielZelt.save();
@@ -174,20 +183,33 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 		if (vorhandeneKassen.size() == 1) {
 			Kasse k = vorhandeneKassen.get(0);
 			kasseZelt.setEntity(k);
-			bisherigeVersandZieleEntfernen(k);
 		}
 		if (vorhandeneKassen.size() > 1) {
 			throw new RuntimeException("Zuviele Einträge für IK " + entity.getIk() + " " + entity.getGültigAb());
 		}
 	}
 
-	private void bisherigeVersandZieleEntfernen(Kasse k) {
-		List<VersandZiel> arbeitsKopie = new ArrayList<VersandZiel>(k.getVersandZiel());
-		for (VersandZiel z : arbeitsKopie) {
-			k.removeVersandZiel(z);
-			z.setKasse(null);
+	private void bisherigeVersandZieleEntfernen() {
+		Kasse kasse = kasseZelt.getEntity();
+		Leistungserbringergruppe aktuelleLeistungserbringergruppe = versandZielZelt.getEntity().getLeistungserbringergruppe();
+		List<VersandZiel> zuEntfernen = verknüpfungenLösen(kasse, aktuelleLeistungserbringergruppe);
+		if (zuEntfernen.size() > 0) {
+			versandZielRepo.deleteAll(zuEntfernen);
 		}
-		versandZielRepo.deleteAll(arbeitsKopie);
+	}
+
+	private List<VersandZiel> verknüpfungenLösen(Kasse kasse,
+			Leistungserbringergruppe aktuelleLeistungserbringergruppe) {
+		List<VersandZiel> arbeitsKopie = new ArrayList<VersandZiel>(kasse.getVersandZiel());
+		List<VersandZiel> zuEntfernen = new ArrayList<VersandZiel>(kasse.getVersandZiel().size());
+		for (VersandZiel z : arbeitsKopie) {
+			if (aktuelleLeistungserbringergruppe.equals(z.getLeistungserbringergruppe())) {
+				kasse.removeVersandZiel(z);
+				z.setKasse(null);
+				zuEntfernen.add(z);
+			}
+		}
+		return zuEntfernen;
 	}
 
 	private TagProvider createTagProvider() {
