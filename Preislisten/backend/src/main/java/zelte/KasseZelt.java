@@ -41,11 +41,12 @@ public class KasseZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new Kasse();
 	}
 
@@ -53,6 +54,11 @@ public class KasseZelt extends StandardZelt {
 	public Kasse getEntity() {
 		return entity;
 	}
+
+	public void setEntity(Kasse entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getKasseId() {
 			return entity.getKasseId();    

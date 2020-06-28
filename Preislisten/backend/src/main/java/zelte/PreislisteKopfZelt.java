@@ -35,11 +35,12 @@ public class PreislisteKopfZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new PreislisteKopf();
 	}
 
@@ -47,6 +48,11 @@ public class PreislisteKopfZelt extends StandardZelt {
 	public PreislisteKopf getEntity() {
 		return entity;
 	}
+
+	public void setEntity(PreislisteKopf entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getPreislisteKopfId() {
 			return entity.getPreislisteKopfId();    

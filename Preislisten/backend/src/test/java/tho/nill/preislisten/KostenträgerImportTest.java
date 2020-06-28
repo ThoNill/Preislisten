@@ -11,7 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.event.annotation.BeforeTestMethod;
 
 import entities.Kasse;
-import entities.VersandZiel;
 import repositories.KasseRepository;
 import repositories.VersandZielRepository;
 import tho.nill.preislisten.simpleAttributes.IK;
@@ -38,7 +37,7 @@ public class KostenträgerImportTest {
 	@Test
 	public void test() throws IOException {
 		kostenträgerImportService.performService("src/test/resources/BK05Q220.ke0");
-		List<Kasse> kl = kasseRepository.getKassenZurIK(new IK(661430046));
+		List<Kasse> kl = kasseRepository.findByIk(new IK(661430046));
 		assertEquals(1,kl.size());
 		Kasse k = kl.get(0);
 	/*	
@@ -66,4 +65,11 @@ public class KostenträgerImportTest {
 		
 	}
 
+	@Test
+	public void doppeltEinlesen() throws IOException {
+		kostenträgerImportService.performService("src/test/resources/BK05Q220.ke0");
+		kostenträgerImportService.performService("src/test/resources/BK05Q220.ke0");
+		List<Kasse> kl = kasseRepository.findByIk(new IK(661430046));
+		assertEquals(1,kl.size());
+	}
 }

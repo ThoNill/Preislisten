@@ -31,11 +31,12 @@ public class HMVProduktZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new HMVProdukt();
 	}
 
@@ -43,6 +44,11 @@ public class HMVProduktZelt extends StandardZelt {
 	public HMVProdukt getEntity() {
 		return entity;
 	}
+
+	public void setEntity(HMVProdukt entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getHMVProduktId() {
 			return entity.getHMVProduktId();    

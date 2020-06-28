@@ -3,6 +3,8 @@ package tho.nill.preislisten;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Consumer;
 
 import javax.persistence.EntityManager;
@@ -12,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 
+import entities.Kasse;
+import entities.VersandZiel;
 import lombok.extern.slf4j.Slf4j;
 import repositories.KasseRepository;
 import repositories.VersandZielRepository;
@@ -124,6 +128,7 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 			break;
 		case "VDT":
 			vdtFelder.accept(seg);
+			bisherigeKassenEinträgeBerücksichtigen();
 			break;
 		case "KTO":
 			ktoFelder.accept(seg);
@@ -161,6 +166,28 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 			break;
 		default:
 		}
+	}
+
+	private void bisherigeKassenEinträgeBerücksichtigen() {
+		Kasse entity = kasseZelt.getEntity();
+		List<Kasse> vorhandeneKassen = kasseRepo.findByIkAndGültigAb(entity.getIk(), entity.getGültigAb());
+		if (vorhandeneKassen.size() == 1) {
+			Kasse k = vorhandeneKassen.get(0);
+			kasseZelt.setEntity(k);
+			bisherigeVersandZieleEntfernen(k);
+		}
+		if (vorhandeneKassen.size() > 1) {
+			throw new RuntimeException("Zuviele Einträge für IK " + entity.getIk() + " " + entity.getGültigAb());
+		}
+	}
+
+	private void bisherigeVersandZieleEntfernen(Kasse k) {
+		List<VersandZiel> arbeitsKopie = new ArrayList<VersandZiel>(k.getVersandZiel());
+		for (VersandZiel z : arbeitsKopie) {
+			k.removeVersandZiel(z);
+			z.setKasse(null);
+		}
+		versandZielRepo.deleteAll(arbeitsKopie);
 	}
 
 	private TagProvider createTagProvider() {

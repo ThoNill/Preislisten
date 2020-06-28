@@ -30,11 +30,12 @@ public class HMVArtZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new HMVArt();
 	}
 
@@ -42,6 +43,11 @@ public class HMVArtZelt extends StandardZelt {
 	public HMVArt getEntity() {
 		return entity;
 	}
+
+	public void setEntity(HMVArt entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getHMVArtId() {
 			return entity.getHMVArtId();    

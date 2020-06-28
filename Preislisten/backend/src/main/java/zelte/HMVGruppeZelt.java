@@ -30,11 +30,12 @@ public class HMVGruppeZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new HMVGruppe();
 	}
 
@@ -42,6 +43,11 @@ public class HMVGruppeZelt extends StandardZelt {
 	public HMVGruppe getEntity() {
 		return entity;
 	}
+
+	public void setEntity(HMVGruppe entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getHMVGruppeId() {
 			return entity.getHMVGruppeId();    

@@ -32,11 +32,12 @@ public class KundeZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new Kunde();
 	}
 
@@ -44,6 +45,11 @@ public class KundeZelt extends StandardZelt {
 	public Kunde getEntity() {
 		return entity;
 	}
+
+	public void setEntity(Kunde entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getKundeId() {
 			return entity.getKundeId();    

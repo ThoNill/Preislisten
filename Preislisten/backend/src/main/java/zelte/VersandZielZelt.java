@@ -38,11 +38,12 @@ public class VersandZielZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new VersandZiel();
 	}
 
@@ -50,6 +51,11 @@ public class VersandZielZelt extends StandardZelt {
 	public VersandZiel getEntity() {
 		return entity;
 	}
+
+	public void setEntity(VersandZiel entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getVersandZielId() {
 			return entity.getVersandZielId();    

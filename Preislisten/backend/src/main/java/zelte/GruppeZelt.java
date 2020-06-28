@@ -30,11 +30,12 @@ public class GruppeZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new Gruppe();
 	}
 
@@ -42,6 +43,11 @@ public class GruppeZelt extends StandardZelt {
 	public Gruppe getEntity() {
 		return entity;
 	}
+
+	public void setEntity(Gruppe entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getGruppeId() {
 			return entity.getGruppeId();    

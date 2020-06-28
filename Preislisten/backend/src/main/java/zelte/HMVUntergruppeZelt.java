@@ -30,11 +30,12 @@ public class HMVUntergruppeZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new HMVUntergruppe();
 	}
 
@@ -42,6 +43,11 @@ public class HMVUntergruppeZelt extends StandardZelt {
 	public HMVUntergruppe getEntity() {
 		return entity;
 	}
+
+	public void setEntity(HMVUntergruppe entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getHMVUntergruppeId() {
 			return entity.getHMVUntergruppeId();    

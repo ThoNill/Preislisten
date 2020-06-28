@@ -31,11 +31,12 @@ public class PositionZelt extends StandardZelt {
 		}
 	}
 
-
+	public void load(Long id) {
+         entity = repo.getOne(id);
+	}	
 
 
 	public void create() {
-		save();
 		entity = new Position();
 	}
 
@@ -43,6 +44,11 @@ public class PositionZelt extends StandardZelt {
 	public Position getEntity() {
 		return entity;
 	}
+
+	public void setEntity(Position entity) {
+         this.entity = entity;
+	}	
+
 
     public java.lang.Long getPositionId() {
 			return entity.getPositionId();    
