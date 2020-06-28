@@ -4,9 +4,10 @@ package tho.nill.preislisten.simpleAttributes;
 
 /* Schlüssel Leistungserbringergruppe */
 public enum Leistungserbringergruppe  {
-
+	// Apotheken  
+	Apotheken_3("3"),
 	/* Sonstige Leistungserbringer */
-	 Sonstige_5("5");
+	Sonstige_5("5");
 
 	private String code;
 
