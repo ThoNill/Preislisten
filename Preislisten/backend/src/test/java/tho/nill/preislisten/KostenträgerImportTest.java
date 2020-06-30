@@ -15,7 +15,6 @@ import repositories.KasseRepository;
 import repositories.VersandZielRepository;
 import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
 import tho.nill.preislisten.simpleAttributes.Bundesland;
-import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
 import tho.nill.preislisten.simpleAttributes.IK;
 import tho.nill.preislisten.simpleAttributes.KVBezirk;
 import tho.nill.preislisten.simpleAttributes.Leistungserbringergruppe;
@@ -67,7 +66,7 @@ public class KostenträgerImportTest {
 		assertEquals("da302@syntela.de", k.getKommunikationskanal());
 
 		VersandzielAbfrageDaten abfrage = new VersandzielAbfrageDaten(new IK(101320032),
-				DatenlieferungsArt.RechnungDaten_07, Bundesland.Baden_Württemberg_08, KVBezirk.Koblenz_47,
+				Bundesland.Baden_Württemberg_08, KVBezirk.Koblenz_47,
 				Abrechnungscode.Ergotherapeut_26, new Tarifkennzeichen("00"), Leistungserbringergruppe.Sonstige_5);
 
 		P302Ergebnis erg = kostenträgerInfoService.service(abfrage);

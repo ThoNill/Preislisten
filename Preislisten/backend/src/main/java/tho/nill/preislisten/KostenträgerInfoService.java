@@ -75,13 +75,13 @@ public class KostenträgerInfoService extends BasisServiceWithResult<Versandziel
 		Optional<IK> papier = Optional.empty();
 		Optional<IK> datenannahmestelle = Optional.empty();
 		if (kostenträger.isPresent()) {
-			prüfstelle = queryResult(kostenträger.get(), VerweisArt.VerweisPrüfstelle_03, abfrage.getArt(), abfrage,
-					kostenträger.get(), versichertenkarte);
-			papier = queryResult(kostenträger.get(), VerweisArt.VerweisPapierannahme_09,
-					DatenlieferungsArt.RechnungPapier_21, abfrage, kostenträger.get(), versichertenkarte);
+			papier = queryResult(kostenträger.get(), kostenträger.get(), VerweisArt.VerweisPapierannahme_09,
+					DatenlieferungsArt.RechnungPapier_21, abfrage);
+			prüfstelle = queryResult(kostenträger.get(), kostenträger.get(), VerweisArt.VerweisPrüfstelle_03,
+					DatenlieferungsArt.RechnungDaten_07, abfrage);
 			if (prüfstelle.isPresent()) {
 				datenannahmestelle = queryResult(kostenträger.get(), VerweisArt.VerweisDatenannahme_02,
-						abfrage.getArt(), abfrage, prüfstelle.get(), kostenträger.get());
+						DatenlieferungsArt.RechnungDaten_07, abfrage, prüfstelle.get(), kostenträger.get());
 				if (datenannahmestelle.isEmpty()) {
 					datenannahmestelle = prüfstelle;
 				}
