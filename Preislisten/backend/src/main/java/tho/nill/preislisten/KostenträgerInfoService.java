@@ -17,6 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 import repositories.KasseRepository;
 import repositories.KundeRepository;
 import repositories.VersandZielRepository;
+import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
 import tho.nill.preislisten.simpleAttributes.DatenlieferungsArt;
 import tho.nill.preislisten.simpleAttributes.IK;
 import tho.nill.preislisten.simpleAttributes.Leistungserbringergruppe;
@@ -54,7 +55,7 @@ public class KostenträgerInfoService extends BasisServiceWithResult<Versandziel
 		felder.add(new EnumFilter(abfrage.getLand(), "land", (VersandZiel z) -> z.getLand()));
 		felder.add(new TarifkennzeichenFilter(abfrage.getTarifkennzeichen()));
 		felder.add(new EnumFilter(abfrage.getBezirk(), "bezirk", (VersandZiel z) -> z.getBezirk()));
-		felder.add(new EnumFilter(abfrage.getAbrechnungscode(), "abrechnungscode",
+		felder.add(new EnumFilter(abfrage.getAbrechnungscode(),Abrechnungscode.Sammelschlüssel_00, "abrechnungscode",
 				(VersandZiel z) -> z.getAbrechnungscode()));
 		return felder;
 	}

@@ -6,14 +6,22 @@ import entities.VersandZiel;
 
 public class EnumFilter implements VersandZielFilter {
 	private Enum e;
+	private Enum standard;
 	private String name;
 	private Function<VersandZiel,Enum> field;
 
-	public EnumFilter(Enum e, String name,Function<VersandZiel,Enum> field) {
+	
+	public EnumFilter(Enum e,String name,Function<VersandZiel,Enum> field) {
+		this(e,null,name,field);
+	}
+
+	
+	public EnumFilter(Enum e, Enum standard,String name,Function<VersandZiel,Enum> field) {
 		super();
 		this.e = e;
 		this.name = name;
 		this.field = field;
+		this.standard = standard;
 	}
 
 	@Override
@@ -26,8 +34,12 @@ public class EnumFilter implements VersandZielFilter {
 
 	@Override
 	public void append(StringBuilder builder) {
-		builder.append(" and (z." + name + " = " + e.ordinal() + " or z." + name + " is null)  ");
+		builder.append(" and (z." + name + " = " + e.ordinal() + standardDazu() + " or z." + name + " is null)  ");
 
+	}
+
+	private String standardDazu() {
+		return (standard==null) ? "" : " or z." + name + " = " + standard.ordinal();
 	}
 
 }
