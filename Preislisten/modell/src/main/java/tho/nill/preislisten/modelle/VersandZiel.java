@@ -19,7 +19,7 @@ public class VersandZiel extends ObjectModell implements Entity, Aggregate {
 	
 	public IK von_ik;
 	public IK nach_ik;
-	public IK abrechnungsstelle;
+	public IK kostenträger;
 	
 	public DatenlieferungsArt art;
 	public VerweisArt verweis;

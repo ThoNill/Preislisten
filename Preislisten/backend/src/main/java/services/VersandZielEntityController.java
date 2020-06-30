@@ -43,7 +43,7 @@ public class VersandZielEntityController  {
      // value
     , @RequestParam(name = "nach_ik") IK nach_ik
      // value
-    , @RequestParam(name = "abrechnungsstelle") IK abrechnungsstelle
+    , @RequestParam(name = "kostenträger") IK kostenträger
      // value
     , @RequestParam(name = "art") DatenlieferungsArt art
      // enumeration
@@ -66,7 +66,7 @@ public class VersandZielEntityController  {
     ) {
 
     		try {
-    			VersandZiel d = service.create(von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse);
+    			VersandZiel d = service.create(von_ik, nach_ik, kostenträger, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse);
     			return DER_DATENSATZ_MIT_DER + d.getVersandZielId() + " wurden erfolgreich angelegt";
     		} catch (Exception e) {
     			return "Beim Anlegen eines VersandZiel Datensatzes trat ein Fehler auf";
@@ -80,7 +80,7 @@ public class VersandZielEntityController  {
     	               // value
     	              , @RequestParam(name = "nach_ik") IK nach_ik
     	               // value
-    	              , @RequestParam(name = "abrechnungsstelle") IK abrechnungsstelle
+    	              , @RequestParam(name = "kostenträger") IK kostenträger
     	               // value
     	              , @RequestParam(name = "art") DatenlieferungsArt art
     	               // enumeration
@@ -103,7 +103,7 @@ public class VersandZielEntityController  {
     ) {
 
     		try {
-    			service.update(id,von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse);
+    			service.update(id,von_ik, nach_ik, kostenträger, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse);
     			return DER_DATENSATZ_MIT_DER + id + " wurden erfolgreich geändert";
     		} catch (Exception e) {
     			return "Beim Ändern des VersandZiel Datensatzes mit der " + id + " trat ein Fehler auf";

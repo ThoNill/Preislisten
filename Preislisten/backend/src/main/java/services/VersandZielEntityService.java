@@ -36,18 +36,18 @@ public class VersandZielEntityService  {
     		return repo.findById(id);
     	}
 
-    	public VersandZiel create(IK  von_ik, IK  nach_ik, IK  abrechnungsstelle, DatenlieferungsArt  art, VerweisArt  verweis, DFÜMedium  medium, Bundesland  land, KVBezirk  bezirk, Abrechnungscode  abrechnungscode, Tarifkennzeichen  tarifkennzeichen, Leistungserbringergruppe  leistungserbringergruppe, long kasse 
+    	public VersandZiel create(IK  von_ik, IK  nach_ik, IK  kostenträger, DatenlieferungsArt  art, VerweisArt  verweis, DFÜMedium  medium, Bundesland  land, KVBezirk  bezirk, Abrechnungscode  abrechnungscode, Tarifkennzeichen  tarifkennzeichen, Leistungserbringergruppe  leistungserbringergruppe, long kasse 
     ) {
     		VersandZiel d = new VersandZiel();
-    		felderSetzen(d, von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse
+    		felderSetzen(d, von_ik, nach_ik, kostenträger, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse
     );
     		return repo.save(d);
     	}
 
-    	public void update(long id, IK  von_ik, IK  nach_ik, IK  abrechnungsstelle, DatenlieferungsArt  art, VerweisArt  verweis, DFÜMedium  medium, Bundesland  land, KVBezirk  bezirk, Abrechnungscode  abrechnungscode, Tarifkennzeichen  tarifkennzeichen, Leistungserbringergruppe  leistungserbringergruppe, long kasse 
+    	public void update(long id, IK  von_ik, IK  nach_ik, IK  kostenträger, DatenlieferungsArt  art, VerweisArt  verweis, DFÜMedium  medium, Bundesland  land, KVBezirk  bezirk, Abrechnungscode  abrechnungscode, Tarifkennzeichen  tarifkennzeichen, Leistungserbringergruppe  leistungserbringergruppe, long kasse 
     ) {
     		VersandZiel d = repo.getOne(id);
-    		felderSetzen(d, von_ik, nach_ik, abrechnungsstelle, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse
+    		felderSetzen(d, von_ik, nach_ik, kostenträger, art, verweis, medium, land, bezirk, abrechnungscode, tarifkennzeichen, leistungserbringergruppe, kasse
     );
     		repo.save(d);
     	}
@@ -57,12 +57,12 @@ public class VersandZielEntityService  {
     	}
 
     	private void felderSetzen(VersandZiel d, 
-    	IK  von_ik, IK  nach_ik, IK  abrechnungsstelle, DatenlieferungsArt  art, VerweisArt  verweis, DFÜMedium  medium, Bundesland  land, KVBezirk  bezirk, Abrechnungscode  abrechnungscode, Tarifkennzeichen  tarifkennzeichen, Leistungserbringergruppe  leistungserbringergruppe, long kasse 
+    	IK  von_ik, IK  nach_ik, IK  kostenträger, DatenlieferungsArt  art, VerweisArt  verweis, DFÜMedium  medium, Bundesland  land, KVBezirk  bezirk, Abrechnungscode  abrechnungscode, Tarifkennzeichen  tarifkennzeichen, Leistungserbringergruppe  leistungserbringergruppe, long kasse 
 
     	) {
     	d.setVon_ik(von_ik);
     	d.setNach_ik(nach_ik);
-    	d.setAbrechnungsstelle(abrechnungsstelle);
+    	d.setKostenträger(kostenträger);
     	d.setArt(art);
     	d.setVerweis(verweis);
     	d.setMedium(medium);

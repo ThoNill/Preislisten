@@ -82,11 +82,11 @@ public class VersandZielZelt extends StandardZelt {
          
 
 
-     	    public IK getAbrechnungsstelle() {
-     	         return entity.getAbrechnungsstelle(); 
+     	    public IK getKostenträger() {
+     	         return entity.getKostenträger(); 
      	    }
-     	    public void setAbrechnungsstelleWithString(String value) {
-     	        	entity.setAbrechnungsstelle(convertToIK( value));
+     	    public void setKostenträgerWithString(String value) {
+     	        	entity.setKostenträger(convertToIK( value));
      	        }
          
 

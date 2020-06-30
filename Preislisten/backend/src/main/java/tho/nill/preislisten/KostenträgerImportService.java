@@ -70,8 +70,10 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 		ansFelder = new SetterList(kasseZelt::skip, kasseZelt::setPlzWithString, kasseZelt::setOrtWithString,
 				kasseZelt::setStraßeWithString);
 
-		vkgFelder = new SetterList(versandZielZelt::setVerweisWithString, versandZielZelt::setNach_ikWithString,
-				versandZielZelt::setLeistungserbringergruppeWithString, versandZielZelt::setAbrechnungsstelleWithString,
+		vkgFelder = new SetterList(versandZielZelt::setVerweisWithString, 
+				versandZielZelt::setNach_ikWithString,
+				versandZielZelt::setLeistungserbringergruppeWithString, 
+				versandZielZelt::setKostenträgerWithString,
 				versandZielZelt::setArtWithString, versandZielZelt::setMediumWithString,
 				versandZielZelt::setLandWithString, versandZielZelt::setBezirkWithString,
 				versandZielZelt::setAbrechnungscodeWithString, versandZielZelt::setTarifkennzeichenWithString);
@@ -163,7 +165,9 @@ public class KostenträgerImportService extends BasisServiceWithoutResult<String
 			versandZielZelt.create();
 			vkgFelder.accept(seg);
 			if (versandZieleEntfernen) {
+				versandZieleEntfernen=false;
 				bisherigeVersandZieleEntfernen();
+				
 			}
 			kasseZelt.connectKasse(versandZielZelt);
 			versandZielZelt.getEntity().setVon_ik(kasseZelt.getIk());

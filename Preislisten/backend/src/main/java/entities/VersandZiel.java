@@ -85,17 +85,17 @@ public class VersandZiel  {
 
 
      		@Basic
-     	    @Column(name = "ABRECHNUNGSSTELLE")
+     	    @Column(name = "KOSTENTRÄGER")
      	     @Convert(converter = tho.nill.preislisten.simpleAttributes.IKAdapter.class)
-     	    private IK abrechnungsstelle;
+     	    private IK kostenträger;
 
 
-     	    public IK getAbrechnungsstelle() {
-     	    	return abrechnungsstelle;
+     	    public IK getKostenträger() {
+     	    	return kostenträger;
      	    }
 
-     	    public void setAbrechnungsstelle(IK value) {
-     	    	abrechnungsstelle = value;
+     	    public void setKostenträger(IK value) {
+     	    	kostenträger = value;
      	    }
 
          
