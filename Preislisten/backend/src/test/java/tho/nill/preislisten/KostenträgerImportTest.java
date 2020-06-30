@@ -11,7 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.event.annotation.BeforeTestMethod;
 
 import entities.Kasse;
-import entities.VersandZiel;
 import repositories.KasseRepository;
 import repositories.VersandZielRepository;
 import tho.nill.preislisten.simpleAttributes.Abrechnungscode;
@@ -66,21 +65,17 @@ public class KostenträgerImportTest {
 		assertEquals("0341/25920-20", k.getFax());
 		assertEquals("Zentrale", k.getArbeitsgebiet());
 		assertEquals("da302@syntela.de", k.getKommunikationskanal());
-		
-		
-		
-	
-		
-		
+
 		VersandzielAbfrageDaten abfrage = new VersandzielAbfrageDaten(new IK(101320032),
 				DatenlieferungsArt.RechnungDaten_07, Bundesland.Baden_Württemberg_08, KVBezirk.Koblenz_47,
 				Abrechnungscode.Ergotherapeut_26, new Tarifkennzeichen("00"), Leistungserbringergruppe.Sonstige_5);
+
 		P302Ergebnis erg = kostenträgerInfoService.service(abfrage);
-		assertEquals(new IK(101320032),erg.getVersichertenkarte());
-		assertEquals(new IK(101320032),erg.getKostenträger());
-		assertEquals(new IK(107436557),erg.getPrüfstelle());
-		assertEquals(new IK(107436557),erg.getPapier());
-		assertEquals(new IK(107436557),erg.getDatenannahmestelle());
+		assertEquals(new IK(101320032), erg.getVersichertenkarte());
+		assertEquals(new IK(101320032), erg.getKostenträger());
+		assertEquals(new IK(107436557), erg.getPrüfstelle());
+		assertEquals(new IK(107436557), erg.getPapier());
+		assertEquals(new IK(107436557), erg.getDatenannahmestelle());
 	}
 
 	@Test

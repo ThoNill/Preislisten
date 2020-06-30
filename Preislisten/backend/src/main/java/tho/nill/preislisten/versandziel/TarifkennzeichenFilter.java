@@ -14,11 +14,13 @@ public class TarifkennzeichenFilter implements VersandZielFilter {
 	@Override
 	public int bewertung(VersandZiel ziel) {
 		Tarifkennzeichen z = ziel.getTarifkennzeichen();
-		if (tz.equals(z)) {
-			return 2;
-		}
-		if (tz.getTarifbereich().equals(z.getTarifbereich())) {
-			return 1;
+		if (z != null) {
+			if (tz.equals(z)) {
+				return 2;
+			}
+			if (tz.getTarifbereich().equals(z.getTarifbereich())) {
+				return 1;
+			}
 		}
 
 		return 0;
@@ -26,7 +28,11 @@ public class TarifkennzeichenFilter implements VersandZielFilter {
 
 	@Override
 	public void append(StringBuilder builder) {
-		builder.append(" and (z.tarifkennzeichen = '" + tz.toString() + "' or z.tarifkennzeichen = '" + tz.getTarifbereich().getCode() + "' or z.tarifkennzeichen = '')  ");
+		builder.append(" and (z.tarifkennzeichen = '" + tz.toString()+ "' ");
+		if (tz.getTarifbereich() != null) {
+			builder.append(" or z.tarifkennzeichen = '" + tz.getTarifbereich().getCode() + "' ");
+		}
+		builder.append(" or z.tarifkennzeichen = '')  ");
 
 	}
 

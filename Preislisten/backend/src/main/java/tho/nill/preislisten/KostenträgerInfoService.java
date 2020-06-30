@@ -55,7 +55,7 @@ public class KostenträgerInfoService extends BasisServiceWithResult<Versandziel
 		felder.add(new EnumFilter(abfrage.getLand(), "land", (VersandZiel z) -> z.getLand()));
 		felder.add(new TarifkennzeichenFilter(abfrage.getTarifkennzeichen()));
 		felder.add(new EnumFilter(abfrage.getBezirk(), "bezirk", (VersandZiel z) -> z.getBezirk()));
-		felder.add(new EnumFilter(abfrage.getAbrechnungscode(),Abrechnungscode.Sammelschlüssel_00, "abrechnungscode",
+		felder.add(new EnumFilter(abfrage.getAbrechnungscode(), Abrechnungscode.Sammelschlüssel_00, "abrechnungscode",
 				(VersandZiel z) -> z.getAbrechnungscode()));
 		return felder;
 	}
@@ -63,39 +63,27 @@ public class KostenträgerInfoService extends BasisServiceWithResult<Versandziel
 	@Override
 	public P302Ergebnis performService(VersandzielAbfrageDaten abfrage) {
 		IK versichertenkarte = abfrage.getIk();
-		
-		
-		
+
 		List<Kasse> lk = kasseRepo.findByIk(versichertenkarte);
-		for(Kasse ka : lk) {
-			for(VersandZiel z : ka.getVersandZiel()) {
-				System.out.println("z von IK: " + z.getVon_ik());
-				System.out.println("z nach IK: " + z.getNach_ik());
-				System.out.println("z Abrechnungscode: " + z.getAbrechnungscode());
-				System.out.println("z Art: " + z.getArt());
-				System.out.println("z Leistungserbringergruppe: " + z.getLeistungserbringergruppe());
-				System.out.println("z Tarifkennzeichen: " + z.getTarifkennzeichen());
-				System.out.println("z Bezirk: " + z.getBezirk());
-				System.out.println("z Land: " + z.getLand());
-			}
+		for (Kasse ka : lk) {
+			anzeigen(ka.getVersandZiel());
 		}
-		
-		
-		
-		
-		Optional<IK> kostenträger = queryResult(abfrage.getIk(), null, VerweisArt.VerweisKostenträger_01, abfrage);
+
+		Optional<IK> kostenträger = queryResult(abfrage.getIk(), null, VerweisArt.VerweisKostenträger_01, null,
+				abfrage);
 		Optional<IK> prüfstelle = Optional.empty();
 		Optional<IK> papier = Optional.empty();
 		Optional<IK> datenannahmestelle = Optional.empty();
 		if (kostenträger.isPresent()) {
-			prüfstelle = queryResult(kostenträger.get(), kostenträger.get(), VerweisArt.VerweisPrüfstelle_03, abfrage);
-			papier = queryResult(kostenträger.get(), kostenträger.get(), VerweisArt.VerweisPapierannahme_09,
-					abfrage);
+			prüfstelle = queryResult(kostenträger.get(), VerweisArt.VerweisPrüfstelle_03, abfrage.getArt(), abfrage,
+					kostenträger.get(), versichertenkarte);
+			papier = queryResult(kostenträger.get(), VerweisArt.VerweisPapierannahme_09,
+					DatenlieferungsArt.RechnungPapier_21, abfrage, kostenträger.get(), versichertenkarte);
 			if (prüfstelle.isPresent()) {
-				datenannahmestelle = queryResult(prüfstelle.get(), kostenträger.get(),
-						VerweisArt.VerweisDatenannahme_02, abfrage);
-				if (datenannahmestelle==null) {
-					datenannahmestelle= prüfstelle;
+				datenannahmestelle = queryResult(kostenträger.get(), VerweisArt.VerweisDatenannahme_02,
+						abfrage.getArt(), abfrage, prüfstelle.get(), kostenträger.get());
+				if (datenannahmestelle.isEmpty()) {
+					datenannahmestelle = prüfstelle;
 				}
 			}
 		}
@@ -107,26 +95,42 @@ public class KostenträgerInfoService extends BasisServiceWithResult<Versandziel
 		return (ik.isPresent()) ? ik.get() : null;
 	}
 
-	private Optional<IK> queryResult(IK ik, IK kostenträger, VerweisArt verweisArt, VersandzielAbfrageDaten abfrage) {
-		FilterList filter = createFilterList(abfrage);
-		String stmt = createQuery(ik, kostenträger, verweisArt, filter, abfrage);
-		log.info(stmt);
-		Query query = entityManager.createQuery(stmt);
-		List<VersandZiel> ziele = (List<VersandZiel>) query.getResultList();
-		if (ziele.size() > 0) {
-			Optional<VersandZiel> ziel = filter.bestesZiel(ziele);
-			if (ziel.isPresent()) {
-				return Optional.of(ziel.get().getNach_ik());
+	private Optional<IK> queryResult(IK kostenträger, VerweisArt verweisArt, DatenlieferungsArt art,
+			VersandzielAbfrageDaten abfrage, IK... iks) {
+		for (IK ik : iks) {
+			Optional<IK> verweisIk = queryResult(ik, kostenträger, verweisArt, art, abfrage);
+			if (verweisIk.isPresent()) {
+				return verweisIk;
 			}
 		}
 		return Optional.empty();
 	}
 
-	private String createQuery(IK ik, IK kostenträger, VerweisArt verweisArt, FilterList filter,
+	private Optional<IK> queryResult(IK ik, IK kostenträger, VerweisArt verweisArt, DatenlieferungsArt art,
+			VersandzielAbfrageDaten abfrage) {
+		FilterList filter = createFilterList(abfrage);
+		String stmt = createQuery(ik, kostenträger, verweisArt, art, filter, abfrage);
+		log.info(stmt);
+		Query query = entityManager.createQuery(stmt);
+		List<VersandZiel> ziele = (List<VersandZiel>) query.getResultList();
+		if (ziele.size() > 0) {
+			log.info("Abfrage ergibt " + ziele.size() + " Einträge");
+			anzeigen(ziele);
+			Optional<VersandZiel> ziel = filter.bestesZiel(ziele);
+			if (ziel.isPresent()) {
+				return Optional.of(ziel.get().getNach_ik());
+			}
+		} else {
+			log.info("Abfrage ergibt leeres Resultat");
+		}
+		return Optional.empty();
+	}
+
+	private String createQuery(IK ik, IK kostenträger, VerweisArt verweisArt, DatenlieferungsArt art, FilterList filter,
 			VersandzielAbfrageDaten abfrage) {
 		StringBuilder builder = new StringBuilder();
 		builder.append("select z from VersandZiel z where z.von_ik = " + ik);
-		addDatenlieferungsart(builder, abfrage.getArt());
+		addDatenlieferungsart(builder, art);
 		addLeistungserbringergruppe(builder, abfrage.getLeistungserbringergruppe());
 		addVerweisArt(builder, verweisArt);
 		addKostenträger(builder, kostenträger);
@@ -142,15 +146,36 @@ public class KostenträgerInfoService extends BasisServiceWithResult<Versandziel
 	}
 
 	private void addDatenlieferungsart(StringBuilder builder, DatenlieferungsArt art) {
-		builder.append(" and z.art in " + art.getSuche() + " ");
+		if (art != null) {
+			builder.append(" and ( z.art in " + art.getSuche() + " or z.art is null) ");
+		}
 	}
 
 	private void addVerweisArt(StringBuilder builder, VerweisArt verweisArt) {
-		builder.append(" and z.verweis = " + verweisArt.ordinal() + " ");
+		if (verweisArt != null) {
+			builder.append(" and z.verweis = " + verweisArt.ordinal() + " ");
+		}
 	}
 
 	private void addLeistungserbringergruppe(StringBuilder builder, Leistungserbringergruppe gruppe) {
-		builder.append(" and z.leistungserbringergruppe = " + gruppe.ordinal() + " ");
+		if (gruppe != null) {
+			builder.append(" and z.leistungserbringergruppe = " + gruppe.ordinal() + " ");
+		}
 	}
 
+	private void anzeigen(Iterable<VersandZiel> ziele) {
+		if (log.isDebugEnabled()) {
+			for (VersandZiel z : ziele) {
+				log.debug("z von IK: " + z.getVon_ik());
+				log.debug("z nach IK: " + z.getNach_ik());
+				log.debug("z Abrechnungscode: " + z.getAbrechnungscode());
+				log.debug("z Art: " + z.getArt());
+				log.debug("z Leistungserbringergruppe: " + z.getLeistungserbringergruppe());
+				log.debug("z Tarifkennzeichen: " + z.getTarifkennzeichen());
+				log.debug("z Bezirk: " + z.getBezirk());
+				log.debug("z Land: " + z.getLand());
+				log.debug("z Verweis: " + z.getVerweis());
+			}
+		}
+	}
 }
