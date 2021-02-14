@@ -9,6 +9,28 @@ import org.springframework.stereotype.Service;
 import entities.HMVArt;
 import repositories.HMVArtRepository;
 
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.String;
+
+import org.nill.vorlagen.compiler.markerClasses.CharBLOB;
+
+import org.nill.vorlagen.compiler.markerClasses.CharBLOB;
+
+
+
+
+import java.util.concurrent.atomic.AtomicLong;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 @Service
 public class HMVArtEntityService  {
 

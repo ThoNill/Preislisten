@@ -44,6 +44,7 @@ public class KostenträgerImportTest {
 
 	@Test
 	public void test() throws IOException {
+		init();
 		kostenträgerImportService.performService("src/test/resources/BK05Q220.ke0");
 		List<Kasse> kl = kasseRepository.findByIk(new IK(661430046));
 		assertEquals(1, kl.size());

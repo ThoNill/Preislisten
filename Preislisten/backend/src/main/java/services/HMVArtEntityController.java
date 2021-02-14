@@ -11,6 +11,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import entities.HMVArt;
 
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.String;
+
+import org.nill.vorlagen.compiler.markerClasses.CharBLOB;
+
+import org.nill.vorlagen.compiler.markerClasses.CharBLOB;
+
 
 
 

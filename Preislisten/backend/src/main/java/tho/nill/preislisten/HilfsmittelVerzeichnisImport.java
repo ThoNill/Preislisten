@@ -4,6 +4,7 @@ import java.util.NoSuchElementException;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -59,6 +60,7 @@ public class HilfsmittelVerzeichnisImport extends BasisServiceWithoutResult<Stri
 		super(transactionManager);
 	}
 
+	@Transactional
 	@Override
 	public void performService(String dateiName) {
 		int zeile = 1;

@@ -14,7 +14,7 @@ public class HMVArt extends ObjectModell implements Entity, Aggregate {
 	public Long gruppe;
 	public Long untergruppe;
 	public Long ort;
-	public String bezeichnung;
+	public CharBLOB bezeichnung;
 	public CharBLOB beschreibung;
 	public CharBLOB indikation;
 			

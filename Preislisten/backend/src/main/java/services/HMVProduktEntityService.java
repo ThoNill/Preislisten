@@ -1,7 +1,6 @@
 package services;
 
 
-import java.time.LocalDate;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +8,33 @@ import org.springframework.stereotype.Service;
 
 import entities.HMVProdukt;
 import repositories.HMVProduktRepository;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.Long;
+
+import java.lang.String;
+
+import org.nill.vorlagen.compiler.markerClasses.CharBLOB;
+
+import java.lang.String;
+
+import org.nill.vorlagen.compiler.markerClasses.CharBLOB;
+
+import java.time.LocalDate;
+
+
+
+import java.util.concurrent.atomic.AtomicLong;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @Service
 public class HMVProduktEntityService  {

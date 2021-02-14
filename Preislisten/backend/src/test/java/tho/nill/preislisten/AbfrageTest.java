@@ -66,6 +66,7 @@ public class AbfrageTest {
 
 	@Test
 	public void testOhneErgebnis() throws IOException {
+		init();
 		AbfrageDaten d = testDatenErzeugen(false);
 		d.add(new AbfrageDatum(DatumArt.Leistungsdatum,LocalDate.now().minusYears(2)));
 		d.setArtDerPreisliste(PreislisteArt.Kinder);
@@ -75,6 +76,7 @@ public class AbfrageTest {
 
 	@Test
 	public void testMitErgebnis() throws IOException {
+		init();
 		AbfrageDaten d = testDatenErzeugen(true);
 		d.add(new AbfrageDatum(DatumArt.Leistungsdatum,LocalDate.now().minusYears(2)));
 		d.setArtDerPreisliste(PreislisteArt.Kinder);

@@ -18,6 +18,7 @@ public class XmlHMVGruppe {
 	
 	@XmlPath(path = "hv:BEZEICHNUNG")
 	public void setBezeichnung(String value ) {
+		System.out.println("Bezeichnung= "+value);
 		entity.setBezeichnung(value);
 	}
 
